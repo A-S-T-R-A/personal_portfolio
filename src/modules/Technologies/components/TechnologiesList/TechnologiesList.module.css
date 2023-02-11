@@ -1,0 +1,30 @@
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 3rem 0;
+
+
+}
+
+@media (max-width:960px) {
+    .list {
+        margin: 64px 0;
+    }
+}
+
+@media (max-width:650px) {
+    .list {
+        margin: 64px 0;
+        gap: 24px
+    }
+}
+
+@media (max-width:480px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        margin: 32px 0;
+    }
+}

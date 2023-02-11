@@ -1,0 +1,10 @@
+@media (max-width:480px) {
+    .container {
+        display: flex;
+        min-width: min-content
+    }
+
+    .final {
+        max-width: 120%
+    }
+}

@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px 0;
+    margin: 0 auto;
+    max-width: 1040px;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 24px 48px 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 16px 16px 0;
+        width: calc(100vw - 32px);
+        flex-direction: column;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.nopadding {
+    padding: 0;
+}

@@ -1,0 +1,41 @@
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -25%;
+    top: 40px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 100;
+    padding: 4px 0;
+    cursor: default;
+    overflow: hidden;
+    transition: 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(.3)
+}
+
+
+
+@media (max-width:650px) {
+    .container {
+        top: 32px;
+    }
+}
+
+@media ((max-width:480px)) {
+    .container {
+        top: 24px;
+    }
+}
+
+
+
+.containerOpen {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}

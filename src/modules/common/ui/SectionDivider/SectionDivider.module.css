@@ -1,0 +1,29 @@
+.container {
+    width: 64px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+}
+
+.colorAlt {
+    background: linear-gradient(270deg, #F46737 0%, #945DD6 100%);
+}
+
+.divider {
+    margin: 4rem 0
+}
+
+@media (max-width:650px) {
+    .container {
+        width: 48px;
+        height: 4px;
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 32px;
+        height: 2px;
+    }
+}
