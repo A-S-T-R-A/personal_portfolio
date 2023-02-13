@@ -1,4 +1,2 @@
-import Projects from "./Projects"
-
-export { Projects }
-export { projectsData } from "constants"
+export { Projects } from "./Projects"
+export { projectCategories, projectsData } from "constants/newProjectsData"

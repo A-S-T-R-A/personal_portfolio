@@ -1,16 +1,38 @@
-import { Section } from "modules/common/ui/Section"
-import { SectionDivider } from "modules/common/ui/SectionDivider"
-import { SectionTitle } from "modules/common/ui/SectionTitle"
-import GridContainer from "./components/GridContainer/GridContainer"
+import { useEffect, useState } from "react"
+import { projectsData, projectCategories } from "."
+import { Section, SectionDivider, SectionTitle } from "modules/common/ui"
+import { CategoriesFilter } from "./components/CategoriesFilter/CategoriesFilter"
+import { FilteredProjects } from "./components/FilteredProjects/FilteredProjects"
 
-function Projects() {
+export function Projects() {
+    const [active, setActive] = useState(projectCategories[0])
+    const [filteredProjectsData, setFilteredProjectsData] =
+        useState(projectsData)
+
+    useEffect(() => {
+        function filter(tag) {
+            if (tag === "All") {
+                setFilteredProjectsData(projectsData)
+            } else {
+                setFilteredProjectsData(
+                    projectsData.filter(proj => proj.tags.includes(tag))
+                )
+            }
+        }
+
+        filter(active)
+    }, [active])
+
     return (
         <Section isNopadding id="projects">
             <SectionDivider />
             <SectionTitle isMain>Projects</SectionTitle>
-            <GridContainer />
+            <CategoriesFilter
+                data={projectCategories}
+                active={active}
+                setActive={setActive}
+            />
+            <FilteredProjects data={filteredProjectsData} />
         </Section>
     )
 }
-
-export default Projects

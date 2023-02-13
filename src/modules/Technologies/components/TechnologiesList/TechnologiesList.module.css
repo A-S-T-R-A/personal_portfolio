@@ -6,17 +6,6 @@
     flex-direction: row;
 }
 
-/* .list {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 5rem;
-} */
-
-
-
 .list {
     list-style-type: none;
     display: grid;
