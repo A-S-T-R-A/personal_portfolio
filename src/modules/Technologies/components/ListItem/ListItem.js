@@ -1,17 +1,14 @@
 import styles from "./ListItem.module.css"
 
 function ListItem({ data }) {
-    const { title, Icon, desc } = data
+    const { title, img, desc } = data
     return (
-        <li className={styles.item}>
-            <picture>
-                <Icon size="3rem" />
-            </picture>
-            <div className={styles.listContainer}>
-                <h4 className={styles.title}>{title}</h4>
-                <p className={styles.desc}>{desc}</p>
+        <div className={styles.container}>
+            <div className={styles.imgContainer}>
+                <img src={img} alt="" className={styles.img} />
             </div>
-        </li>
+            <p className={styles.title}>{title}</p>
+        </div>
     )
 }
 

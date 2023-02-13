@@ -1,4 +1,4 @@
 import Technologies from "./Technologies"
 
 export { Technologies }
-export { technologiesData } from "constants"
+export { technologiesData, timelineData } from "constants"

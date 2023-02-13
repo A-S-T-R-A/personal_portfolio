@@ -1,8 +1,8 @@
-import { Acomplishments } from "modules/Acomplishments"
+import { About } from "modules/About"
+import { Form } from "modules/Form"
 import { Main } from "modules/Main"
 import { Projects } from "modules/NProjects"
 import { Technologies } from "modules/Technologies"
-import { Timeline } from "modules/Timeline"
 import { Footer } from "./modules/Footer"
 import { Header } from "./modules/Header"
 
@@ -12,10 +12,10 @@ function App() {
             <Header />
             <div>
                 <Main />
+                <About />
                 <Projects />
                 <Technologies />
-                <Timeline />
-                <Acomplishments />
+                <Form />
             </div>
             <Footer />
         </div>

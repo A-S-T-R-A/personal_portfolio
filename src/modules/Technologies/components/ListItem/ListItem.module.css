@@ -1,4 +1,37 @@
-.item {
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.imgContainer {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 50%;
+    height: 50%;
+}
+
+.content:hover {
+    box-shadow: 0 0 25px #fef4f5;
+}
+
+.title {
+    color: white;
+}
+
+
+
+/* .item {
     max-width: 320px;
     display: flex;
     flex-direction: column;
@@ -73,4 +106,4 @@
         font-size: 14px;
         line-height: 22px;
     }
-}
+} */

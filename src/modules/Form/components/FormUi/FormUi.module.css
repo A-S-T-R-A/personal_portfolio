@@ -1,0 +1,120 @@
+.form {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: var(--fs-h2);
+    font-weight: 500;
+    color: var(--base-bg-color);
+    grid-area: title;
+    max-width: 100%;
+}
+
+.formContainer {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "title"
+        "input1"
+        "input2"
+        "button";
+    justify-content: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.inputWrap:nth-child(2) {
+    grid-area: input1;
+}
+
+.inputWrap:nth-child(3) {
+    grid-area: input2;
+}
+
+.inputs {
+    outline: none;
+    width: 100%;
+    height: 45px;
+    padding-left: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: var(--fs-h4);
+}
+
+.inputs::placeholder {
+    font-size: var(--middle-text);
+}
+
+.inputs:focus {
+    border: 1px solid var(--secondary-color);
+}
+
+.formBtn {
+    width: 100%;
+    grid-area: button;
+}
+
+.btn {
+    max-width: 100% !important;
+    height: 45px !important;
+    color: var(--base-color) !important;
+    border-radius: 5px !important;
+    font-weight: var(--fw-mid) !important;
+    border: none !important;
+}
+
+.inputWrap {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.error {
+    position: absolute;
+    font-size: 13px;
+    font-weight: var(--fw-mid);
+    color: red;
+    left: 16px;
+    margin-top: 45px;
+}
+
+.inpError {
+    border: 1px solid red;
+    outline: none;
+}
+
+@media (min-width: 961px) {
+    .form {
+        min-height: 150px;
+    }
+
+    .formContainer {
+        min-height: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "title title title"
+            "input1 input2 button";
+        max-width: 80%;
+    }
+
+    .inputWrap {
+        margin-right: 20px;
+    }
+
+    .inputs {
+        max-width: 400px;
+    }
+}

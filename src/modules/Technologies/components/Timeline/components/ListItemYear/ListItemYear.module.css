@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 0;
+    color: white
+}
+
+.yearContainer {
+    margin-right: 3rem;
+}
+
+.year {
+    font-weight: 800;
+}
+
+.works {
+    flex: 1;
+}
