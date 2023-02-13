@@ -7,7 +7,7 @@ function Main() {
     return (
         <Section isGrid>
             <Hero />
-            {/* <BgAnimation /> */}
+            <BgAnimation />
         </Section>
     )
 }
