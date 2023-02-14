@@ -12,6 +12,7 @@ export function ProjectItem({ data }) {
     return (
         <div className={styles.container}>
             <DescriptionModal
+                data={data}
                 showModal={showModal}
                 setShowModal={setShowModal}
             />
