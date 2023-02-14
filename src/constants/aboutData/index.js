@@ -25,7 +25,7 @@ export const aboutData = [
         desc: "I am a web designer with a passion for creating beautiful and functional web applications",
     },
     {
-        id: 3,
+        id: 4,
         img: about04Img,
         title: "Frontend Developer",
         desc: "I am a web designer with a passion for creating beautiful and functional web applications",

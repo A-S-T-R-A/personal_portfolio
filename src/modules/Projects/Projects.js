@@ -32,7 +32,10 @@ export function Projects() {
                 active={active}
                 setActive={setActive}
             />
-            <FilteredProjects data={filteredProjectsData} />
+            <FilteredProjects
+                data={filteredProjectsData}
+                filterActive={active}
+            />
         </Section>
     )
 }
