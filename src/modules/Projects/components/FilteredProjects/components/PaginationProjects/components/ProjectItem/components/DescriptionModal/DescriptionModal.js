@@ -1,6 +1,6 @@
 import { Button, Section, SectionTitle } from "modules/common/ui"
 import { AnimatedModal } from "modules/common/ui/AnimatedModal"
-import { RxCross1 } from "react-icons/rx"
+
 import ProjectTechnologies from "./components/ProjectTechnologies/ProjectTechnologies"
 import styles from "./DescriptionModal.module.css"
 
@@ -13,11 +13,6 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
             onClose={() => setShowModal(false)}
             innerClassName={styles.container}
         >
-            <RxCross1
-                className={styles.close}
-                onClick={() => setShowModal(false)}
-            />
-
             <div className={styles.imgContainer}>
                 <img src={image} alt={title} className={styles.img} />
             </div>
@@ -40,8 +35,12 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
                         </Button>
                     </a>
 
-                    <Button isDisabled isAlt className={styles.btn}>
-                        Code
+                    <Button
+                        isDisabled
+                        isAlt
+                        onClick={() => setShowModal(false)}
+                    >
+                        Close
                     </Button>
                 </div>
             </Section>

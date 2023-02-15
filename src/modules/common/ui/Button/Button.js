@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./Button.module.css"
 import { classNames } from "modules/common/helpers/classNames"
 
-function Button({ children, className, isAlt, isForm, isDisabled }) {
+function Button({ children, className, isAlt, isForm, isDisabled, ...props }) {
     const containerClassName = classNames(
         styles.container,
         {
@@ -13,7 +13,11 @@ function Button({ children, className, isAlt, isForm, isDisabled }) {
         [className]
     )
 
-    return <div className={containerClassName}>{children}</div>
+    return (
+        <div className={containerClassName} {...props}>
+            {children}
+        </div>
+    )
 }
 
 export default Button
