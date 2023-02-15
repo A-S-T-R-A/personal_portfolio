@@ -5,7 +5,7 @@ import { ProjectItemContent } from "./components/ProjectItemContent/ProjectItemC
 import styles from "./ProjectItem.module.css"
 
 export function ProjectItem({ data }) {
-    const { title, description, image, tags, visit } = data
+    const { title, description, images, tags, visit } = data
 
     const [showModal, setShowModal] = useState(false)
 
@@ -20,7 +20,7 @@ export function ProjectItem({ data }) {
                 className={styles.imgContainer}
                 onClick={() => setShowModal(true)}
             >
-                <img src={image} alt={title} className={styles.img} />
+                <img src={images[0]} alt={title} className={styles.img} />
             </div>
             <ProjectItemContent data={{ description, title, tags }} />
             <ProjectItemButtons setShowModal={setShowModal} demoLink={visit} />

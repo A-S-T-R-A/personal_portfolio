@@ -1,11 +1,12 @@
 import { Button, Section, SectionTitle } from "modules/common/ui"
 import { AnimatedModal } from "modules/common/ui/AnimatedModal"
+import ProjectImagesSwiper from "./components/ProjectImagesSwiper/ProjectImagesSwiper"
 
 import ProjectTechnologies from "./components/ProjectTechnologies/ProjectTechnologies"
 import styles from "./DescriptionModal.module.css"
 
 export function DescriptionModal({ data, showModal, setShowModal }) {
-    const { image, title, description, visit, technologies } = data
+    const { images, title, description, visit, technologies } = data
 
     return (
         <AnimatedModal
@@ -13,9 +14,11 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
             onClose={() => setShowModal(false)}
             innerClassName={styles.container}
         >
-            <div className={styles.imgContainer}>
+            {/* <div className={styles.imgContainer}>
                 <img src={image} alt={title} className={styles.img} />
-            </div>
+            </div> */}
+            <ProjectImagesSwiper images={images} />
+
             <Section isNopadding className={styles.contentContainer}>
                 <SectionTitle>{title}</SectionTitle>
 
