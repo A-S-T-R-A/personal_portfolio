@@ -5,21 +5,22 @@ import { classNames } from "modules/common/helpers/classNames"
 
 function Section({
     children,
+    className,
     isGrid = false,
     isRow = false,
     isNopadding = false,
 }) {
-    const className = classNames(
+    const sectionClassName = classNames(
         styles.container,
         {
             [styles.grid]: isGrid,
             [styles.row]: isRow,
             [styles.nopadding]: isNopadding,
         },
-        []
+        [className]
     )
 
-    return <section className={className}>{children}</section>
+    return <section className={sectionClassName}>{children}</section>
 }
 
 export default Section

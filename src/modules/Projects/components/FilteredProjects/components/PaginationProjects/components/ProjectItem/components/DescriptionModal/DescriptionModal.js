@@ -1,10 +1,11 @@
+import { Button, Section, SectionTitle } from "modules/common/ui"
 import { AnimatedModal } from "modules/common/ui/AnimatedModal"
 import { RxCross1 } from "react-icons/rx"
-/* import { AiFillEye, AiFillGithub } from "react-icons/ai" */
+import ProjectTechnologies from "./components/ProjectTechnologies/ProjectTechnologies"
 import styles from "./DescriptionModal.module.css"
 
 export function DescriptionModal({ data, showModal, setShowModal }) {
-    const { image, title, description, visit, dates, technologies } = data
+    const { image, title, description, visit, technologies } = data
 
     return (
         <AnimatedModal
@@ -20,38 +21,30 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
             <div className={styles.imgContainer}>
                 <img src={image} alt={title} className={styles.img} />
             </div>
-            <div className={styles.contentContainer}>
-                <h4 className={styles.title}>{title}</h4>
-                <p className={styles.description}>{description}</p>
-                <div className={styles.timesContainer}>
-                    <p>Started: {dates.start}</p>
-                    <p>Finished: {dates.finish}</p>
-                </div>
+            <Section isNopadding className={styles.contentContainer}>
+                <SectionTitle>{title}</SectionTitle>
 
-                <div className={styles.tech}>
-                    <h4>Technologies:</h4>
-                    {technologies.map((item, index) => (
-                        <p key={index}>{item}</p>
-                    ))}
-                </div>
+                <h4 className={styles.modalTitle}>About</h4>
+                <p className={styles.desc}>{description}</p>
+
+                <h4 className={styles.modalTitle}>Technologies:</h4>
+                <ProjectTechnologies
+                    technologies={technologies}
+                    className={styles.tech}
+                />
 
                 <div className={styles.buttonsContainer}>
-                    <div className={styles.btn}>Source Code</div>
                     <a href={visit}>
-                        <div className={styles.btn}>Live Demo</div>
+                        <Button isAlt className={styles.btn}>
+                            Live Demo
+                        </Button>
                     </a>
+
+                    <Button isDisabled isAlt className={styles.btn}>
+                        Code
+                    </Button>
                 </div>
-            </div>
-            {/* <a href={linkSource} target="_blank" rel="noreferrer">
-                <div className={styles.iconContainer}>
-                    <AiFillEye className={styles.icon} />
-                </div>
-            </a>
-            <a href={linkCode} target="_blank" rel="noreferrer">
-                <div className={styles.iconContainer}>
-                    <AiFillGithub className={styles.icon} />
-                </div>
-            </a> */}
+            </Section>
         </AnimatedModal>
     )
 }
