@@ -106,7 +106,7 @@ export default function Form() {
     }
 
     return (
-        <Section>
+        <Section id="contact">
             <SectionTitle>Sign up</SectionTitle>
 
             <FormModal

@@ -1,0 +1,9 @@
+.icons {
+    display: none;
+}
+
+@media (min-width: 961px) {
+    .icons {
+        display: block;
+    }
+}

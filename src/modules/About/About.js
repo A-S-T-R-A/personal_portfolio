@@ -3,7 +3,7 @@ import { AboutList } from "./components/AboutList/AboutList"
 
 export function About() {
     return (
-        <Section>
+        <Section id="about">
             <SectionTitle>
                 I Know that <span>Good Design</span> <br />
                 means <span>Good Business</span>
