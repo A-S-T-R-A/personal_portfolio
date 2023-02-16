@@ -1,30 +1,40 @@
-import { useEffect, useState } from "react"
-import { PaginationBullets } from "./components/PaginationBullets/PaginationBullets"
-import { PaginationProjects } from "./components/PaginationProjects/PaginationProjects"
 import styles from "./FilteredProjects.module.css"
+import "./FilteredProjects.css"
+
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination } from "swiper"
+
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
+import { ProjectItem } from "./components/ProjectItem/ProjectItem"
+import { classNames } from "modules/common/helpers/classNames"
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 
 export function FilteredProjects({ data, filterActive }) {
-    const [currentPage, setCurrentPage] = useState(0)
-
-    useEffect(() => {
-        setCurrentPage(0)
-    }, [filterActive])
-
-    const projectsPerPage = 3
-
-    const indexOfFirst = currentPage * projectsPerPage
-    const indexOfLast = indexOfFirst + projectsPerPage
-    const paginatedProjects = data.slice(indexOfFirst, indexOfLast)
-
     return (
-        <div className={styles.container}>
-            <PaginationProjects projects={paginatedProjects} />
-            <PaginationBullets
-                currentPage={currentPage}
-                setCurrentPage={setCurrentPage}
-                totalProjects={data.length}
-                projectsPerPage={projectsPerPage}
-            />
+        <div
+            className={classNames(styles.container, {}, ["projectsPagination"])}
+        >
+            <Swiper
+                slidesPerView={3}
+                className={styles.swiper}
+                pagination={{ clickable: true }}
+                modules={[Pagination, Navigation]}
+                navigation={{
+                    nextEl: "#nextProject",
+                    prevEl: "#prevProject",
+                }}
+            >
+                {data.map((proj, index) => (
+                    <SwiperSlide key={index}>
+                        <ProjectItem data={proj} filterActive={filterActive} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+            <BsChevronLeft className={styles.navPrev} id="prevProject" />
+            <BsChevronRight className={styles.navNext} id="nextProject" />
         </div>
     )
 }

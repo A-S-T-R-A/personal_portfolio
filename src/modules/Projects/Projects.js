@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
-import { projectCategories, projectsData } from "./index"
+import { projectsData } from "./index"
 import { Section, SectionDivider, SectionTitle } from "modules/common/ui"
 import { CategoriesFilter } from "./components/CategoriesFilter/CategoriesFilter"
 import { FilteredProjects } from "./components/FilteredProjects/FilteredProjects"
+import { getProjectCategories } from "./helpers/getProjectCategories"
 
 export function Projects() {
+    const projectCategories = getProjectCategories(projectsData)
+
     const [active, setActive] = useState(projectCategories[0])
     const [filteredProjectsData, setFilteredProjectsData] =
         useState(projectsData)

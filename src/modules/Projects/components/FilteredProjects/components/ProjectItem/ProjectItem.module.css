@@ -29,3 +29,17 @@
     border-radius: 0.5rem;
     object-fit: cover;
 }
+
+.buttonsContainer {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+
+}

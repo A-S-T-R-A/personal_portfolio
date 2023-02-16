@@ -1,0 +1,11 @@
+.projectsPagination .swiper-pagination {
+    margin-bottom: -15px !important;
+}
+
+.projectsPagination .swiper-pagination-bullet-active {
+    background-color: royalblue !important;
+}
+
+.projectsPagination .swiper-pagination-bullet {
+    background-color: rgb(255, 255, 255);
+}
