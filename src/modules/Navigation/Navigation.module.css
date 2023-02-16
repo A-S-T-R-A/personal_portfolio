@@ -20,16 +20,23 @@
     color: white;
 }
 
-.logoContainer {
+.logoCont {
+    height: 100%;
+    min-height: 40px;
+
+}
+
+.logo {
     padding: 0 10px;
+    width: 125px;
 }
 
 @media (max-width: 961px) {
-    .logoContainer {
+    .logo {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 50px;
+        width: 10%;
         height: 50px;
         position: absolute;
         left: 1rem;
