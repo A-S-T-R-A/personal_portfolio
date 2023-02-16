@@ -18,14 +18,6 @@ function ProjectImagesSwiper({ images, title }) {
     const [nextVisible, setNextVisible] = useState(true)
 
     function hoverHandler(isHover) {
-        const paginationEl = document.querySelector(
-            ".modalProjectSwiperWrapper .swiper-pagination"
-        )
-        if (isHover) {
-            paginationEl.classList.add("paginationHovered")
-        } else {
-            paginationEl.classList.remove("paginationHovered")
-        }
         setImageHovered(isHover)
     }
 

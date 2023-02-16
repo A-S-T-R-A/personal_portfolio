@@ -1,29 +1,19 @@
-.modalProjectSwiperWrapper .swiper-pagination {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    display: flex !important;
-    padding: 5px;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: fit-content !important;
-    cursor: default;
-    margin-bottom: -10px;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
+ .modalProjectSwiperWrapper .swiper-pagination {
+     display: flex !important;
+     position: absolute !important;
+     left: 50% !important;
+     bottom: 0;
+     transform: translateX(-50%) translateY(100%) !important;
+     width: fit-content !important;
+     cursor: default;
+     transition: opacity 0.2s ease;
+ }
 
-.modalProjectSwiperWrapper .paginationHovered {
-    opacity: 1;
-}
 
-.modalProjectSwiperWrapper .swiper-pagination-bullet-active {
-    background-color: red;
-}
+ .modalProjectSwiperWrapper .swiper-pagination-bullet-active {
+     background-color: royalblue !important;
+ }
 
-.modalProjectSwiperWrapper .swiper-pagination-bullet {
-    background-color: red;
-}
-
-.aaa {
-    opacity: 0 !important;
-}
+ .modalProjectSwiperWrapper .swiper-pagination-bullet {
+     background-color: rgb(255, 255, 255);
+ }

@@ -14,9 +14,6 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
             onClose={() => setShowModal(false)}
             innerClassName={styles.container}
         >
-            {/* <div className={styles.imgContainer}>
-                <img src={image} alt={title} className={styles.img} />
-            </div> */}
             <ProjectImagesSwiper images={images} />
 
             <Section isNopadding className={styles.contentContainer}>
@@ -32,15 +29,21 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
                 />
 
                 <div className={styles.buttonsContainer}>
-                    <a href={visit}>
-                        <Button isAlt className={styles.btn}>
-                            Live Demo
-                        </Button>
-                    </a>
+                    <Button
+                        isAlt
+                        className={styles.btn}
+                        onClick={e => {
+                            e.preventDefault()
+                            window.open(visit, "_blank")
+                        }}
+                    >
+                        Live Demo
+                    </Button>
 
                     <Button
                         isDisabled
                         isAlt
+                        className={styles.btn}
                         onClick={() => setShowModal(false)}
                     >
                         Close
