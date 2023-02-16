@@ -57,3 +57,7 @@ li {
     width: 100%;
     margin: auto;
 }
+
+span.accent {
+    -webkit-text-fill-color: plum;
+}

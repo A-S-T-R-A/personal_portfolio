@@ -5,8 +5,8 @@ export function About() {
     return (
         <Section>
             <SectionTitle>
-                I Know that <span>Good Design</span> <br />
-                means <span>Good Business</span>
+                I Know that <span className="accent">Good Design</span> <br />
+                means <span className="accent">Good Business</span>
             </SectionTitle>
             <AboutList />
         </Section>
