@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./BurgerIcon.module.css"
 
-function BurgerIcon({ showBurger, setShowBurger }) {
+export function BurgerIcon({ showBurger, setShowBurger }) {
     function clickHandler(e) {
         e.stopPropagation()
         setShowBurger(prev => !prev)
@@ -18,5 +18,3 @@ function BurgerIcon({ showBurger, setShowBurger }) {
         </div>
     )
 }
-
-export default BurgerIcon

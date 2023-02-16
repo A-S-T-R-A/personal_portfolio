@@ -3,14 +3,14 @@ import styles from "./Navigation.module.css"
 
 import { Burger, Navbar } from "./components"
 
-import Art1us from "../../assets/images/common/art1us.png"
+import Art1us from "assets/images/common/art1us.png"
 
-function Navigation() {
+export function Navigation() {
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <div className={styles.logoCont}>
-                    <img src={Art1us} className={styles.logo} />
+                <div className={styles.logoContainer}>
+                    <img src={Art1us} className={styles.logo} alt="" />
                 </div>
                 <Navbar />
                 <Burger />
@@ -18,5 +18,3 @@ function Navigation() {
         </div>
     )
 }
-
-export default Navigation

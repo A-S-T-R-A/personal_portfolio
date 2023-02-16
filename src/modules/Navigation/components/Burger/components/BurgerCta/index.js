@@ -1,2 +1,1 @@
-import BurgerCta from "./BurgerCta"
-export { BurgerCta }
+export { BurgerCta } from "./BurgerCta"

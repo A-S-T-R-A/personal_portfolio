@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./NavigationLink.module.css"
 
-function NavigationLink({ children, link, onClick }) {
+export function NavigationLink({ children, link, onClick }) {
     return (
         <li className={styles.item} onClick={onClick}>
             <a href={link} className={styles.undreline}>
@@ -10,5 +10,3 @@ function NavigationLink({ children, link, onClick }) {
         </li>
     )
 }
-
-export default NavigationLink

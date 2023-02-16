@@ -1,5 +1,3 @@
-import { BurgerCta } from "./BurgerCta"
-import { BurgerIcon } from "./BurgerIcon"
-import { BurgerNav } from "./BurgerNav"
-
-export { BurgerCta, BurgerIcon, BurgerNav }
+export { BurgerCta } from "./BurgerCta"
+export { BurgerIcon } from "./BurgerIcon"
+export { BurgerNav } from "./BurgerNav"

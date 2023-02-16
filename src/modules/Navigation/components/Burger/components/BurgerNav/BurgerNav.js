@@ -3,7 +3,7 @@ import { BurgerCta } from "../"
 import { NavigationList } from "../../../common"
 import styles from "./BurgerNav.module.css"
 
-function BurgerNav({ showBurger, setShowBurger }) {
+export function BurgerNav({ showBurger, setShowBurger }) {
     function menuClickHandler(e) {
         e.stopPropagation()
     }
@@ -28,5 +28,3 @@ function BurgerNav({ showBurger, setShowBurger }) {
         </div>
     )
 }
-
-export default BurgerNav

@@ -1,4 +1,2 @@
-import { Burger } from "./Burger"
-import { Navbar } from "./Navbar"
-
-export { Burger, Navbar }
+export { Burger } from "./Burger"
+export { Navbar } from "./Navbar"

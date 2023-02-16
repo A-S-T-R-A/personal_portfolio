@@ -1,2 +1,1 @@
-import BurgerIcon from "./BurgerIcon"
-export { BurgerIcon }
+export { BurgerIcon } from "./BurgerIcon"

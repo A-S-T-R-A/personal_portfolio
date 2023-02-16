@@ -1,5 +1,3 @@
-import { NavigationLink } from "./NavigationLink"
-import { NavigationList } from "./NavigationList"
-import { SocialsIcon } from "./SocialsIcon"
-
-export { NavigationLink, NavigationList, SocialsIcon }
+export { NavigationLink } from "./NavigationLink"
+export { NavigationList } from "./NavigationList"
+export { SocialIcons } from "./SocialIcons"

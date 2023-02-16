@@ -1,2 +1,1 @@
-import BurgerNav from "./BurgerNav"
-export { BurgerNav }
+export { BurgerNav } from "./BurgerNav"

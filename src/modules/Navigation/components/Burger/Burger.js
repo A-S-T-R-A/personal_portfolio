@@ -4,7 +4,7 @@ import styles from "./Burger.module.css"
 import { BurgerIcon } from "./components"
 import { BurgerNav } from "./components"
 
-function Burger() {
+export function Burger() {
     const [showBurger, setShowBurger] = useState(false)
 
     function clickHandler(e) {
@@ -22,5 +22,3 @@ function Burger() {
         </div>
     )
 }
-
-export default Burger
