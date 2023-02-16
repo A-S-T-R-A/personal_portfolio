@@ -2,9 +2,9 @@ import React from "react"
 import styles from "./SocialsIcon.module.css"
 import { socialsData } from "../../common/data"
 
-export default function SocialsIcon() {
+export default function SocialsIcon({ onClick }) {
     return (
-        <span className={styles.socials}>
+        <span onClick={onClick} className={styles.socials}>
             {socialsData.map(item => {
                 return (
                     <a className={styles.item} href={item.link}>

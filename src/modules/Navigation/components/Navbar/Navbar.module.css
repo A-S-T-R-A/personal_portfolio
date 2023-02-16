@@ -1,9 +1,14 @@
-.icons {
+.navBar {
     display: none;
+    width: 100%;
+    max-width: 1000px;
 }
 
 @media (min-width: 961px) {
-    .icons {
-        display: block;
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
     }
 }

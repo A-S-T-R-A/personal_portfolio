@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./NavigationList.module.css"
 import { NavigationLink } from "../NavigationLink"
-import { menuData, socialsData } from "../data"
+import { menuData } from "../data"
 
 function NavigationList({ closeClickHandler }) {
     return (

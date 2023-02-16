@@ -1,10 +1,9 @@
 import React from "react"
-import styles from "./BurgerCta.module.css"
 
-import { SocialsIcon } from "modules/Navigation/components/common/SocialsIcon"
+import { SocialsIcon } from "modules/Navigation/components/common"
 
 function BurgerCta({ closeClickHandler }) {
-    return <SocialsIcon />
+    return <SocialsIcon onClick={closeClickHandler} />
 }
 
 export default BurgerCta

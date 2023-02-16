@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import styles from "./Burger.module.css"
 
-import { BurgerIcon } from "./components/BurgerIcon"
-import { BurgerNav } from "./components/BurgerNav"
+import { BurgerIcon } from "./components"
+import { BurgerNav } from "./components"
 
 function Burger() {
     const [showBurger, setShowBurger] = useState(false)

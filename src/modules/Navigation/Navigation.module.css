@@ -20,6 +20,10 @@
     color: white;
 }
 
+.logoContainer {
+    padding: 0 10px;
+}
+
 @media (max-width: 961px) {
     .logoContainer {
         display: flex;

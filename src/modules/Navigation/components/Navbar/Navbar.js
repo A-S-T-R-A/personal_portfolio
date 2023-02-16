@@ -2,15 +2,13 @@ import React from "react"
 import styles from "./Navbar.module.css"
 
 import { NavigationList } from "../common"
-import { SocialsIcon } from "../common/SocialsIcon"
+import { SocialsIcon } from "../common"
 
 export default function Navbar() {
     return (
-        <>
+        <div className={styles.navBar}>
             <NavigationList />
-            <div className={styles.icons}>
-                <SocialsIcon />
-            </div>
-        </>
+            <SocialsIcon />
+        </div>
     )
 }

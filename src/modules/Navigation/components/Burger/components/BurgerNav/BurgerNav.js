@@ -1,6 +1,6 @@
 import React from "react"
-import { BurgerCta } from "../BurgerCta"
-import { BurgerNavigationList } from "../../../Burger/components/BurgerNavigationList"
+import { BurgerCta } from "../"
+import { NavigationList } from "../../../common"
 import styles from "./BurgerNav.module.css"
 
 function BurgerNav({ showBurger, setShowBurger }) {
@@ -21,9 +21,7 @@ function BurgerNav({ showBurger, setShowBurger }) {
         >
             <div className={styles.wrapper} onClick={menuClickHandler}>
                 <div className={styles.container}>
-                    <BurgerNavigationList
-                        closeClickHandler={closeClickHandler}
-                    />
+                    <NavigationList closeClickHandler={closeClickHandler} />
                     <BurgerCta closeClickHandler={closeClickHandler} />
                 </div>
             </div>
