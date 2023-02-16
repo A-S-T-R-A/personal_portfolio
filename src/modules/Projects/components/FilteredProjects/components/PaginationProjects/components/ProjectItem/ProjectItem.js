@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { ProjectItemButtons } from "../ProjectItemButtons/ProjectItemButtons"
 import { DescriptionModal } from "./components/DescriptionModal/DescriptionModal"
+import { ProjectItemButtons } from "./components/ProjectItemButtons/ProjectItemButtons"
 import { ProjectItemContent } from "./components/ProjectItemContent/ProjectItemContent"
 import styles from "./ProjectItem.module.css"
 
