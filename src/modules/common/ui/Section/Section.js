@@ -4,6 +4,7 @@ import styles from "./Section.module.css"
 import { classNames } from "modules/common/helpers/classNames"
 
 function Section({
+    id,
     children,
     className,
     isGrid = false,
@@ -20,7 +21,11 @@ function Section({
         [className]
     )
 
-    return <section className={sectionClassName}>{children}</section>
+    return (
+        <section id={id} className={className}>
+            {children}
+        </section>
+    )
 }
 
 export default Section

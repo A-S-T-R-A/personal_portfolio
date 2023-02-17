@@ -35,6 +35,7 @@
         font-size: clamp(40px, 6vw + 10px, 56px);
         line-height: 56px;
         padding: 40px 0 12px;
+        margin-top: 30px;
     }
 }
 

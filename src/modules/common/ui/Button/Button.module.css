@@ -11,9 +11,7 @@
     color: #fff;
     background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
     cursor: pointer;
-    transition: 0.5s ease;
     position: relative;
-    overflow: hidden;
     opacity: 1;
 }
 
@@ -34,6 +32,45 @@
     background: gray;
 }
 
+.outlined {
+    border: 2px solid;
+    border-image-source: linear-gradient(270deg, #ff622e 0%, #B133FF 100%);
+    border-image-slice: 1;
+    border-width: 2px;
+    background: none;
+}
+
+.outlined:hover {
+    border-radius: 0;
+
+}
+
+.outlinedBg {
+    background: linear-gradient(270deg, #ff622e 0%, #B133FF 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outlinedBg:hover {
+    opacity: 1
+}
+
+.text {
+    background: none;
+}
+
+.text:hover {
+    color: #ffffff9b
+}
 
 
 @media (max-width:650px) {

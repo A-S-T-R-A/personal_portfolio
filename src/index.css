@@ -48,6 +48,14 @@ a {
     text-decoration: none;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 li {
     list-style: none;
 }
@@ -56,4 +64,8 @@ li {
     max-width: 1200px;
     width: 100%;
     margin: auto;
+}
+
+span.accent {
+    -webkit-text-fill-color: plum;
 }
