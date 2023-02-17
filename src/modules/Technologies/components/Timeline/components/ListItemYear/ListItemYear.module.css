@@ -1,11 +1,14 @@
 .container {
     width: 100%;
+    max-width: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
-    color: white
+    color: white;
+
+    border: 1px solid red;
 }
 
 .yearContainer {
