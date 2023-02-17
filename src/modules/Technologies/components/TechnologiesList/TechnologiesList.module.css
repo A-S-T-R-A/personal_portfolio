@@ -11,10 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
     margin: 3rem 0;
-
-
 }
 
 @media (max-width:960px) {
@@ -30,7 +27,6 @@
 @media (max-width:650px) {
     .list {
         margin: 64px 0;
-        gap: 24px
     }
 }
 

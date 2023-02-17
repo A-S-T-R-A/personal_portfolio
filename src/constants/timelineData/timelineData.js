@@ -15,7 +15,7 @@ export const timelineData = [
         year: 2021,
         works: [
             {
-                name: "Blockchain",
+                name: "Blockchain Developer",
                 company: "Meta",
                 description: "Worked as a freelance developer",
             },
