@@ -1,4 +1,4 @@
-import { Button, Section, SectionTitle } from "modules/common/ui"
+import { Button, SectionTitle } from "modules/common/ui"
 import { AnimatedModal } from "modules/common/ui/AnimatedModal"
 import ProjectImagesSwiper from "./components/ProjectImagesSwiper/ProjectImagesSwiper"
 
@@ -16,7 +16,7 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
         >
             <ProjectImagesSwiper images={images} />
 
-            <Section isNopadding className={styles.contentContainer}>
+            <div className={styles.contentContainer}>
                 <SectionTitle>{title}</SectionTitle>
 
                 <h4 className={styles.modalTitle}>About</h4>
@@ -49,7 +49,7 @@ export function DescriptionModal({ data, showModal, setShowModal }) {
                         Close
                     </Button>
                 </div>
-            </Section>
+            </div>
         </AnimatedModal>
     )
 }

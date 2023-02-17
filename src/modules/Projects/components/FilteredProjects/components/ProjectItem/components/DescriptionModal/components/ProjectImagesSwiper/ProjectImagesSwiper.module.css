@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-height: 500px;
+    max-height: 300px;
     position: relative;
 }
 
@@ -10,6 +10,13 @@
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+.slide {
+    margin-bottom: 40px;
+    height: 100%;
+    max-height: 100%;
+    cursor: default;
 }
 
 .imgContainer {
