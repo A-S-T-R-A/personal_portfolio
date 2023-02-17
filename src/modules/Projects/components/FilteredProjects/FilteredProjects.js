@@ -1,30 +1,51 @@
-import { useEffect, useState } from "react"
-import { PaginationBullets } from "./components/PaginationBullets/PaginationBullets"
-import { PaginationProjects } from "./components/PaginationProjects/PaginationProjects"
+import { useContext } from "react"
+import { ProjectsContext } from "../../providers/ProjectsProvider"
 import styles from "./FilteredProjects.module.css"
+import "./FilteredProjects.css"
+import { classNames } from "modules/common/helpers/classNames"
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
+import { ProjectItem } from "./components/ProjectItem/ProjectItem"
 
-export function FilteredProjects({ data, filterActive }) {
-    const [currentPage, setCurrentPage] = useState(0)
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination } from "swiper"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
 
-    useEffect(() => {
-        setCurrentPage(0)
-    }, [filterActive])
-
-    const projectsPerPage = 3
-
-    const indexOfFirst = currentPage * projectsPerPage
-    const indexOfLast = indexOfFirst + projectsPerPage
-    const paginatedProjects = data.slice(indexOfFirst, indexOfLast)
+export function FilteredProjects() {
+    const { filteredProjectsData } = useContext(ProjectsContext)
 
     return (
-        <div className={styles.container}>
-            <PaginationProjects projects={paginatedProjects} />
-            <PaginationBullets
-                currentPage={currentPage}
-                setCurrentPage={setCurrentPage}
-                totalProjects={data.length}
-                projectsPerPage={projectsPerPage}
-            />
+        <div
+            className={classNames(styles.container, {}, ["projectsPagination"])}
+        >
+            <Swiper
+                slidesPerView={1}
+                className={styles.swiper}
+                pagination={{ clickable: true }}
+                modules={[Pagination, Navigation]}
+                navigation={{
+                    nextEl: "#nextProject",
+                    prevEl: "#prevProject",
+                }}
+                breakpoints={{
+                    820: {
+                        slidesPerView: 2,
+                    },
+                    1020: {
+                        slidesPerView: 3,
+                    },
+                }}
+            >
+                {filteredProjectsData.map((proj, index) => (
+                    <SwiperSlide key={index} className={styles.slide}>
+                        <ProjectItem data={proj} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+            <BsChevronLeft className={styles.navPrev} id="prevProject" />
+            <BsChevronRight className={styles.navNext} id="nextProject" />
         </div>
     )
 }

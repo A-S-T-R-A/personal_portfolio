@@ -10,7 +10,7 @@ import styles from "./Technologies.module.css"
 
 function Technologies() {
     return (
-        <Section id="tech">
+        <Section id="technologies">
             <SectionDivider isDivider />
             <SectionTitle>Technologies</SectionTitle>
             <SectionText>
