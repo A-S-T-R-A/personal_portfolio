@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .navPrev,
@@ -21,14 +21,15 @@
     position: absolute;
     color: rgba(255, 255, 255, 0.547);
     font-size: clamp(50px, 11vw, 100px);
-    top: calc(50% - 10px);
+    top: calc(50% - 20px);
     z-index: 3;
     cursor: pointer;
+    transition: 0.2s ease;
 }
 
 .navPrev:hover,
 .navNext:hover {
-    color: royalblue;
+    color: #0269a5;
 }
 
 .navPrev {
