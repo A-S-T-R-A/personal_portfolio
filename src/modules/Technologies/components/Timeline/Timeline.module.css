@@ -3,8 +3,9 @@
     max-width: 300px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    padding-left: 50px;
 }
 
 @media (max-width: 960px) {
