@@ -5,7 +5,7 @@ import { Hero } from "./components/Hero"
 
 function Main() {
     return (
-        <Section isGrid>
+        <Section id="home" isGrid>
             <Hero />
             <BgAnimation />
         </Section>
