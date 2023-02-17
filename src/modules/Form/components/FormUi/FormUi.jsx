@@ -1,3 +1,4 @@
+import { classNames } from "modules/common/helpers/classNames"
 import { Button } from "modules/common/ui/Button"
 import React from "react"
 import styles from "./FormUi.module.css"
@@ -5,28 +6,36 @@ import styles from "./FormUi.module.css"
 export function FormUi({
     submitHandler,
     handleNameChange,
-    handlePhoneChange,
+    handleEmailChange,
     formRef,
     nameError,
-    phoneError,
+    emailError,
     name,
-    phone,
+    email,
+    onClick,
+    message,
+    handleMessageChange,
 }) {
+    const nameInputClassName = classNames(styles.inputs, {
+        [styles.inpError]: nameError,
+    })
+
+    const emailInputClassName = classNames(styles.inputs, {
+        [styles.inpError]: emailError,
+    })
+
     return (
         <form onSubmit={submitHandler} className={styles.form} ref={formRef}>
             <div className={styles.formContainer}>
-                <p className={styles.title}>Title</p>
                 <div className={styles.inputWrap}>
                     <input
                         id="nameInput"
-                        className={`${styles.inputs} ${
-                            nameError ? styles.inpError : ""
-                        }`}
+                        className={nameInputClassName}
                         type="text"
                         name="name"
                         value={name}
                         onChange={handleNameChange}
-                        placeholder="Name"
+                        placeholder="Your Name"
                     />
                     {nameError && (
                         <p className={styles.error}>Enter Valid Name</p>
@@ -34,22 +43,31 @@ export function FormUi({
                 </div>
                 <div className={styles.inputWrap}>
                     <input
-                        className={`${styles.inputs} ${
-                            phoneError ? styles.inpError : ""
-                        }`}
+                        className={emailInputClassName}
                         type="text"
-                        name="phone"
-                        value={phone}
-                        onChange={handlePhoneChange}
-                        placeholder="Phone"
+                        name="email"
+                        value={email}
+                        onChange={handleEmailChange}
+                        placeholder="Your Email"
                     />
-                    {phoneError && (
-                        <p className={styles.error}>Enter Valid Phone</p>
+                    {emailError && (
+                        <p className={styles.error}>Enter Valid Email</p>
                     )}
                 </div>
-                <div className={styles.formBtn}>
-                    <Button className={styles.btn}>Submit</Button>
+                <div className={styles.textareaWrap}>
+                    <textarea
+                        className={styles.textarea}
+                        type="text"
+                        name="email"
+                        value={message}
+                        onChange={handleMessageChange}
+                        placeholder="Your Message"
+                    />
                 </div>
+
+                <Button className={styles.btn} onClick={onClick}>
+                    Submit
+                </Button>
             </div>
         </form>
     )

@@ -1,13 +1,13 @@
 import { AnimatedLoadingIcon } from "modules/common/ui/AnimatedLoadingIcon"
 import { AiOutlineCheckCircle } from "react-icons/ai"
 import { BiErrorCircle } from "react-icons/bi"
-import { FailContent } from "../FailContent/FailContent"
-import { GratitudeContent } from "../GratitudeContent/GratitudeContent"
-import { LoadingContent } from "../LoadingContent/LoadingContent"
+import { FailContent } from "./components/FailContent/FailContent"
+import { GratitudeContent } from "./components/GratitudeContent/GratitudeContent"
+import { LoadingContent } from "./components/LoadingContent/LoadingContent"
 
-import styles from "./ModalContent.module.css"
+import styles from "./FormLoading.module.css"
 
-export function ModalContent({ loading, isSuccess }) {
+export function FormLoading({ loading, isSuccess }) {
     return (
         <div className={styles.container}>
             <div className={styles.iconContainer}>
