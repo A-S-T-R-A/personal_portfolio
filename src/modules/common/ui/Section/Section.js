@@ -22,7 +22,7 @@ function Section({
     )
 
     return (
-        <section id={id} className={className}>
+        <section id={id} className={sectionClassName}>
             {children}
         </section>
     )
