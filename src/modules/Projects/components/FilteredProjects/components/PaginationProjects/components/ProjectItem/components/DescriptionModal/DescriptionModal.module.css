@@ -1,40 +1,95 @@
 .container {
-    background-color: white;
-    width: 300px;
-    height: 300px;
+    color: var(--primary1-color);
+    background-color: #1c2841;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 1rem;
     z-index: 100;
     position: relative;
-
-    border-radius: 0.5rem;
+    border-radius: 10px;
     transition: all 0.3s ease;
-
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.close {
+.closeContainer {
+    background-color: rgba(0, 0, 0, 0.31);
     position: absolute;
     cursor: pointer;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 50px;
     z-index: 10;
-}
-
-.iconContainer {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    padding: 5px;
 }
 
-.icon {
-    width: 50%;
-    height: 50%;
-    color: white;
+.contentContainer {
+    margin: 2rem 3rem;
+    position: relative;
+}
+
+.modalTitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.tech {
+    margin-bottom: 20px;
+}
+
+.timesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttonsContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width:650px) {
+    .btn {
+        max-width: 150px;
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    .contentContainer {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .btn {
+        max-width: 100px;
+    }
 }

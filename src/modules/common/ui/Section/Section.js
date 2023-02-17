@@ -6,22 +6,23 @@ import { classNames } from "modules/common/helpers/classNames"
 function Section({
     id,
     children,
+    className,
     isGrid = false,
     isRow = false,
     isNopadding = false,
 }) {
-    const className = classNames(
+    const sectionClassName = classNames(
         styles.container,
         {
             [styles.grid]: isGrid,
             [styles.row]: isRow,
             [styles.nopadding]: isNopadding,
         },
-        []
+        [className]
     )
 
     return (
-        <section id={id} className={className}>
+        <section id={id} className={sectionClassName}>
             {children}
         </section>
     )

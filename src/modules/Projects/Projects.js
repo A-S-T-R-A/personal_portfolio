@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { projectsData, projectCategories } from "."
+import { projectCategories, projectsData } from "./index"
 import { Section, SectionDivider, SectionTitle } from "modules/common/ui"
 import { CategoriesFilter } from "./components/CategoriesFilter/CategoriesFilter"
 import { FilteredProjects } from "./components/FilteredProjects/FilteredProjects"
