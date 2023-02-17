@@ -1,6 +1,6 @@
 import { ProjectsContext } from "modules/Projects/providers/ProjectsProvider"
 import { useContext } from "react"
-import { ProjectTag } from "../ProjectTag/ProjectTag"
+import { ProjectTag } from "../../ui/ProjectTag/ProjectTag"
 import styles from "./CategoriesFilter.module.css"
 
 export function CategoriesFilter() {

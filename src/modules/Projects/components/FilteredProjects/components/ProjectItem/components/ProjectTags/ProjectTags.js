@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import styles from "./ProjectTags.module.css"
 import { ProjectsContext } from "../../../../../../providers/ProjectsProvider"
-import { ProjectTag } from "modules/Projects/components/ProjectTag/ProjectTag"
+import { ProjectTag } from "modules/Projects/ui/ProjectTag/ProjectTag"
 
 function ProjectTags({ tags }) {
     const { active, setActive } = useContext(ProjectsContext)

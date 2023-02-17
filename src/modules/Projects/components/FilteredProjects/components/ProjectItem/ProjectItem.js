@@ -1,8 +1,8 @@
-import { Button } from "modules/common/ui"
 import { useState } from "react"
 import { DescriptionModal } from "./components/DescriptionModal/DescriptionModal"
 import { ProjectItemContent } from "./components/ProjectItemContent/ProjectItemContent"
 import styles from "./ProjectItem.module.css"
+import { Button } from "modules/common/ui"
 
 export function ProjectItem({ data }) {
     const { title, description, images, tags, visit } = data
@@ -29,19 +29,21 @@ export function ProjectItem({ data }) {
 
             <div className={styles.buttonsContainer}>
                 <Button
-                    isAlt
                     onClick={() => setShowModal(true)}
-                    className={styles.btn}
+                    isOutlined
+                    isAlt
+                    className={styles.btn1}
                 >
                     Details
                 </Button>
                 <Button
-                    isAlt
                     onClick={e => {
                         e.preventDefault()
                         window.open(visit, "_blank")
                     }}
-                    className={styles.btn}
+                    className={styles.btn2}
+                    isAlt
+                    isText
                 >
                     Live Demo
                 </Button>

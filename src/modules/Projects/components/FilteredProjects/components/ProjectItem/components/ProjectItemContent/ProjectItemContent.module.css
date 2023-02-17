@@ -7,15 +7,25 @@
 }
 
 .title {
-    margin-top: 1rem;
-    line-height: 1.5;
-    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #9cc9e3;
+    padding: 0.5rem 0;
 }
 
-/* .tagsContainer {
-    position: absolute;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    background-color: #fff;
-    top: -25px;
-} */
+.hr {
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    border: 0;
+    background: #d0bb57;
+}
+
+.desc {
+    width: 100%;
+    color: #e4e6e7;
+    text-align: justify;
+    margin-bottom: 10px;
+}

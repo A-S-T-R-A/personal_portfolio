@@ -7,6 +7,7 @@ export function ProjectItemContent({ data, onClick }) {
     return (
         <div className={styles.container} onClick={onClick}>
             <h4 className={styles.title}>{title}</h4>
+            <hr className={styles.hr} />
             <BlurredDescription className={styles.desc}>
                 {description}
             </BlurredDescription>
