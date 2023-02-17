@@ -1,4 +1,10 @@
 .content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 960px) {
+    .content {
+        flex-direction: column;
+    }
 }

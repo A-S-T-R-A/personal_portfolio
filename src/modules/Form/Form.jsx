@@ -1,51 +1,21 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useState } from "react"
 /* import emailjs from "@emailjs/browser" */
 
 import { FormUi } from "./components/FormUi/FormUi"
-import FormModal from "./components/FormModal/FormModal"
-import { Section, SectionDivider, SectionTitle } from "modules/common/ui"
+import { Section, SectionTitle } from "modules/common/ui"
+import { FormLoading } from "./components/FormLoading/FormLoading"
 
 export default function Form() {
     const [name, setName] = useState("")
-    const [phone, setPhone] = useState("")
-    const [showGratitudeModal, setShowGratitudeModal] = useState(false)
-    const [nameError, setNameError] = useState(false)
-    const [phoneError, setPhoneError] = useState(false)
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
 
+    const [nameError, setNameError] = useState(false)
+    const [emailError, setEmailError] = useState(false)
+
+    const [showForm, setShowForm] = useState(true)
     const [loading, setLoading] = useState(false)
     const [isSuccess, setIsSuccess] = useState(false)
-
-    const formRef = useRef()
-
-    const [formContact, setFormContact] = useState(false)
-
-    useEffect(() => {
-        setTimeout(() => {
-            document.querySelector("#nameInput").focus({ preventScroll: true })
-        }, 100)
-    }, [formContact])
-
-    useEffect(() => {
-        function formContacted() {
-            if (loading) return
-            const formEl = document.querySelector("#form")
-            const rect = formEl.getBoundingClientRect()
-            if (rect.top < window.innerHeight) {
-                setFormContact(true)
-            }
-        }
-        window.addEventListener("scroll", formContacted)
-
-        return () => {
-            window.removeEventListener("scroll", formContacted)
-        }
-    }, [])
-
-    function handleNameChange(e) {
-        e.preventDefault()
-        setName(e.target.value)
-        setNameError(false)
-    }
 
     function sendEmail() {
         setLoading(true)
@@ -57,15 +27,16 @@ export default function Form() {
                 process.env.REACT_APP_USER_ID
             ) */
         new Promise(resolve => {
+            setShowForm(false)
             setTimeout(() => resolve(), 1500)
         })
             .then(
                 result => {
                     setIsSuccess(true)
                     setName("")
-                    setPhone("")
+                    setEmail("")
                     setNameError(false)
-                    setPhoneError(false)
+                    setEmailError(false)
                 },
                 error => {
                     error && console.log(error.text)
@@ -76,30 +47,31 @@ export default function Form() {
             })
     }
 
-    function formatPhone(phone) {
-        if (phone === "+") return "+"
-        if (phone.length === 1) return `+${phone}`
-        return phone
+    function handleNameChange(e) {
+        e.preventDefault()
+        setName(e.target.value)
+        setNameError(false)
     }
 
-    function handlePhoneChange(e) {
+    function handleEmailChange(e) {
         e.preventDefault()
-        setPhone(formatPhone(e.target.value))
-        setPhoneError(false)
+        setEmail(e.target.value)
+        setEmailError(false)
     }
 
     function submitHandler(e) {
         e.preventDefault()
 
         const nameRegEx = /^[a-zа-яё\s]+$/iu
-        const phoneRegEx = /^[+()-\d ]+$/
+        const emailRegEx =
+            /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 
         if (!nameRegEx.test(name)) {
             setNameError(true)
             return
         }
-        if (!phoneRegEx.test(phone)) {
-            setPhoneError(true)
+        if (!emailRegEx.test(email)) {
+            setEmailError(true)
             return
         }
         sendEmail()
@@ -109,22 +81,22 @@ export default function Form() {
         <Section id="contact">
             <SectionTitle>Sign up</SectionTitle>
 
-            <FormModal
-                showGratitudeModal={showGratitudeModal}
-                setShowGratitudeModal={setShowGratitudeModal}
-                loading={loading}
-                isSuccess={isSuccess}
-            />
-            <FormUi
-                submitHandler={submitHandler}
-                handleNameChange={handleNameChange}
-                handlePhoneChange={handlePhoneChange}
-                formRef={formRef}
-                nameError={nameError}
-                phoneError={phoneError}
-                name={name}
-                phone={phone}
-            />
+            {showForm ? (
+                <FormUi
+                    submitHandler={submitHandler}
+                    handleNameChange={handleNameChange}
+                    handleEmailChange={handleEmailChange}
+                    handleMessageChange={e => setMessage(e.target.value)}
+                    nameError={nameError}
+                    emailError={emailError}
+                    name={name}
+                    email={email}
+                    message={message}
+                    onClick={submitHandler}
+                />
+            ) : (
+                <FormLoading loading={loading} isSuccess={isSuccess} />
+            )}
         </Section>
     )
 }
