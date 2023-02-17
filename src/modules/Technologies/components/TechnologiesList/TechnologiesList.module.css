@@ -1,22 +1,24 @@
 .container {
-    width: 80%;
-    margin-top: 3rem;
-
+    width: 100%;
+    max-width: 800px;
+    height: max-content;
     display: flex;
     flex-direction: row;
 }
 
 .list {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 3rem 0;
-
-
 }
 
 @media (max-width:960px) {
+    .container {
+        max-width: 600px;
+    }
+
     .list {
         margin: 64px 0;
     }
@@ -25,14 +27,11 @@
 @media (max-width:650px) {
     .list {
         margin: 64px 0;
-        gap: 24px
     }
 }
 
 @media (max-width:480px) {
     .list {
-        display: flex;
-        flex-direction: column;
         margin: 32px 0;
     }
 }
