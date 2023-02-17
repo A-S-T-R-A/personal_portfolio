@@ -2,7 +2,7 @@ import BlurredDescription from "modules/common/ui/BlurredDescription/BlurredDesc
 import ProjectTags from "../ProjectTags/ProjectTags"
 import styles from "./ProjectItemContent.module.css"
 
-export function ProjectItemContent({ data, onClick, filterActive }) {
+export function ProjectItemContent({ data, onClick }) {
     const { title, description, tags } = data
     return (
         <div className={styles.container} onClick={onClick}>
@@ -10,7 +10,7 @@ export function ProjectItemContent({ data, onClick, filterActive }) {
             <BlurredDescription className={styles.desc}>
                 {description}
             </BlurredDescription>
-            <ProjectTags tags={tags} filterActive={filterActive} />
+            <ProjectTags tags={tags} />
         </div>
     )
 }

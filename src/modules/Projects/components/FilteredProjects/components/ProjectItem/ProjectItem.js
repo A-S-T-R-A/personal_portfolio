@@ -4,7 +4,7 @@ import { DescriptionModal } from "./components/DescriptionModal/DescriptionModal
 import { ProjectItemContent } from "./components/ProjectItemContent/ProjectItemContent"
 import styles from "./ProjectItem.module.css"
 
-export function ProjectItem({ data, filterActive }) {
+export function ProjectItem({ data }) {
     const { title, description, images, tags, visit } = data
 
     const [showModal, setShowModal] = useState(false)
@@ -24,7 +24,6 @@ export function ProjectItem({ data, filterActive }) {
             </div>
             <ProjectItemContent
                 data={{ description, title, tags }}
-                filterActive={filterActive}
                 onClick={() => setShowModal(true)}
             />
 

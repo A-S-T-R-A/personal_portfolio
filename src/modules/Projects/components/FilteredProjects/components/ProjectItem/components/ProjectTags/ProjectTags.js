@@ -1,10 +1,13 @@
 import { classNames } from "modules/common/helpers/classNames"
+import { ProjectsContext } from "../../../../../../providers/ProjectsProvider"
+import { useContext } from "react"
 import styles from "./ProjectTags.module.css"
 
-function ProjectTags({ tags, filterActive }) {
+function ProjectTags({ tags }) {
+    const { active } = useContext(ProjectsContext)
     return (
         <div className={styles.tagsContainer}>
-            {filterActive === "All" ? (
+            {active === "All" ? (
                 tags.slice(0, 3).map((tag, index) => (
                     <p className={styles.tag} key={index}>
                         {tag.length > 7 ? `${tag.slice(0, 6)}...` : tag}
@@ -12,7 +15,7 @@ function ProjectTags({ tags, filterActive }) {
                 ))
             ) : (
                 <p className={classNames(styles.tag, {}, [styles.active])}>
-                    {filterActive}
+                    {active}
                 </p>
             )}
         </div>
