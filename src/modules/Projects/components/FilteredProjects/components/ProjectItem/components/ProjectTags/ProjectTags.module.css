@@ -1,0 +1,9 @@
+.tagsContainer {
+    position: absolute;
+    top: -40px;
+    display: flex;
+}
+
+.tag {
+    margin: 0.2rem;
+}

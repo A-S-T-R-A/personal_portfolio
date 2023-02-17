@@ -61,7 +61,7 @@ function ProjectImagesSwiper({ images, title }) {
                 onSlideChange={slideChangeHandler}
             >
                 {images.map((image, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} className={styles.slide}>
                         <div className={styles.imgContainer}>
                             <img
                                 key={index}

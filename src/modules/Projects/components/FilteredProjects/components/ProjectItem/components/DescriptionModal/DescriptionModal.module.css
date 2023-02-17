@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-height: 95vh;
 }
 
 .closeContainer {
@@ -80,6 +81,7 @@
         bottom: 0;
         margin: 0;
         justify-content: flex-start;
+        max-height: none;
     }
 
     .contentContainer {

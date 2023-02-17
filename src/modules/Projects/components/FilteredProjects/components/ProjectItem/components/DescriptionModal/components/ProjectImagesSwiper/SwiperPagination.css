@@ -10,10 +10,12 @@
  }
 
 
- .modalProjectSwiperWrapper .swiper-pagination-bullet-active {
-     background-color: royalblue !important;
- }
+
 
  .modalProjectSwiperWrapper .swiper-pagination-bullet {
      background-color: rgb(255, 255, 255);
+ }
+
+ .modalProjectSwiperWrapper .swiper-pagination-bullet-active {
+     background-color: royalblue;
  }
