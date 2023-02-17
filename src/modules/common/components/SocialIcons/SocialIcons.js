@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./SocialIcons.module.css"
-import { socialsData } from "../data"
+import { socialsData } from "../../../Navigation/components/common/data"
 
 export function SocialIcons({ onClick }) {
     return (

@@ -1,3 +1,4 @@
+import { SocialIcons } from "modules/common/components/SocialIcons"
 import React from "react"
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
 
@@ -29,16 +30,8 @@ const Footer = () => {
                         Innovating one project at a time
                     </p>
                 </div>
-                <div className={styles.socialLinks}>
-                    <a className={styles.social} href="https://google.com">
-                        <AiFillGithub size="3rem" />
-                    </a>
-                    <a className={styles.social} href="https://google.com">
-                        <AiFillLinkedin size="3rem" />
-                    </a>
-                    <a className={styles.social} href="https://google.com">
-                        <AiFillInstagram size="3rem" />
-                    </a>
+                <div className={styles.socialIcons}>
+                    <SocialIcons />
                 </div>
             </div>
         </section>
