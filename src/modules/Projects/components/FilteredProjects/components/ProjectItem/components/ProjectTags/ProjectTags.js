@@ -1,22 +1,33 @@
-import { classNames } from "modules/common/helpers/classNames"
-import { ProjectsContext } from "../../../../../../providers/ProjectsProvider"
 import { useContext } from "react"
 import styles from "./ProjectTags.module.css"
+import { ProjectsContext } from "../../../../../../providers/ProjectsProvider"
+import { ProjectTag } from "modules/Projects/components/ProjectTag/ProjectTag"
 
 function ProjectTags({ tags }) {
-    const { active } = useContext(ProjectsContext)
+    const { active, setActive } = useContext(ProjectsContext)
+
+    function clickHandler(e, tag) {
+        e.stopPropagation()
+        if (tag) {
+            setActive(tag)
+        }
+    }
     return (
         <div className={styles.tagsContainer}>
             {active === "All" ? (
                 tags.slice(0, 3).map((tag, index) => (
-                    <p className={styles.tag} key={index}>
+                    <ProjectTag
+                        className={styles.tag}
+                        key={index}
+                        onClick={e => clickHandler(e, tag)}
+                    >
                         {tag.length > 7 ? `${tag.slice(0, 6)}...` : tag}
-                    </p>
+                    </ProjectTag>
                 ))
             ) : (
-                <p className={classNames(styles.tag, {}, [styles.active])}>
+                <ProjectTag className={styles.tag} onClick={clickHandler}>
                     {active}
-                </p>
+                </ProjectTag>
             )}
         </div>
     )

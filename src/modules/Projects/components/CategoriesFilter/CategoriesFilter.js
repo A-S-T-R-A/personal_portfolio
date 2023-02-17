@@ -1,6 +1,6 @@
-import { classNames } from "modules/common/helpers/classNames"
 import { ProjectsContext } from "modules/Projects/providers/ProjectsProvider"
 import { useContext } from "react"
+import { ProjectTag } from "../ProjectTag/ProjectTag"
 import styles from "./CategoriesFilter.module.css"
 
 export function CategoriesFilter() {
@@ -8,18 +8,15 @@ export function CategoriesFilter() {
 
     return (
         <div className={styles.container}>
-            {projectCategories.map(item => {
-                const itemClassName = classNames(styles.item, {
-                    [styles.active]: active === item,
-                })
+            {projectCategories.map((item, index) => {
                 return (
-                    <div
-                        key={item}
+                    <ProjectTag
+                        key={index}
+                        isActive={active === item}
                         onClick={() => setActive(item)}
-                        className={itemClassName}
                     >
                         {item}
-                    </div>
+                    </ProjectTag>
                 )
             })}
         </div>

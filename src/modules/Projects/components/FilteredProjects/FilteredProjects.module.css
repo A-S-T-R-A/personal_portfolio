@@ -1,8 +1,4 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: relative;
     padding: 0 60px;
 }
@@ -11,12 +7,20 @@
     width: 100%;
 }
 
+.slide {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .navPrev,
 .navNext {
     position: absolute;
     color: rgba(255, 255, 255, 0.547);
     font-size: 100px;
-    top: 50%;
+    top: calc(50% - 10px);
     z-index: 3;
     cursor: pointer;
 }
@@ -34,4 +38,23 @@
 .navNext {
     right: 0;
     transform: translateY(-50%) translateX(+25%);
+}
+
+@media (max-width:650px) {
+
+    .navPrev,
+    .navNext {
+        font-size: 80px;
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        padding: 0;
+    }
+
+    .navPrev,
+    .navNext {
+        font-size: 60px;
+    }
 }

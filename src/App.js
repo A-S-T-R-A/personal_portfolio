@@ -17,7 +17,8 @@ function App() {
                 <Technologies />
                 <Form />
             </div>
-            <Footer />
+            {/* 
+            <Footer /> */}
         </div>
     )
 }

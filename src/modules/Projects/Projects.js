@@ -6,7 +6,7 @@ import { ProjectsProvider } from "./providers/ProjectsProvider"
 export function Projects() {
     return (
         <ProjectsProvider>
-            <Section isNopadding id="projects">
+            <Section id="projects">
                 <SectionDivider />
                 <SectionTitle isMain>Projects</SectionTitle>
                 <CategoriesFilter />

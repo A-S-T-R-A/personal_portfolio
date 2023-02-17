@@ -1,0 +1,27 @@
+.tag {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.tag:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
