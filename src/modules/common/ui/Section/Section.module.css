@@ -20,7 +20,7 @@
 @media (max-width: 480px) {
     .container {
         padding: 16px 16px 0;
-        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
         flex-direction: column;
     }
 }
