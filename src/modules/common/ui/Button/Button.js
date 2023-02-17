@@ -2,20 +2,20 @@ import React from "react"
 import styles from "./Button.module.css"
 import { classNames } from "modules/common/helpers/classNames"
 
-import ButtonFront from "./components/ButtonFront/ButtonFront"
-
-function Button({ children, isAlt, isForm, isDisabled }) {
-    const containerClassName = classNames(styles.container, {
-        [styles.alt]: isAlt,
-        [styles.form]: isForm,
-        [styles.disabled]: isDisabled,
-    })
+function Button({ children, className, isAlt, isForm, isDisabled, ...props }) {
+    const containerClassName = classNames(
+        styles.container,
+        {
+            [styles.alt]: isAlt,
+            [styles.form]: isForm,
+            [styles.disabled]: isDisabled,
+        },
+        [className]
+    )
 
     return (
-        <div className={containerClassName}>
-            <ButtonFront isAlt={isAlt} isDisabled={isDisabled}>
-                {children}
-            </ButtonFront>
+        <div className={containerClassName} {...props}>
+            {children}
         </div>
     )
 }

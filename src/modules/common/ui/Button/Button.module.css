@@ -1,7 +1,7 @@
 .container {
     width: 262px;
     height: 64px;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 24px;
     font-weight: 600;
     display: flex;
@@ -30,7 +30,8 @@
 }
 
 .disabled {
-    opacity: 0.5
+    opacity: 0.5;
+    background: gray;
 }
 
 

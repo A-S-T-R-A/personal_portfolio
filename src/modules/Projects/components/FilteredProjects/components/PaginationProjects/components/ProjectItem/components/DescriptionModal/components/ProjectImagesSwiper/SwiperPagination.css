@@ -1,0 +1,19 @@
+ .modalProjectSwiperWrapper .swiper-pagination {
+     display: flex !important;
+     position: absolute !important;
+     left: 50% !important;
+     bottom: 0;
+     transform: translateX(-50%) translateY(100%) !important;
+     width: fit-content !important;
+     cursor: default;
+     transition: opacity 0.2s ease;
+ }
+
+
+ .modalProjectSwiperWrapper .swiper-pagination-bullet-active {
+     background-color: royalblue !important;
+ }
+
+ .modalProjectSwiperWrapper .swiper-pagination-bullet {
+     background-color: rgb(255, 255, 255);
+ }

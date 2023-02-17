@@ -1,35 +1,55 @@
+import { Button, Section, SectionTitle } from "modules/common/ui"
 import { AnimatedModal } from "modules/common/ui/AnimatedModal"
-import { RxCross1 } from "react-icons/rx"
-import { AiFillEye, AiFillGithub } from "react-icons/ai"
+import ProjectImagesSwiper from "./components/ProjectImagesSwiper/ProjectImagesSwiper"
+
+import ProjectTechnologies from "./components/ProjectTechnologies/ProjectTechnologies"
 import styles from "./DescriptionModal.module.css"
 
-export function DescriptionModal({
-    linkSource,
-    linkCode,
-    showModal,
-    setShowModal,
-}) {
+export function DescriptionModal({ data, showModal, setShowModal }) {
+    const { images, title, description, visit, technologies } = data
+
     return (
         <AnimatedModal
             opened={showModal}
             onClose={() => setShowModal(false)}
             innerClassName={styles.container}
         >
-            <RxCross1
-                className={styles.close}
-                onClick={() => setShowModal(false)}
-            />
+            <ProjectImagesSwiper images={images} />
 
-            <a href={linkSource} target="_blank" rel="noreferrer">
-                <div className={styles.iconContainer}>
-                    <AiFillEye className={styles.icon} />
+            <Section isNopadding className={styles.contentContainer}>
+                <SectionTitle>{title}</SectionTitle>
+
+                <h4 className={styles.modalTitle}>About</h4>
+                <p className={styles.desc}>{description}</p>
+
+                <h4 className={styles.modalTitle}>Technologies:</h4>
+                <ProjectTechnologies
+                    technologies={technologies}
+                    className={styles.tech}
+                />
+
+                <div className={styles.buttonsContainer}>
+                    <Button
+                        isAlt
+                        className={styles.btn}
+                        onClick={e => {
+                            e.preventDefault()
+                            window.open(visit, "_blank")
+                        }}
+                    >
+                        Live Demo
+                    </Button>
+
+                    <Button
+                        isDisabled
+                        isAlt
+                        className={styles.btn}
+                        onClick={() => setShowModal(false)}
+                    >
+                        Close
+                    </Button>
                 </div>
-            </a>
-            <a href={linkCode} target="_blank" rel="noreferrer">
-                <div className={styles.iconContainer}>
-                    <AiFillGithub className={styles.icon} />
-                </div>
-            </a>
+            </Section>
         </AnimatedModal>
     )
 }
