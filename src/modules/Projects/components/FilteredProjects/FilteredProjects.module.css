@@ -1,6 +1,7 @@
 .container {
     position: relative;
-    padding: 0 60px;
+    padding-right: clamp(20px, 10vw, 60px);
+    padding-left: clamp(20px, 10vw, 60px);
 }
 
 .swiper {
@@ -19,7 +20,7 @@
 .navNext {
     position: absolute;
     color: rgba(255, 255, 255, 0.547);
-    font-size: 100px;
+    font-size: clamp(50px, 11vw, 100px);
     top: calc(50% - 10px);
     z-index: 3;
     cursor: pointer;
@@ -38,23 +39,4 @@
 .navNext {
     right: 0;
     transform: translateY(-50%) translateX(+25%);
-}
-
-@media (max-width:650px) {
-
-    .navPrev,
-    .navNext {
-        font-size: 80px;
-    }
-}
-
-@media (max-width:480px) {
-    .container {
-        padding: 0;
-    }
-
-    .navPrev,
-    .navNext {
-        font-size: 60px;
-    }
 }
