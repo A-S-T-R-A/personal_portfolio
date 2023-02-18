@@ -8,7 +8,7 @@ import { Footer } from "./modules/Footer"
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <Navigation />
             <div>
                 <Main />

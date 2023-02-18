@@ -68,7 +68,7 @@
 
 @media (max-width:650px) {
     .btn {
-        max-width: 150px;
+        max-width: 150px !important;
     }
 }
 

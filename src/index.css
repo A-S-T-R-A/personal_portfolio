@@ -61,12 +61,6 @@ li {
     list-style: none;
 }
 
-.App {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-}
-
 span.accent {
     -webkit-text-fill-color: plum;
 }
