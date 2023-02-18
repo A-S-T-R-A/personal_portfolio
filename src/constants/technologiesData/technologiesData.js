@@ -1,10 +1,9 @@
 import {
     jsIcon,
     nodeIcon,
-    sassIcon,
+    reduxIcon,
     reactIcon,
-    gitIcon,
-    figmaIcon,
+    nextIcon,
     cssIcon,
     typescriptIcon,
     htmlIcon,
@@ -13,6 +12,30 @@ import {
 export const technologiesData = [
     {
         id: 1,
+        title: "React.js",
+        img: reactIcon,
+        desc: "Experience with React",
+    },
+    {
+        id: 2,
+        title: "Redux",
+        img: reduxIcon,
+        desc: "Experience with Redux",
+    },
+    {
+        id: 2,
+        title: "Next.js",
+        img: nextIcon,
+        desc: "Experience with Next",
+    },
+    {
+        id: 3,
+        title: "Type Script",
+        img: typescriptIcon,
+        desc: "Experience with TS",
+    },
+    {
+        id: 3,
         title: "Java Scrypt",
         img: jsIcon,
         desc: "Experience with React.js",
@@ -27,36 +50,12 @@ export const technologiesData = [
         id: 3,
         title: "HTML",
         img: htmlIcon,
-        desc: "Experience with tools like Figma",
-    },
-    {
-        id: 4,
-        title: "React.js",
-        img: reactIcon,
-        desc: "Experience with tools like Figma",
-    },
-    {
-        id: 5,
-        title: "Git",
-        img: gitIcon,
-        desc: "Experience with tools like Figma",
-    },
-    {
-        id: 6,
-        title: "Figma",
-        img: figmaIcon,
-        desc: "Experience with tools like Figma",
+        desc: "Experience with HTML",
     },
     {
         id: 7,
         title: "CSS",
         img: cssIcon,
-        desc: "Experience with tools like Figma",
-    },
-    {
-        id: 8,
-        title: "Type Script",
-        img: typescriptIcon,
-        desc: "Experience with tools like Figma",
+        desc: "Experience with CSS",
     },
 ]
