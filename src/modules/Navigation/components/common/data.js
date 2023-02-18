@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import { AiFillGithub, AiFillFacebook, AiFillLinkedin } from "react-icons/ai"
 
 export const menuData = [
     { id: 1, link: "#home", text: "Home" },
@@ -9,7 +9,7 @@ export const menuData = [
 ]
 
 export const socialsData = [
-    { id: 1, link: "#staff", icon: <AiFillInstagram /> },
+    { id: 1, link: "#staff", icon: <AiFillFacebook /> },
     { id: 2, link: "#reviews", icon: <AiFillLinkedin /> },
     { id: 3, link: "#footer", icon: <AiFillGithub /> },
 ]
