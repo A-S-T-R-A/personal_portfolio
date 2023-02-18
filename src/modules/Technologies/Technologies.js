@@ -15,7 +15,7 @@ function Technologies() {
             <SectionTitle>Technologies</SectionTitle>
             <SectionText>
                 I've worked with a range a technologies in the web development
-                world. From Back-end To Design
+                world. From Frontend to Backend and design.
             </SectionText>
             <div className={styles.content}>
                 <TechnologiesList />

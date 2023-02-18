@@ -2,7 +2,7 @@ import React, { useState } from "react"
 /* import emailjs from "@emailjs/browser" */
 
 import { FormUi } from "./components/FormUi/FormUi"
-import { Section, SectionTitle } from "modules/common/ui"
+import { Section, SectionText, SectionTitle } from "modules/common/ui"
 import { FormLoading } from "./components/FormLoading/FormLoading"
 
 export default function Form() {
@@ -79,7 +79,10 @@ export default function Form() {
 
     return (
         <Section id="contact">
-            <SectionTitle>Sign up</SectionTitle>
+            <SectionTitle>Contact me</SectionTitle>
+            <SectionText>
+                Chat with me and see how can I help to bring your ideas to life.
+            </SectionText>
 
             {showForm ? (
                 <FormUi
