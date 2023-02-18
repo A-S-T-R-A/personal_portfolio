@@ -1,64 +1,95 @@
-import { projImg1, projImg2, projImg3, projImg4 } from "assets/images/projects"
+import {
+  projImg1_1,
+  projImg1_2,
+  projImg1_3,
+  projImg2_1,
+  projImg2_2,
+  projImg2_3,
+  projImg3_1,
+  projImg3_2,
+  projImg3_3,
+  projImg4_1,
+  projImg4_2,
+  projImg4_3,
+  projImg5_1,
+  projImg5_2,
+  projImg5_3,
+} from "assets/images/projects";
 
 export const projectsData = [
-    {
-        title: "MERN Memories",
-        description:
-            "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-        images: [projImg1, projImg1, projImg1],
-        tags: ["Mongo"],
-        technologies: ["Mongo", "Express", "React", "Node"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://google.com",
-        visit: "https://google.com",
-        id: 0,
+  {
+    title: "Beats store",
+    description:
+      "Experience the ultimate in sound quality with our headphones store website, where you can browse a wide selection of headphones and audio accessories, read reviews, and make a purchase, all from the comfort of your own home.",
+    images: [projImg1_1, projImg1_2, projImg1_3],
+    tags: [],
+    technologies: ["HTML", "JavaScript", "CSS"],
+    dates: {
+      start: "14.05.2210",
+      finish: "14.05.2210",
     },
-    {
-        title: "E-Commerce",
-        description:
-            "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-        images: [projImg2, projImg2, projImg2],
-        tags: ["Mongo", "React"],
-        technologies: ["Mongo", "Express", "React", "Node"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://google.com",
-        visit: "https://google.com",
-        id: 1,
+    source: "https://tranquil-pothos-611864.netlify.app/",
+    visit: "https://tranquil-pothos-611864.netlify.app/",
+    id: 0,
+  },
+  {
+    title: "Delivery website",
+    description:
+      "Our idelivery website provides a convenient way to get your desired products delivered right to your doorstep, whether it be groceries, electronics, or household items, saving you time and effort from going out to the store.",
+    images: [projImg2_1, projImg2_2, projImg2_3],
+    tags: [],
+    technologies: ["HTML", "JavaScript", "CSS"],
+    dates: {
+      start: "14.05.2210",
+      finish: "14.05.2210",
     },
-    {
-        title: "WebRTC App",
-        description:
-            "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-        images: [projImg3, projImg3, projImg3],
-        tags: ["React"],
-        technologies: ["Mongo", "Express", "React", "Node"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://google.com",
-        visit: "https://google.com",
-        id: 2,
+    source: "https://resplendent-marzipan-98ad86.netlify.app/",
+    visit: "https://resplendent-marzipan-98ad86.netlify.app/",
+    id: 1,
+  },
+  {
+    title: "Halloween event",
+    description:
+      "Step into the spooky season with our Halloween event website, where you can find information on upcoming events and order items to get a taste of the Halloween fun you can expect.",
+    images: [projImg3_1, projImg3_2, projImg3_3],
+    tags: [],
+    technologies: ["HTML", "JavaScript", "CSS"],
+    dates: {
+      start: "14.05.2210",
+      finish: "14.05.2210",
     },
-    {
-        title: "Unichat",
-        description:
-            "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-        images: [projImg4, projImg4, projImg4],
-        tags: ["React"],
-        technologies: ["Mongo", "Express", "React", "Node"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://google.com",
-        visit: "https://google.com",
-        id: 3,
+    source: "https://jade-pony-f69691.netlify.app/",
+    visit: "https://jade-pony-f69691.netlify.app/",
+    id: 2,
+  },
+  {
+    title: "Sushi restaurant",
+    description:
+      "Welcome to our sushi restaurant website, where you can explore our menu, make a reservation, and order your favorite sushi dishes online for pickup or delivery.",
+    images: [projImg4_1, projImg4_2, projImg4_3],
+    tags: [],
+    technologies: ["HTML", "JavaScript", "CSS"],
+    dates: {
+      start: "14.05.2210",
+      finish: "14.05.2210",
     },
-]
+    source: "https://cosmic-lokum-10d23a.netlify.app/",
+    visit: "https://cosmic-lokum-10d23a.netlify.app/",
+    id: 3,
+  },
+  {
+    title: "Flight agency",
+    description:
+      "Start your journey with our flight agency website, where you can book flights, view travel deals, and get all the information you need to make your travel experience comfortable and hassle-free, including destination guides, luggage policies, and travel tips",
+    images: [projImg5_1, projImg5_2, projImg5_3],
+    tags: [],
+    technologies: ["HTML", "JavaScript", "CSS"],
+    dates: {
+      start: "14.05.2210",
+      finish: "14.05.2210",
+    },
+    source: "https://sparkling-puffpuff-01ec61.netlify.app/",
+    visit: "https://sparkling-puffpuff-01ec61.netlify.app/",
+    id: 4,
+  },
+];
