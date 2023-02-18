@@ -6,7 +6,13 @@ import React from "react"
 
 import styles from "./Hero.module.css"
 
-function Hero({ handleClick }) {
+function Hero() {
+    function clickHandler() {
+        document
+            .getElementById("contact")
+            .scrollIntoView({ behavior: "smooth" })
+    }
+
     return (
         <Section isRow isNopadding>
             <div className={styles.leftSection}>
@@ -15,11 +21,12 @@ function Hero({ handleClick }) {
                     My Personal Portfolio
                 </SectionTitle>
                 <SectionText>
-                    The purpose of JavaScript Mastery is to help aspiring and
-                    established developers to take their development skills to
-                    the next level and build awesome apps.
+                    My name is Artur Pazyniuk. I'm a software engineer
+                    specializing in building (ocasionally designing) exceptional
+                    user experiences.
+                    <br /> Let's make something special together.
                 </SectionText>
-                <Button onClick={handleClick}>Learn More</Button>
+                <Button onClick={clickHandler}>Contact Me</Button>
             </div>
         </Section>
     )

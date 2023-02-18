@@ -1,0 +1,28 @@
+.list {
+    list-style: none;
+    color: white;
+    align-items: center;
+    width: 100%;
+    min-width: 500px;
+    max-width: 680px;
+    height: 100%;
+    min-height: 50px;
+}
+
+@media (min-width: 961px) {
+    .list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1201px) {
+    .list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        color: var(--base-color);
+        font-size: var(--middle-text);
+    }
+}

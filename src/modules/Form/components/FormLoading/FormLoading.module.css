@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.contentContainer {
+    text-align: center;
+}
+
+.loadingIcon {
+    color: rgba(255, 255, 255, 0.833);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.successIcon {
+    color: green;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.failIcon {
+    color: red;
+    font-size: 60px;
+    margin-bottom: 10px;
+}

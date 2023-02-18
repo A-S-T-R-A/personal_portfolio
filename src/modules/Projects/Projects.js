@@ -1,41 +1,26 @@
-import { useEffect, useState } from "react"
-import { projectsData, projectCategories } from "."
-import { Section, SectionDivider, SectionTitle } from "modules/common/ui"
+import {
+    Section,
+    SectionDivider,
+    SectionText,
+    SectionTitle,
+} from "modules/common/ui"
 import { CategoriesFilter } from "./components/CategoriesFilter/CategoriesFilter"
 import { FilteredProjects } from "./components/FilteredProjects/FilteredProjects"
+import { ProjectsProvider } from "./providers/ProjectsProvider"
 
 export function Projects() {
-    const [active, setActive] = useState(projectCategories[0])
-    const [filteredProjectsData, setFilteredProjectsData] =
-        useState(projectsData)
-
-    useEffect(() => {
-        function filter(tag) {
-            if (tag === "All") {
-                setFilteredProjectsData(projectsData)
-            } else {
-                setFilteredProjectsData(
-                    projectsData.filter(proj => proj.tags.includes(tag))
-                )
-            }
-        }
-
-        filter(active)
-    }, [active])
-
     return (
-        <Section isNopadding id="projects">
-            <SectionDivider />
-            <SectionTitle isMain>Projects</SectionTitle>
-            <CategoriesFilter
-                data={projectCategories}
-                active={active}
-                setActive={setActive}
-            />
-            <FilteredProjects
-                data={filteredProjectsData}
-                filterActive={active}
-            />
-        </Section>
+        <ProjectsProvider>
+            <Section id="projects">
+                <SectionDivider isDivider />
+                <SectionTitle>Projects</SectionTitle>
+                <SectionText>
+                    A selection of my range of work from simple Landing Pages to
+                    complex Fullstack Web Applications
+                </SectionText>
+                <CategoriesFilter />
+                <FilteredProjects />
+            </Section>
+        </ProjectsProvider>
     )
 }

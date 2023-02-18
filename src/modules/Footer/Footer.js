@@ -1,47 +1,35 @@
-import React from "react"
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
-
+import { SocialIcons } from "modules/common/components/SocialIcons"
 import styles from "./Footer.module.css"
 
-const Footer = () => {
+function Footer() {
     return (
-        <section className={styles.wrapper}>
-            <ul className={styles.list}>
-                <div className={styles.column}>
-                    <h4 className={styles.linkTitle}>Call</h4>
-                    <a className={styles.link} href="tel:314-343-3432">
-                        314-343-3432
-                    </a>
-                </div>
-                <div className={styles.column}>
-                    <h4 className={styles.linkTitle}>Email</h4>
-                    <a
-                        className={styles.link}
-                        href="mailto:contact@jsmastery.com"
-                    >
-                        contact@jsmastery.com
-                    </a>
-                </div>
-            </ul>
-            <div className={styles.socialsContainer}>
-                <div className={styles.companyContainer}>
-                    <p className={styles.slogan}>
-                        Innovating one project at a time
-                    </p>
-                </div>
-                <div className={styles.socialLinks}>
-                    <a className={styles.social} href="https://google.com">
-                        <AiFillGithub size="3rem" />
-                    </a>
-                    <a className={styles.social} href="https://google.com">
-                        <AiFillLinkedin size="3rem" />
-                    </a>
-                    <a className={styles.social} href="https://google.com">
-                        <AiFillInstagram size="3rem" />
-                    </a>
+        <footer className={styles.wrapper} id="footer">
+            <div className={styles.container}>
+                <div className={styles.content}>
+                    <div className={styles.phone}>
+                        <h4 className={styles.linkTitle}>Skype</h4>
+                        <a
+                            className={styles.link}
+                            href="skype:live:artur0503915024"
+                        >
+                            Artur Pazyniuk
+                        </a>
+                    </div>
+                    <div className={styles.email}>
+                        <h4 className={styles.linkTitle}>Email</h4>
+                        <a
+                            className={styles.link}
+                            href="mailto:PazyniukArtur@gmail.com"
+                        >
+                            PazyniukArtur@gmail.com
+                        </a>
+                    </div>
+                    <div className={styles.socialIcons}>
+                        <SocialIcons className={styles.icons} />
+                    </div>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }
 
