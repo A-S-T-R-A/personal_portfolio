@@ -1,7 +1,7 @@
 import styles from "./ListItem.module.css"
 
 function ListItem({ data }) {
-    const { title, img, desc } = data
+    const { title, img } = data
     return (
         <div className={styles.container}>
             <div className={styles.imgContainer}>

@@ -79,7 +79,7 @@ export default function Form() {
 
     return (
         <Section id="contact">
-            <SectionTitle>Sign up</SectionTitle>
+            <SectionTitle>Contact me</SectionTitle>
 
             {showForm ? (
                 <FormUi

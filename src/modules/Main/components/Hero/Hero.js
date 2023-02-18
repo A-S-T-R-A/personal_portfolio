@@ -21,9 +21,10 @@ function Hero() {
                     My Personal Portfolio
                 </SectionTitle>
                 <SectionText>
-                    The purpose of JavaScript Mastery is to help aspiring and
-                    established developers to take their development skills to
-                    the next level and build awesome apps.
+                    My name is Artur Pazyniuk. I'm a software engineer
+                    specializing in building (ocasionally designing) exceptional
+                    user experiences.
+                    <br /> Let's make something special together.
                 </SectionText>
                 <Button onClick={clickHandler}>Contact Me</Button>
             </div>
