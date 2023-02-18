@@ -27,11 +27,11 @@
 }
 
 .inputWrap:nth-child(2) {
-    grid-area: input1;
+    grid-area: input2;
 }
 
 .inputWrap:nth-child(3) {
-    grid-area: input2;
+    grid-area: input3;
 }
 
 .inputs {
