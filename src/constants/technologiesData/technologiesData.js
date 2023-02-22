@@ -30,13 +30,13 @@ export const technologiesData = [
     },
     {
         id: 4,
-        title: "Type Script",
+        title: "TypeScript",
         img: typescriptIcon,
         desc: "Experience with TS",
     },
     {
         id: 5,
-        title: "Java Scrypt",
+        title: "JavaScript",
         img: jsIcon,
         desc: "Experience with React.js",
     },
