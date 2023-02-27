@@ -31,6 +31,22 @@ select {
     --brown-color: #46364a;
     --white-color: #ffffff; */
 
+    /*     
+medium: базовый размер шрифта браузера (16 пикселей)
+
+small: 13 пикселей
+
+x-small: 10 пикселей
+
+xx-small: 9 пикселей
+
+large: 18 пикселей
+
+x-large: 24 пикселя
+
+xx-large: 32 пикселя */
+
+
     --main-bg-color: #1f2029;
     /* back */
     --modal-bg-color: #1e293d;
@@ -42,6 +58,15 @@ select {
     --lightgray-color: #e4e4e4;
     --warning-color: red;
 
+    /* FONTS */
+
+    --xx-small-fonts: 9px;
+    --x-small-fonts: 10px;
+    --small-fonts: 13px;
+    --medium-fonts: 16px;
+    --large-fonts: 18px;
+    --x-large-fonts: 24px;
+    --xx-large-fonts: 32px;
 
 }
 
