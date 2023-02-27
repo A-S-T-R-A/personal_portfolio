@@ -1,12 +1,25 @@
 {
     "compilerOptions": {
+        "jsx": "react",
+        "noImplicitAny": true,
+        "module": "ESNext",
         "target": "es2016",
-        "module": "commonjs",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
+        "allowJs": true,
         "skipLibCheck": true,
-        "baseUrl": "src"
+        "baseUrl": "src",
+        "paths": {
+            "*": ["./src/*"]
+        },
+        "moduleResolution": "node",
+        "types": ["node", "react", "react-dom", "typings/*"]
     },
-    "include": ["src"]
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.css",
+        "typings/Button.module.css.d.ts"
+    ]
 }
