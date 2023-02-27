@@ -10,16 +10,14 @@
         "allowJs": true,
         "skipLibCheck": true,
         "baseUrl": "src",
-        "paths": {
-            "*": ["./src/*"]
-        },
-        "moduleResolution": "node",
-        "types": ["node", "react", "react-dom", "typings/*"]
+        "moduleResolution": "node"
     },
     "include": [
-        "src/**/*.ts",
-        "src/**/*.tsx",
-        "src/**/*.css",
-        "typings/Button.module.css.d.ts"
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.css",
+        "modules/common/types/global.d.ts"
     ]
 }

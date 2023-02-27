@@ -4,7 +4,7 @@ import { classNames } from "modules/common/helpers/classNames"
 
 function SectionTitle({
     children,
-    className,
+    className = null,
     isMain = false,
     isCenter = false,
 }) {
