@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./SocialIcons.module.css"
-import { socialsData } from "../../../Navigation/components/common/data"
+import { socialsData } from "./data"
 import { classNames } from "modules/common/helpers/classNames"
 
 export function SocialIcons({ onClick, className }) {
