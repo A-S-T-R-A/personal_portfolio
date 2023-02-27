@@ -31,7 +31,6 @@ select {
     --brown-color: #46364a;
     --white-color: #ffffff; */
 
-
     --main-bg-color: #1f2029;
     /* back */
     --modal-bg-color: #1e293d;
@@ -41,6 +40,9 @@ select {
     --alternative-color: #4a90e2;
     --gray-color: #6b7688;
     --lightgray-color: #e4e4e4;
+    --warning-color: red;
+
+
 }
 
 html {
@@ -50,7 +52,7 @@ html {
 
 body {
     /* background: rgb(57, 43, 57); cool color*/
-    background: var(--background1-color);
+    background: var(--main-bg-color);
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
 }

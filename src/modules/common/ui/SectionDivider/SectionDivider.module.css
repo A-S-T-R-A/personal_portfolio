@@ -3,11 +3,13 @@
     height: 6px;
     border-radius: 10px;
     background-color: #fff;
-    background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+    background: var(--accent-color);
+    /* linear-gradient(270deg, #13ADC7 0%, #945DD6 100%); */
 }
 
 .colorAlt {
-    background: linear-gradient(270deg, #F46737 0%, #945DD6 100%);
+    background: var(--accent-color);
+    /* linear-gradient(270deg, #F46737 0%, #945DD6 100%); */
 }
 
 .divider {

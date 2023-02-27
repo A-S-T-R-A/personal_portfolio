@@ -1,5 +1,6 @@
 .wrapper {
-  background-color: rgba(57, 43, 57, 0.521);
+  background-color: var(--main-bg-color);
+  /* rgba(57, 43, 57, 0.521); */
   position: fixed;
   top: 0;
   bottom: 0;

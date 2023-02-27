@@ -7,7 +7,8 @@
     margin-bottom: 1rem;
     cursor: pointer;
     position: relative;
-    color: rgba(255, 255, 255, 0.789);
+    color: var(--lightgray-color);
+    /* rgba(255, 255, 255, 0.789); */
 }
 
 .workName {
@@ -16,14 +17,17 @@
 
 .workCompany {
     font-weight: 400;
-    color: gray;
+    color: var(--gray-color);
+    /* gray; */
     margin-top: 5px;
 }
 
 .description {
     width: 100%;
-    background-color: #243556cd;
-    color: rgba(255, 255, 255, 0.688);
+    background-color: var(--modal-bg-color);
+    /* #243556cd; */
+    color: var(--lightgray-color);
+    /* rgba(255, 255, 255, 0.688); */
     font-size: 12px;
     padding: 10px;
     border-radius: 5px;

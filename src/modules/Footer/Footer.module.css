@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    color: white;
+    color: var(--main-text-color);
 }
 
 .content {
@@ -51,7 +51,7 @@
 }
 
 .link {
-    color: darkgrey !important;
+    color: var(--gray-color) !important;
     position: relative;
     left: 0;
     transition: all .3s ease-in-out;
@@ -59,7 +59,7 @@
 
 .link:hover {
     left: 6px;
-    color: white !important;
+    color: var(--main-text-color) !important;
 }
 
 .slogan {
@@ -67,7 +67,7 @@
     grid-area: slogan;
     display: flex;
     justify-content: center;
-    color: darkgray;
+    color: var(--gray-color);
 }
 
 .socialIcons {
