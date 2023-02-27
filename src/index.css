@@ -17,7 +17,7 @@ select {
 }
 
 :root {
-    --primary1-color: hsl(204, 23.8%, 95.9%);
+    /*     --primary1-color: hsl(204, 23.8%, 95.9%);
     --background1-color: #0F1624;
     --project-card-background: #1e293d;
     --accent1-color: hsl(34.9, 98.6%, 72.9%);
@@ -29,11 +29,13 @@ select {
     --black-color: #030303;
     --lightGray-color: #e4e4e4;
     --brown-color: #46364a;
-    --white-color: #ffffff;
+    --white-color: #ffffff; */
 
 
     --main-bg-color: #1f2029;
+    /* back */
     --modal-bg-color: #1e293d;
+    /* modal */
     --main-text-color: #f5f5f5;
     --accent-color: #b07df2;
     --alternative-color: #4a90e2;
@@ -70,5 +72,5 @@ li {
 }
 
 span.accent {
-    -webkit-text-fill-color: plum;
+    -webkit-text-fill-color: var(--accent-color)
 }
