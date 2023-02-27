@@ -29,6 +29,18 @@ import {
     projImg10_1,
     projImg10_2,
     projImg10_3,
+    projImg11_1,
+    projImg11_2,
+    projImg11_3,
+    projImg12_1,
+    projImg12_2,
+    projImg12_3,
+    projImg13_1,
+    projImg13_2,
+    projImg13_3,
+    projImg14_1,
+    projImg14_2,
+    projImg14_3,
 } from "assets/images/projects"
 
 export const projectsData = [
@@ -120,8 +132,8 @@ export const projectsData = [
             start: "14.05.2210",
             finish: "14.05.2210",
         },
-        source: "https://dashing-figolla-a824df.netlify.app/",
-        visit: "https://dashing-figolla-a824df.netlify.app/",
+        source: "https://stirring-phoenix-05f76a.netlify.app/",
+        visit: "https://stirring-phoenix-05f76a.netlify.app/",
         id: 5,
     },
     {
@@ -167,12 +179,12 @@ export const projectsData = [
         },
         source: "https://a-s-t-r-a.github.io/responsive-travel-website/",
         visit: "https://a-s-t-r-a.github.io/responsive-travel-website/",
-        id: 7,
+        id: 8,
     },
     {
-        title: "Small restaurant",
+        title: "Restaurant",
         description:
-            "This small restaurant website showcases their menu, location, and hours of operation, providing an easy and convenient way for customers to plan their visit and satisfy their cravings.",
+            "This restaurant website showcases their menu, location, and hours of operation, providing an easy and convenient way for customers to plan their visit and satisfy their cravings.",
         images: [projImg10_1, projImg10_2, projImg10_3],
         tags: ["Landing Page"],
         technologies: ["HTML", "JavaScript", "CSS"],
@@ -182,6 +194,66 @@ export const projectsData = [
         },
         source: "https://a-s-t-r-a.github.io/small-restaurant-js/",
         visit: "https://a-s-t-r-a.github.io/small-restaurant-js/",
-        id: 7,
+        id: 9,
+    },
+    {
+        title: "Coffee store",
+        description:
+            "This coffee store website offers a wide range of high-quality coffee beans, brewing equipment, and accessories to help customers create the perfect cup of coffee at home.",
+        images: [projImg11_1, projImg11_2, projImg11_3],
+        tags: ["Landing Page"],
+        technologies: ["HTML", "JavaScript", "CSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://lambent-smakager-2aebe1.netlify.app/",
+        visit: "https://lambent-smakager-2aebe1.netlify.app/",
+        id: 10,
+    },
+    {
+        title: "Blog website",
+        description:
+            "This blog website is a valuable resource for anyone looking to expand their knowledge on a variety of topics, featuring a diverse range of articles, opinions, and advice on everything from current events and lifestyle trends to business strategy and personal development.",
+        images: [projImg12_1, projImg12_2],
+        tags: ["Landing Page"],
+        technologies: ["React"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://astra-blog.vercel.app/post/react-testing",
+        visit: "https://astra-blog.vercel.app/post/react-testing",
+        id: 11,
+    },
+    {
+        title: "Real Estate",
+        description:
+            "This real estate website is a comprehensive platform for buying, selling, and renting properties, offering users access to a wide range of listings, professional agents, and helpful resources to navigate the complex world of real estate.",
+        images: [projImg13_1, projImg13_2],
+        tags: ["Landing Page"],
+        technologies: ["HTML", "JavaScript", "CSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://real-estate-sable-six.vercel.app/",
+        visit: "https://real-estate-sable-six.vercel.app/",
+        id: 12,
+    },
+    {
+        title: "E-commerce",
+        description:
+            "This e-commerce website offers a wide variety of top-rated headphones with detailed descriptions, customer reviews, and fast shipping.",
+        images: [projImg14_1, projImg14_2, projImg14_3],
+        tags: ["Landing Page"],
+        technologies: ["HTML", "JavaScript", "CSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://ecommerce-art1us.vercel.app/",
+        visit: "https://ecommerce-art1us.vercel.app/",
+        id: 13,
     },
 ]
