@@ -1,5 +1,5 @@
-import React from "react"
-import { ButtonHTMLAttributes, FC } from "react"
+import React, { ReactElement, ReactNode } from "react"
+import { ButtonHTMLAttributes } from "react"
 import { classNames } from "modules/common/helpers/classNames"
 
 import styles from "./Button.module.css"
@@ -11,12 +11,13 @@ export enum ButtonVariant {
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    children: ReactNode
     className?: string
     variant: ButtonVariant
     isAlt?: Boolean
 }
 
-export const Button: FC<ButtonProps> = props => {
+export function Button(props: ButtonProps): ReactElement {
     const {
         className,
         children,
