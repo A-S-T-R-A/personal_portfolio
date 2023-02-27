@@ -28,22 +28,12 @@ export function ProjectItem({ data }) {
             />
 
             <div className={styles.buttonsContainer}>
-                <Button
-                    onClick={() => setShowModal(true)}
-                    isOutlined
-                    isAlt
-                    className={styles.btn1}
-                >
-                    Details
-                </Button>
+                <Button onClick={() => setShowModal(true)}>Details</Button>
                 <Button
                     onClick={e => {
                         e.preventDefault()
                         window.open(visit, "_blank")
                     }}
-                    className={styles.btn2}
-                    isAlt
-                    isText
                 >
                     Live Demo
                 </Button>

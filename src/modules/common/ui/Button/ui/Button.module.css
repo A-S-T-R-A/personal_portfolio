@@ -1,0 +1,54 @@
+.button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--main-text-color);
+    transition: all 0.2s ease;
+}
+
+.clear:hover {
+    color: var(--accent-color);
+}
+
+.clear:hover.alt {
+    color: var(--alternative-color);
+}
+
+.outlined {
+    background: none;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.outlined.alt {
+    background: none;
+    color: var(--alternative-color);
+    border: 1px solid var(--alternative-color);
+
+}
+
+.outlined:hover {
+    color: var(--main-bg-color);
+    background: var(--accent-color);
+}
+
+.outlined:hover.alt {
+    color: var(--main-bg-color);
+    background: var(--alternative-color);
+}
+
+.filled {
+    background-color: var(--accent-color);
+}
+
+.filled.alt {
+    background-color: var(--alternative-color);
+}
+
+.filled:hover {
+    opacity: 0.9;
+}
