@@ -1,16 +1,15 @@
-import { Button } from "modules/common/ui/Button"
+import React from "react"
+import { Button, ButtonVariant } from "modules/common/ui/Button"
 import { Section } from "modules/common/ui/Section"
 import { SectionText } from "modules/common/ui/SectionText"
 import { SectionTitle } from "modules/common/ui/SectionTitle"
-import React from "react"
-
 import styles from "./Hero.module.css"
 
 function Hero() {
     function clickHandler() {
         document
             .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" })
+            ?.scrollIntoView({ behavior: "smooth" })
     }
 
     return (
@@ -26,7 +25,13 @@ function Hero() {
                     user experiences.
                     <br /> Let's make something special together.
                 </SectionText>
-                <Button onClick={clickHandler}>Contact Me</Button>
+                <Button
+                    onClick={clickHandler}
+                    variant={ButtonVariant.FILLED}
+                    isAlt
+                >
+                    Contact Me
+                </Button>
             </div>
         </Section>
     )

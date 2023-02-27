@@ -4,9 +4,9 @@ import styles from "./Section.module.css"
 import { classNames } from "modules/common/helpers/classNames"
 
 function Section({
-    id,
+    id = null,
     children,
-    className,
+    className = null,
     isGrid = false,
     isRow = false,
     isNopadding = false,
