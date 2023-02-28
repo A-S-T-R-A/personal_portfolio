@@ -6,24 +6,24 @@ function Footer() {
         <footer className={styles.wrapper} id="footer">
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <div className={styles.phone}>
-                        <h4 className={styles.linkTitle}>Skype</h4>
-                        <a
-                            className={styles.link}
-                            href="skype:live:artur0503915024"
-                        >
-                            Artur Pazyniuk
-                        </a>
-                    </div>
-                    <div className={styles.email}>
-                        <h4 className={styles.linkTitle}>Email</h4>
-                        <a
-                            className={styles.link}
-                            href="mailto:PazyniukArtur@gmail.com"
-                        >
+                    <a
+                        className={styles.phone}
+                        href="skype:live:artur0503915024"
+                    >
+                        <span className={styles.linkTitle}>Skype</span>
+                        <dr />
+                        <span className={styles.link}>Artur Pazyniuk</span>
+                    </a>
+                    <a
+                        className={styles.email}
+                        href="mailto:PazyniukArtur@gmail.com"
+                    >
+                        <span className={styles.linkTitle}>Email</span>
+                        <dr />
+                        <span className={styles.link}>
                             PazyniukArtur@gmail.com
-                        </a>
-                    </div>
+                        </span>
+                    </a>
                     <div className={styles.socialIcons}>
                         <SocialIcons className={styles.icons} />
                     </div>

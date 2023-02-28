@@ -34,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto 0;
 }
 
 .email {
@@ -43,6 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto 0;
 }
 
 .linkTitle {
