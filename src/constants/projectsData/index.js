@@ -16,7 +16,7 @@ import {
     projImg5_3,
 } from "assets/images/projects"
 
-export const projectsData = [
+/* export const projectsData = [
     {
         title: "Flight agency",
         description:
@@ -93,5 +93,83 @@ export const projectsData = [
         source: "https://tranquil-pothos-611864.netlify.app/",
         visit: "https://tranquil-pothos-611864.netlify.app/",
         id: 0,
+    },
+] */
+
+export const projectsData = [
+    {
+        title: "Flight",
+        description:
+            "Start your journey with our flight agency website, where you can book flights, view travel deals, and get all the information you need to make your travel experience comfortable and hassle-free, including destination guides, luggage policies, and travel tips",
+        img: projImg3_1,
+        tags: ["Web App"],
+        technologies: ["React", "SCSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        visit: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        id: 4,
+    },
+    {
+        title: "Flight",
+        description:
+            "Start your journey with our flight agency website, where you can book flights, view travel deals, and get all the information you need to make your travel experience comfortable and hassle-free, including destination guides, luggage policies, and travel tips",
+        img: projImg5_1,
+        tags: ["Web App"],
+        technologies: ["React", "SCSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        visit: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        id: 2,
+    },
+    {
+        title: "Flight",
+        description:
+            "Start your journey with our flight agency website, where you can book flights, view travel deals, and get all the information you need to make your travel experience comfortable and hassle-free, including destination guides, luggage policies, and travel tips",
+        img: projImg5_1,
+        tags: ["Web App"],
+        technologies: ["React", "SCSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        visit: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        id: 1,
+    },
+    {
+        title: "Flight",
+        description:
+            "Start your journey with our flight agency website, where you can book flights, view travel deals, and get all the information you need to make your travel experience comfortable and hassle-free, including destination guides, luggage policies, and travel tips",
+        img: projImg5_1,
+        tags: ["Web App"],
+        technologies: ["React", "SCSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        visit: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        id: 7,
+    },
+    {
+        title: "Flight",
+        description:
+            "Start your journey with our flight agency website, where you can book flights, view travel deals, and get all the information you need to make your travel experience comfortable and hassle-free, including destination guides, luggage policies, and travel tips",
+        img: projImg5_1,
+        tags: ["Web App"],
+        technologies: ["React", "SCSS"],
+        dates: {
+            start: "14.05.2210",
+            finish: "14.05.2210",
+        },
+        source: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        visit: "https://sparkling-puffpuff-01ec61.netlify.app/",
+        id: 8,
     },
 ]

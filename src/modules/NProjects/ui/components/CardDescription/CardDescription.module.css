@@ -1,0 +1,51 @@
+.container {
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding: 20px;
+}
+
+.cardTitle {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cardDesc {
+    color: rgba(255, 255, 255, 0.853);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 650px) {
+    .cardTitle {
+        font-size: 32px;
+    }
+}
+
+
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 120px;
+    font-weight: bold;
+}
+
+.btnIcon {
+    margin-right: 5px;
+}

@@ -1,35 +1,35 @@
 import React from "react"
-import styles from "./ExploreCard.module.css"
+import styles from "./ProjectCard.module.css"
 import { motion } from "framer-motion"
 
 import { fadeIn } from "../../../lib/motion"
 import { classNames } from "modules/common/helpers/classNames"
 
 //@ts-ignore
-import headsetSvg from "assets/nProjects/headset.svg"
-//@ts-ignore
-import img from "assets/nProjects/planet-02.png"
+import CardDescription from "../CardDescription/CardDescription"
 
 interface ExploreCardProps {
-    id: any /* 
-    imgUrl: any */
+    id: number
     title: any
     index: any
     active: any
     handleClick: any
+    [key: string]: any
 }
 
-export const ExploreCard = ({
-    id /* 
-    imgUrl, */,
+export function ProjectCard({
+    id,
     title,
     index,
     active,
     handleClick,
-}: ExploreCardProps) => {
+    ...rest
+}: ExploreCardProps) {
     const containerClassName = classNames(styles.container, {
         [styles.active]: active === id,
     })
+
+    const { img, description } = rest
 
     return (
         <motion.div
@@ -41,17 +41,7 @@ export const ExploreCard = ({
             {active !== id ? (
                 <h3 className={styles.h3}>{title}</h3>
             ) : (
-                <div className={styles.cardContainer}>
-                    <div className={styles.cardImgContainer}>
-                        <img
-                            src={headsetSvg}
-                            alt="headset"
-                            className={styles.cardImg}
-                        />
-                    </div>
-                    <p className={styles.cardDesc}>Enter Metaverse</p>
-                    <h2 className={styles.cardTitle}>{title}</h2>
-                </div>
+                <CardDescription title={title} description={description} />
             )}
         </motion.div>
     )

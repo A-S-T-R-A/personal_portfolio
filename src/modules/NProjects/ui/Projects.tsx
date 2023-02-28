@@ -4,9 +4,9 @@ import styles from "./Projects.module.css"
 import { useState } from "react"
 import { motion } from "framer-motion"
 
-import { exploreWorlds } from "../data.js"
+import { projectsData } from "../index"
 import { staggerContainer } from "../lib/motion"
-import { ExploreCard } from "./components/ExploreCard/ExploreCard"
+import { ProjectCard } from "./components/ProjectCard/ProjectCard"
 
 export function Projects() {
     const [active, setActive] = useState("world-2")
@@ -22,10 +22,10 @@ export function Projects() {
                 className={styles.container}
             >
                 <div className={styles.projectsList}>
-                    {exploreWorlds.map((world, index) => (
-                        <ExploreCard
-                            key={world.id}
-                            {...world}
+                    {projectsData.map((project, index) => (
+                        <ProjectCard
+                            key={project.id}
+                            {...project}
                             index={index}
                             active={active}
                             handleClick={setActive}
