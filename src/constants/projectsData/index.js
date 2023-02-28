@@ -14,6 +14,8 @@ import {
     projImg5_1,
     projImg5_2,
     projImg5_3,
+    projImg9_1,
+    projImg10_1,
 } from "assets/images/projects"
 
 export const NProjectsData = [
