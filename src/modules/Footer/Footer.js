@@ -11,13 +11,13 @@ function Footer() {
                             className={styles.linkTitle}
                             href="skype:live:artur0503915024"
                         >
-                            Skype
-                        </a>
-                        <a
-                            className={styles.link}
-                            href="skype:live:artur0503915024"
-                        >
-                            Artur Pazyniuk
+                            Skype <br />
+                            <span
+                                className={styles.link}
+                                href="skype:live:artur0503915024"
+                            >
+                                Artur Pazyniuk
+                            </span>
                         </a>
                     </div>
                     <div className={styles.email}>
@@ -26,12 +26,10 @@ function Footer() {
                             href="mailto:PazyniukArtur@gmail.com"
                         >
                             Email
-                        </a>
-                        <a
-                            className={styles.link}
-                            href="mailto:PazyniukArtur@gmail.com"
-                        >
-                            PazyniukArtur@gmail.com
+                            <br />
+                            <span className={styles.link}>
+                                PazyniukArtur@gmail.com
+                            </span>
                         </a>
                     </div>
                     <div className={styles.socialIcons}>
