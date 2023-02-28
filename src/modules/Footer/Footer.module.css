@@ -48,6 +48,7 @@
 .linkTitle {
     font-size: 20px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .link {
