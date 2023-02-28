@@ -12,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #202f4cc5;
+    background-color: var(--modal-bg-color);
+    /* #202f4cc5; */
 }
 
 .burgerOpen {
@@ -40,7 +41,8 @@
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--primary1-color);
+    background: var(--lightgray-color);
+    /* var(--primary1-color); */
     width: 1.5em;
     height: 3px;
     border-radius: 1em;

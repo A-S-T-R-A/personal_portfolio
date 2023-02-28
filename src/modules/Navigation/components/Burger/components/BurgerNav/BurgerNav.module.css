@@ -1,6 +1,7 @@
 .overlay {
     position: fixed;
-    color: var(--primary1-color);
+    color: var(--main-text-color);
+    /* var(--primary1-color); */
     top: 0;
     bottom: 0;
     left: 0;
@@ -22,7 +23,8 @@
     flex-direction: column;
     margin-left: auto;
     padding: 0;
-    background-color: var(--background1-color);
+    background-color: var(--main-bg-color);
+    /* var(--background1-color); */
 }
 
 .container {

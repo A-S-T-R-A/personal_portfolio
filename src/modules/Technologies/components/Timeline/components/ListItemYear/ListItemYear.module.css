@@ -6,7 +6,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
-    color: white;
+    color: var(--main-text-color);
+    /* white; */
 }
 
 .yearContainer {
@@ -15,7 +16,8 @@
 
 .year {
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.789);
+    color: var(--lightgray-color);
+    /* rgba(255, 255, 255, 0.789); */
 }
 
 .works {
