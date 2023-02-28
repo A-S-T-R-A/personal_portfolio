@@ -14,6 +14,8 @@ import {
     projImg5_1,
     projImg5_2,
     projImg5_3,
+    projImg9_1,
+    projImg10_1,
 } from "assets/images/projects"
 
 export const NProjectsData = [
@@ -21,7 +23,7 @@ export const NProjectsData = [
         title: "Travel website",
         description:
             "This travel website offers a vast selection of destinations, accommodations, and activities, making it easy for travelers to plan and book their dream vacations.",
-        img: projImg9_1,
+        img: projImg4_1,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://a-s-t-r-a.github.io/responsive-travel-website/",
         id: 8,
@@ -30,7 +32,7 @@ export const NProjectsData = [
         title: "Restaurant",
         description:
             "This restaurant website showcases their menu, location, and hours of operation, providing an easy and convenient way for customers to plan their visit and satisfy their cravings.",
-        img: projImg10_1,
+        img: projImg4_1,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://a-s-t-r-a.github.io/small-restaurant-js/",
         id: 9,
