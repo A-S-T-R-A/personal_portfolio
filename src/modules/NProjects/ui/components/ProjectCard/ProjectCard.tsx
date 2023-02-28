@@ -29,7 +29,7 @@ export function ProjectCard({
         [styles.active]: active === id,
     })
 
-    const { img, description } = rest
+    const { img, description, technologies } = rest
 
     return (
         <motion.div
@@ -41,7 +41,11 @@ export function ProjectCard({
             {active !== id ? (
                 <h3 className={styles.h3}>{title}</h3>
             ) : (
-                <CardDescription title={title} description={description} />
+                <CardDescription
+                    title={title}
+                    description={description}
+                    technologies={technologies}
+                />
             )}
         </motion.div>
     )

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+}
+
+.tech {
+    padding: 0.5rem;
+    border: 1px solid var(--main-text-color);
+    color: var(--main-text-color);
+    cursor: default;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 10px;
+}

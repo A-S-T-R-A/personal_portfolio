@@ -1,3 +1,3 @@
 export { Projects } from "./ui/Projects"
 
-export { NProjectsData as projectsData } from "constants/projectsData"
+export { NProjectsData as projectsData } from "./data"
