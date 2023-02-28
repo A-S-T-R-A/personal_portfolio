@@ -7,23 +7,22 @@
     height: 700px;
     min-width: 170px;
     transition: flex 0.7s ease-out;
-    flex-grow: 2;
+    flex: 2;
 }
 
 @media(min-width: 1024px) {
     .container {
-        flex-grow: 0.5;
+        flex: 0.5;
     }
 }
 
 .container.active {
-    flex-grow: 10;
-    border: 1px solid red;
+    flex: 10;
 }
 
 @media(min-width: 1024px) {
     .container.active {
-        flex-grow: 3.5;
+        flex: 3.5;
     }
 }
 
@@ -52,7 +51,7 @@
 
 @media(min-width:1024px) {
     .h3 {
-        bottom: 5rem;
+        bottom: 10rem;
         transform: rotate(-90deg);
     }
 }
@@ -60,6 +59,7 @@
 
 
 .cardContainer {
+    border: 1px solid red;
     position: absolute;
     bottom: 0;
     padding: 8px;
@@ -73,6 +73,7 @@
 }
 
 .cardImgContainer {
+    border: 1px solid red;
     width: 60px;
     height: 60px;
     border-radius: 24px;
