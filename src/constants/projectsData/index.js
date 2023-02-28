@@ -22,8 +22,6 @@ export const NProjectsData = [
         description:
             "This travel website offers a vast selection of destinations, accommodations, and activities, making it easy for travelers to plan and book their dream vacations.",
         img: projImg9_1,
-        projImg9_2,
-        projImg9_3,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://a-s-t-r-a.github.io/responsive-travel-website/",
         id: 8,
@@ -33,8 +31,6 @@ export const NProjectsData = [
         description:
             "This restaurant website showcases their menu, location, and hours of operation, providing an easy and convenient way for customers to plan their visit and satisfy their cravings.",
         img: projImg10_1,
-        projImg10_2,
-        projImg10_3,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://a-s-t-r-a.github.io/small-restaurant-js/",
         id: 9,
@@ -44,8 +40,6 @@ export const NProjectsData = [
         description:
             "Welcome to our sushi restaurant website, where you can explore our menu, make a reservation, and order your favorite sushi dishes online for pickup or delivery.",
         img: projImg4_1,
-        projImg4_2,
-        projImg4_3,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://cosmic-lokum-10d23a.netlify.app/",
         id: 3,
@@ -55,8 +49,6 @@ export const NProjectsData = [
         description:
             "Experience the ultimate in sound quality with our headphones store website, where you can browse a wide selection of headphones and audio accessories, read reviews, and make a purchase, all from the comfort of your own home.",
         img: projImg1_1,
-        projImg1_2,
-        projImg1_3,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://tranquil-pothos-611864.netlify.app/",
         id: 0,
@@ -66,8 +58,6 @@ export const NProjectsData = [
         description:
             "Our idelivery website provides a convenient way to get your desired products delivered right to your doorstep, whether it be groceries, electronics, or household items, saving you time and effort from going out to the store.",
         img: projImg2_1,
-        projImg2_2,
-        projImg2_3,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 1,
