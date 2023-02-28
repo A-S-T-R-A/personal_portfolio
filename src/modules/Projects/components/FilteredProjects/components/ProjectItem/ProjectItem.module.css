@@ -10,11 +10,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--project-card-background);
+    background-color: var(--modal-bg-color);
 }
 
 .container:hover {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px var(--main-bg-color);
+    /* rgba(0, 0, 0, 0.2) */
 }
 
 .imgContainer {
@@ -49,14 +50,17 @@
     height: 30px;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.79);
+    color: var(--main-text-color);
+    /* rgba(255, 255, 255, 0.79); */
 }
 
 .btn2:hover {
-    background: linear-gradient(90deg, #ff622e 0%, #B133FF 100%);
+    background: var(--accent-color);
+    /* linear-gradient(90deg, #ff622e 0%, #B133FF 100%); */
     font-weight: 700;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: rgba(255, 255, 255, 0.79);
+    color: var(--main-text-color);
+    /* rgba(255, 255, 255, 0.79); */
 }

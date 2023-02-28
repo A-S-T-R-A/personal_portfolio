@@ -5,7 +5,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin: 2rem;
-    color: white;
+    color: var(--main-text-color);
     transition: all .2s ease-in-out;
 }
 
@@ -19,7 +19,7 @@
 
 .desc {
     font-size: 13px;
-    color: lightgrey;
+    color: var(--lightgray-color);
 }
 
 .container img {

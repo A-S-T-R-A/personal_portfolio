@@ -1,7 +1,9 @@
 .projectsPagination .swiper-pagination-bullet {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--lightgray-color);
+    /* rgb(255, 255, 255); */
 }
 
 .projectsPagination .swiper-pagination-bullet-active {
-    background-color: #0269a5;
+    background-color: var(--alternative-color);
+    /* #0269a5; */
 }

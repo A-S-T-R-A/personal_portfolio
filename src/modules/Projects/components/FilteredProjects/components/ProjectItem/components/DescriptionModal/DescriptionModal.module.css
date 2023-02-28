@@ -1,6 +1,6 @@
 .container {
-    color: var(--primary1-color);
-    background-color: #1c2841;
+    color: var(--main-text-color);
+    background-color: var(--modal-bg-color);
     max-width: 700px;
     width: 100%;
     margin: 0 1rem;
@@ -24,7 +24,7 @@
     right: 10px;
     font-size: 50px;
     z-index: 10;
-    color: white;
+    color: var(--main-text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@
 .desc {
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255, 255, 255, 1);
+    color: var(--main-text-color);
     margin-bottom: 20px;
 }
 
