@@ -1,3 +1,26 @@
-.section {
-    padding-top: 50px;
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--main-text-color);
+    background-image: url('assets/images/MainSection/main-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 960px) {
+    .container {
+        flex-direction: column-reverse;
+    }
 }

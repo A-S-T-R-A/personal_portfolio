@@ -1,14 +1,15 @@
 import styles from "./Main.module.css"
-import { Section } from "modules/common/ui/Section"
-import { BgAnimation } from "./components/BgAnimation"
 import { Hero } from "./components/Hero"
+import { PlanetAnimation } from "./components/PlanetAnimation"
 
 function Main() {
     return (
-        <Section id="home" isGrid className={styles.section}>
-            <Hero />
-            <BgAnimation />
-        </Section>
+        <main className={styles.wrapper} id="home">
+            <section className={styles.container}>
+                <Hero />
+                <PlanetAnimation />
+            </section>
+        </main>
     )
 }
 

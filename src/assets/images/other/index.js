@@ -9,9 +9,6 @@ import typescriptIcon from "./typescript.png"
 import htmlIcon from "./html.png"
 import reduxIcon from "./redux.png"
 import nextIcon from "./next.png"
-import planet from "./planet.webp"
-import Bsatellite from "./big-satellite.webp"
-import satellite from "./satellite.webp"
 
 import about01Img from "./about01.png"
 import about02Img from "./about02.png"
@@ -34,7 +31,4 @@ export {
     about02Img,
     about03Img,
     about04Img,
-    Bsatellite,
-    satellite,
-    planet,
 }

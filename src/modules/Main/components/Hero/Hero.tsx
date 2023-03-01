@@ -1,9 +1,10 @@
 import React from "react"
 import { Button, ButtonVariant } from "modules/common/ui/Button"
-import { Section } from "modules/common/ui/Section"
-import { SectionText } from "modules/common/ui/SectionText"
-import { SectionTitle } from "modules/common/ui/SectionTitle"
+import { BsArrowRightCircle } from "react-icons/bs"
 import styles from "./Hero.module.css"
+import { TextFlicker } from "modules/common/ui/TextFlicker"
+
+const flickerData = ["Web Developer", "Content Creator", "Lorem Ipsum"]
 
 function Hero() {
     function clickHandler() {
@@ -13,27 +14,26 @@ function Hero() {
     }
 
     return (
-        <Section isRow isNopadding>
-            <div className={styles.leftSection}>
-                <SectionTitle isMain>
-                    Welcome To <br />
-                    My Personal Portfolio
-                </SectionTitle>
-                <SectionText>
-                    My name is Artur Pazyniuk. I'm a software engineer
-                    specializing in building (ocasionally designing) exceptional
-                    user experiences.
-                    <br /> Let's make something special together.
-                </SectionText>
-                <Button
-                    onClick={clickHandler}
-                    variant={ButtonVariant.FILLED}
-                    isAlt
-                >
-                    Contact Me
-                </Button>
-            </div>
-        </Section>
+        <div className={styles.content}>
+            <span className={styles.tagline}>Per aspera ad astra</span>
+            <h1 className={styles.greeting}>
+                Hi! My name is Artur <br /> I'm{" "}
+                <TextFlicker toRotate={flickerData} />
+            </h1>
+            <p className={styles.description}>
+                My name is Artur Pazyniuk. I'm a software engineer specializing
+                in building (ocasionally designing) exceptional user
+                experiences.
+                <br /> Let's make something special together.
+            </p>
+            <Button
+                onClick={clickHandler}
+                variant={ButtonVariant.CLEAR}
+                className={styles.connect}
+            >
+                Let’s Connect <BsArrowRightCircle className={styles.icon} />
+            </Button>
+        </div>
     )
 }
 
