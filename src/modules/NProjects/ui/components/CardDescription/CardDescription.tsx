@@ -18,39 +18,39 @@ function CardDescription({
     technologies,
 }: CardDescriptionProps) {
     const [isOpen, setIsOpen] = useState(false)
-    const [height, setHeight] = useState("0")
+    const [isOpenContent, setIsOpenContent] = useState(false)
 
     const containerClassName = classNames(styles.container, {
-        [styles.containerOpen]: isOpen,
+        [styles.open]: isOpen,
     })
 
     const contentClassName = classNames(styles.content, {
-        [styles.contentOpen]: isOpen,
+        [styles.open]: isOpen,
     })
 
-    const contentRef = useRef(null)
+    const cardTtitleClassName = classNames(styles.cardTitle, {
+        [styles.open]: isOpen,
+    })
 
-    useEffect(() => {
-        setTimeout(() => {
-            //@ts-ignore
-            console.log(contentRef.current?.offsetHeight)
-        }, 100)
-    }, [isOpen])
+    const cardDescClassName = classNames(styles.cardDesc, {
+        [styles.open]: isOpen,
+    })
+
+    const technologiesClassName = classNames(styles.technologiesContainer, {
+        [styles.open]: isOpen,
+    })
+
+    console.log(isOpenContent)
 
     return (
         <div className={containerClassName}>
-            <div
-                className={contentClassName}
-                ref={contentRef}
-                //@ts-ignore
-                style={{ "--height": height }}
-            >
-                <h2 className={styles.cardTitle}>{title}</h2>
-                <p className={styles.cardDesc}>{description}</p>
+            <div className={contentClassName}>
+                <h2 className={cardTtitleClassName}>{title}</h2>
+                <p className={cardDescClassName}>{description}</p>
 
                 <ProjectTechnologies
                     technologies={technologies}
-                    className={styles.technologiesContainer}
+                    className={technologiesClassName}
                 />
             </div>
 
@@ -58,7 +58,13 @@ function CardDescription({
                 <Button
                     variant={ButtonVariant.FILLED}
                     className={styles.btn}
-                    onClick={() => setIsOpen(prev => !prev)}
+                    onClick={() => {
+                        setIsOpen(prev => !prev)
+                        setIsOpenContent(prev => !prev)
+                        /* setTimeout(() => {
+                            setIsOpenContent(prev => !prev)
+                        }, 1) */
+                    }}
                 >
                     <GoLinkExternal className={styles.btnIcon} />
                     Details
