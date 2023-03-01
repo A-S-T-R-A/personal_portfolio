@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--modal-bg-color);
+    background-color: transparent;
     /* #202f4cc5; */
 }
 
