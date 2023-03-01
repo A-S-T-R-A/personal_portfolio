@@ -9,6 +9,7 @@ function Section({
     className = null,
     isGrid = false,
     isRow = false,
+    isFullHeight = false,
     isNopadding = false,
 }) {
     const sectionClassName = classNames(
@@ -17,6 +18,7 @@ function Section({
             [styles.grid]: isGrid,
             [styles.row]: isRow,
             [styles.nopadding]: isNopadding,
+            [styles.fullHeight]: isFullHeight,
         },
         [className]
     )

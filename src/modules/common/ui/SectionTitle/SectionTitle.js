@@ -6,7 +6,7 @@ function SectionTitle({
     children,
     className = null,
     isMain = false,
-    isCenter = false,
+    isCenter = true,
 }) {
     const titleClassName = classNames(
         styles.title,

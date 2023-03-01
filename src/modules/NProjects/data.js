@@ -66,4 +66,13 @@ export const NProjectsData = [
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 1,
     },
+    {
+        title: "Delivery website",
+        description:
+            "Our idelivery website provides a convenient way to get your desired products delivered right to your doorstep, whether it be groceries, electronics, or household items, saving you time and effort from going out to the store.",
+        img: planet,
+        technologies: ["HTML", "JavaScript", "CSS"],
+        visit: "https://resplendent-marzipan-98ad86.netlify.app/",
+        id: 122,
+    },
 ]

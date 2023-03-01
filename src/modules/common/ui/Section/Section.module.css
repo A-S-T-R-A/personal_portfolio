@@ -10,6 +10,10 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.fullHeight {
+    min-height: calc(100vh - 50px);
+}
+
 @media (max-width: 650px) {
     .container {
         padding: 24px 48px 0;
