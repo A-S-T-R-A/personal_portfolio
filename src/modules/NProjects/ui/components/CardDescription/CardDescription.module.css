@@ -10,8 +10,28 @@
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     padding: 20px 30px;
-    transition: border-radius 0.15s ease;
+    transition: border-radius 0.15s ease, transform 0.7s ease-out, opacity 0.35s ease 0.15s;
     cursor: auto;
+    opacity: 1;
+}
+
+.container.notActive {
+    opacity: 0;
+}
+
+
+@media (max-width: 960px) {
+
+    .container {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+
+    .container.notActive {
+        transform: scaleY(0);
+        opacity: 0;
+    }
 }
 
 .container.open {
@@ -23,7 +43,7 @@
     flex-direction: column;
     justify-content: flex-end;
     opacity: 0;
-    transition: opacity 0s ease;
+    transition: opacity 2s ease;
 }
 
 .content.open {
@@ -32,7 +52,7 @@
 
 .content>*,
 .technologiesContainer>p {
-    transition: all 0.15s ease;
+    transition: all 0.4s ease-out;
 
 }
 
@@ -40,13 +60,11 @@
     color: var(--main-text-color);
     font-size: 0;
     margin-bottom: 0;
-    /*  opacity: 0; */
 }
 
 .cardTitle.open {
     font-size: 24px;
     margin-bottom: 15px;
-    /*  opacity: 1; */
 }
 
 .cardDesc {
@@ -55,14 +73,12 @@
     font-size: 0;
     line-height: 0;
     margin-bottom: 0;
-    /*  opacity: 0 */
 }
 
 .cardDesc.open {
     font-size: 16px;
     line-height: 20.16px;
     margin-bottom: 15px;
-    /*   opacity: 1; */
 }
 
 .technologiesContainer>p {

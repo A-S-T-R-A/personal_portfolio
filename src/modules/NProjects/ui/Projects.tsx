@@ -9,7 +9,7 @@ import { staggerContainer } from "../lib/motion"
 import { ProjectCard } from "./components/ProjectCard/ProjectCard"
 
 export function Projects() {
-    const [active, setActive] = useState("world-2")
+    const [active, setActive] = useState(0)
 
     return (
         <section className={styles.wrapper} id="explore">
@@ -27,8 +27,8 @@ export function Projects() {
                             key={project.id}
                             {...project}
                             index={index}
-                            active={active}
-                            handleClick={setActive}
+                            isActive={active === index}
+                            setActive={setActive}
                         />
                     ))}
                 </div>

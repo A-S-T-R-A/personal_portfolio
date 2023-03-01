@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useState } from "react"
 import styles from "./CardDescription.module.css"
 
 import { GoLinkExternal } from "react-icons/go"
@@ -10,37 +10,43 @@ interface CardDescriptionProps {
     title: string
     description: string
     technologies: any
+    isActive: any
 }
 
 function CardDescription({
     title,
     description,
     technologies,
+    isActive,
 }: CardDescriptionProps) {
-    const [isOpen, setIsOpen] = useState(false)
-    const [isOpenContent, setIsOpenContent] = useState(false)
+    const [isExpanded, setIsExpanded] = useState(false)
 
     const containerClassName = classNames(styles.container, {
-        [styles.open]: isOpen,
+        [styles.open]: isExpanded,
+        [styles.notActive]: !isActive,
     })
 
     const contentClassName = classNames(styles.content, {
-        [styles.open]: isOpen,
+        [styles.open]: isExpanded,
     })
 
     const cardTtitleClassName = classNames(styles.cardTitle, {
-        [styles.open]: isOpen,
+        [styles.open]: isExpanded,
     })
 
     const cardDescClassName = classNames(styles.cardDesc, {
-        [styles.open]: isOpen,
+        [styles.open]: isExpanded,
     })
 
     const technologiesClassName = classNames(styles.technologiesContainer, {
-        [styles.open]: isOpen,
+        [styles.open]: isExpanded,
     })
 
-    console.log(isOpenContent)
+    useEffect(() => {
+        return () => {
+            setIsExpanded(false)
+        }
+    }, [isActive])
 
     return (
         <div className={containerClassName}>
@@ -58,13 +64,7 @@ function CardDescription({
                 <Button
                     variant={ButtonVariant.FILLED}
                     className={styles.btn}
-                    onClick={() => {
-                        setIsOpen(prev => !prev)
-                        setIsOpenContent(prev => !prev)
-                        /* setTimeout(() => {
-                            setIsOpenContent(prev => !prev)
-                        }, 1) */
-                    }}
+                    onClick={() => setIsExpanded(prev => !prev)}
                 >
                     <GoLinkExternal className={styles.btnIcon} />
                     Details

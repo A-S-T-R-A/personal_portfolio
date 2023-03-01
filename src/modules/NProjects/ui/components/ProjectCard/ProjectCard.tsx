@@ -5,15 +5,14 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../../lib/motion"
 import { classNames } from "modules/common/helpers/classNames"
 
-//@ts-ignore
 import CardDescription from "../CardDescription/CardDescription"
 
 interface ExploreCardProps {
     id: number
     title: any
-    index: any
-    active: any
-    handleClick: any
+    index: number
+    isActive: boolean
+    setActive: (arg0: number) => void
     [key: string]: any
 }
 
@@ -21,12 +20,12 @@ export function ProjectCard({
     id,
     title,
     index,
-    active,
-    handleClick,
+    isActive,
+    setActive,
     ...rest
 }: ExploreCardProps) {
     const containerClassName = classNames(styles.container, {
-        [styles.active]: active === id,
+        [styles.active]: isActive,
     })
 
     const { img, description, technologies } = rest
@@ -35,18 +34,22 @@ export function ProjectCard({
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5, 0.75)}
             className={containerClassName}
-            onClick={() => handleClick(id)}
+            onClick={() => setActive(index)}
         >
             <img src={img} alt="project" className={styles.img} />
-            {active !== id ? (
-                <h3 className={styles.h3}>{title}</h3>
-            ) : (
-                <CardDescription
-                    title={title}
-                    description={description}
-                    technologies={technologies}
-                />
-            )}
+
+            <h3
+                className={classNames(styles.h3, { [styles.active]: isActive })}
+            >
+                {title}
+            </h3>
+
+            <CardDescription
+                title={title}
+                description={description}
+                technologies={technologies}
+                isActive={isActive}
+            />
         </motion.div>
     )
 }
