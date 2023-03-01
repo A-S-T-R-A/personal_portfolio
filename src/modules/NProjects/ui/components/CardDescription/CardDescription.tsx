@@ -22,24 +22,25 @@ function CardDescription({
     const [isExpanded, setIsExpanded] = useState(false)
 
     const containerClassName = classNames(styles.container, {
-        [styles.open]: isExpanded,
+        [styles.expanded]: isExpanded,
         [styles.notActive]: !isActive,
     })
 
     const contentClassName = classNames(styles.content, {
-        [styles.open]: isExpanded,
+        [styles.expanded]: isExpanded,
+        [styles.collapsed]: !isExpanded,
     })
 
     const cardTtitleClassName = classNames(styles.cardTitle, {
-        [styles.open]: isExpanded,
+        [styles.expanded]: isExpanded,
     })
 
     const cardDescClassName = classNames(styles.cardDesc, {
-        [styles.open]: isExpanded,
+        [styles.expanded]: isExpanded,
     })
 
     const technologiesClassName = classNames(styles.technologiesContainer, {
-        [styles.open]: isExpanded,
+        [styles.expanded]: isExpanded,
     })
 
     useEffect(() => {
