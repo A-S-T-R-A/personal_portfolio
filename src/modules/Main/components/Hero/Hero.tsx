@@ -15,16 +15,18 @@ function Hero() {
 
     return (
         <div className={styles.content}>
-            <span className={styles.tagline}>Per aspera ad astra</span>
+            <div className={styles.tagline}>Per aspera ad astra</div>
             <h1 className={styles.greeting}>
-                Hi! My name is Artur <br /> I'm{" "}
-                <TextFlicker toRotate={flickerData} />
+                Hi! My name is Artur
+                <br />
+                I'm <TextFlicker toRotate={flickerData} />
             </h1>
-            <p className={styles.description}>
+            <p className={styles.text}>
                 My name is Artur Pazyniuk. I'm a software engineer specializing
                 in building (ocasionally designing) exceptional user
                 experiences.
-                <br /> Let's make something special together.
+                <br />
+                Let's make something special together.
             </p>
             <Button
                 onClick={clickHandler}

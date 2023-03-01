@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./PlanetAnimation.module.css"
-import { planet, satellite, Bsatellite } from "assets/images/MainSection"
+import { planet, satellite, BigSatellite } from "assets/images/MainSection"
 
 export function PlanetAnimation() {
     return (
@@ -8,9 +8,9 @@ export function PlanetAnimation() {
             <img src={planet} alt="planet Img" className={styles.planet} />
             <img src={satellite} alt="satellite" className={styles.satellite} />
             <img
-                src={Bsatellite}
+                src={BigSatellite}
                 alt="Big satellite"
-                className={styles.Bsatellite}
+                className={styles.BigSatellite}
             />
         </div>
     )
