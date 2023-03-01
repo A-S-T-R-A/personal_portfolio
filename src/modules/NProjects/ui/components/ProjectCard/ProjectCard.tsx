@@ -32,7 +32,7 @@ export function ProjectCard({
 
     return (
         <motion.div
-            variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+            variants={fadeIn("right", "spring", index * 0.25, 0.65)}
             className={containerClassName}
             onClick={() => setActive(index)}
         >

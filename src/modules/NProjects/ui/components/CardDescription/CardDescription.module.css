@@ -32,9 +32,7 @@
     }
 }
 
-.container.expanded {
-    border-radius: 24px;
-}
+
 
 .content {
     display: flex;
@@ -42,10 +40,6 @@
     justify-content: flex-end;
     opacity: 0;
     transition: opacity 0.2s ease 0.2s;
-}
-
-.content.expanded {
-    opacity: 1;
 }
 
 .content.collapsed {
@@ -56,18 +50,12 @@
 .content>*,
 .technologiesContainer>p {
     transition: all 0.3s ease-out;
-
 }
 
 .cardTitle {
     color: var(--main-text-color);
     font-size: 0;
     margin-bottom: 0;
-}
-
-.cardTitle.expanded {
-    font-size: 24px;
-    margin-bottom: 15px;
 }
 
 .cardDesc {
@@ -78,25 +66,11 @@
     margin-bottom: 0;
 }
 
-.cardDesc.expanded {
-    font-size: 16px;
-    line-height: 20.16px;
-    margin-bottom: 15px;
-}
-
 .technologiesContainer>p {
     font-size: 0;
     padding: 0;
     margin-bottom: 0;
     border: none;
-}
-
-.technologiesContainer.expanded>p {
-    font: inherit;
-    padding: 3px 6px;
-    border: 1px solid var(--main-text-color);
-    color: var(--main-text-color);
-    margin-bottom: 15px;
 }
 
 .btnContainer {
@@ -113,6 +87,8 @@
     margin-right: 5px;
 }
 
+
+
 .btn:last-child {
     margin-right: 0;
     margin-left: 5px;
@@ -120,4 +96,69 @@
 
 .btnIcon {
     margin-right: 5px;
+}
+
+
+.content.expanded {
+    opacity: 1;
+}
+
+.container.expanded {
+    border-radius: 24px;
+}
+
+.cardTitle.expanded {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cardDesc.expanded {
+    font-size: 16px;
+    line-height: 20.16px;
+    margin-bottom: 15px;
+}
+
+.technologiesContainer.expanded>p {
+    font: inherit;
+    padding: 3px 6px;
+    border: 1px solid var(--main-text-color);
+    color: var(--main-text-color);
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 15px;
+    }
+
+    .container.expanded {
+        max-height: 100%;
+    }
+
+    .content {
+        overflow: hidden
+    }
+
+    .btnContainer {
+        height: 30px;
+    }
+
+    .cardTitle.expanded {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cardDesc.expanded {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    .technologiesContainer.expanded>p {
+        font: inherit;
+        padding: 3px 6px;
+        border: 1px solid var(--main-text-color);
+        color: var(--main-text-color);
+        font-size: 14px;
+    }
 }

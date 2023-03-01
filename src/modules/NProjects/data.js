@@ -33,7 +33,7 @@ export const NProjectsData = [
     {
         title: "Restaurant",
         description:
-            "This restaurant website showcases their menu, location, and hours of operation, providing an easy and convenient way for customers to plan their visit and satisfy their cravings.",
+            "This restaurant website showcases their menu location, and hours of operation, providing an easy and convenient way for customers to plan their visit and satisfy their cravings.",
         img: planet,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://a-s-t-r-a.github.io/small-restaurant-js/",
@@ -69,7 +69,7 @@ export const NProjectsData = [
     {
         title: "Delivery website",
         description:
-            "Our idelivery website provides a convenient way to get your desired products delivered right to your doorstep, whether it be groceries, electronics, or household items, saving you time and effort from going out to the store.",
+            "Our idelivery website provides a convenient way to get your desired products delivered or household items, effort from going out to the store.",
         img: planet,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
