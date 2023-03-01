@@ -7,7 +7,12 @@ function Footer() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.phone}>
-                        <h4 className={styles.linkTitle}>Skype</h4>
+                        <a
+                            className={styles.linkTitle}
+                            href="skype:live:artur0503915024"
+                        >
+                            Skype
+                        </a>
                         <a
                             className={styles.link}
                             href="skype:live:artur0503915024"
@@ -16,7 +21,12 @@ function Footer() {
                         </a>
                     </div>
                     <div className={styles.email}>
-                        <h4 className={styles.linkTitle}>Email</h4>
+                        <a
+                            className={styles.linkTitle}
+                            href="mailto:PazyniukArtur@gmail.com"
+                        >
+                            Email
+                        </a>
                         <a
                             className={styles.link}
                             href="mailto:PazyniukArtur@gmail.com"
