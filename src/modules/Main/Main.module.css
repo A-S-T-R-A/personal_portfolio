@@ -28,8 +28,8 @@
     }
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     .container {
         padding-top: 120px;
     }
-} */
+}
