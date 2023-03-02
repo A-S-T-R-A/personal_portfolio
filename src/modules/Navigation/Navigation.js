@@ -6,6 +6,7 @@ import { classNames } from "modules/common/helpers/classNames"
 
 export function Navigation({ className }) {
     const [navbarVisible, setNavbarVisible] = useState(false)
+
     useEffect(() => {
         function scrolled() {
             window.scrollY > 11

@@ -9,7 +9,7 @@ import { Footer } from "./modules/Footer"
 function App() {
     return (
         <div>
-            <Navigation className={"className"} />
+            <Navigation />
             <div>
                 <Main />
                 <About />
