@@ -10,7 +10,7 @@ export function BurgerCta({ closeClickHandler }) {
             .getElementById("contact")
             ?.scrollIntoView({ behavior: "smooth" })
 
-        closeClickHandler()
+        closeClickHandler && closeClickHandler()
     }
 
     return (
