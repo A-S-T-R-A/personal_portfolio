@@ -1,6 +1,6 @@
 .ctaBtn {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     width: fit-content;
     height: 100%;

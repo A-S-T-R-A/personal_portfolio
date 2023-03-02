@@ -15,6 +15,7 @@ export function BurgerCta({ closeClickHandler }) {
 
     return (
         <div className={styles.ctaBtn}>
+            <SocialIcons onClick={closeClickHandler} />
             <Button
                 onClick={clickHandler}
                 variant={ButtonVariant.OUTLINED}
@@ -22,7 +23,6 @@ export function BurgerCta({ closeClickHandler }) {
             >
                 Contact Me
             </Button>
-            <SocialIcons onClick={closeClickHandler} />
         </div>
     )
 }
