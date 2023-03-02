@@ -14,9 +14,11 @@
 
 .container {
     width: 1200px;
-    min-height: 600px;
+    min-height: inherit;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border: 1px solid red;
 }
 
 @media (max-width: 960px) {
