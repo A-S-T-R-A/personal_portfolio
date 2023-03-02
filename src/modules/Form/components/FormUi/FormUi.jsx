@@ -58,7 +58,7 @@ export function FormUi({
                     <textarea
                         className={styles.textarea}
                         type="text"
-                        name="email"
+                        name="message"
                         value={message}
                         onChange={handleMessageChange}
                         placeholder="Your Message"
