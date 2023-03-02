@@ -5,7 +5,7 @@ import styles from "./BurgerNav.module.css"
 
 export function BurgerNav({ showBurger, setShowBurger }) {
     const [height, setHeight] = useState(window.innerHeight)
-    console.log(height)
+
     useEffect(() => {
         function handleResize() {
             setHeight(window.innerHeight)
