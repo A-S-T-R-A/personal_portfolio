@@ -14,7 +14,7 @@
 
 .container {
     width: 1200px;
-    min-height: inherit;
+    height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,8 +28,8 @@
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .container {
         padding-top: 120px;
     }
-}
+} */

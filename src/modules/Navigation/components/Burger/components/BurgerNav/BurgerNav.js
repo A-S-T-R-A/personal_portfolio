@@ -36,7 +36,7 @@ export function BurgerNav({ showBurger, setShowBurger }) {
             <div className={styles.wrapper} onClick={menuClickHandler}>
                 <div
                     className={styles.container}
-                    style={{ minHeight: `${height}px` }}
+                    style={{ height: `${height}px` }}
                 >
                     <NavigationList
                         closeClickHandler={closeClickHandler}
