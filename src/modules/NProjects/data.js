@@ -1,26 +1,6 @@
-import {
-    projImg1_1,
-    projImg1_2,
-    projImg1_3,
-    projImg2_1,
-    projImg2_2,
-    projImg2_3,
-    projImg3_1,
-    projImg3_2,
-    projImg3_3,
-    projImg4_1,
-    projImg4_2,
-    projImg4_3,
-    projImg5_1,
-    projImg5_2,
-    projImg5_3,
-    projImg9_1,
-    projImg10_1,
-} from "assets/images/projects"
-
 import planet from "assets/nProjects/planet-02.png"
 
-export const NProjectsData = [
+export const projectsData = [
     {
         title: "Travel website",
         description:
