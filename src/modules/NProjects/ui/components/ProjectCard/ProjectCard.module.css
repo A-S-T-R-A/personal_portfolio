@@ -31,7 +31,7 @@
     width: max-content;
     position: absolute;
     z-index: 0;
-    color: #ffffff;
+    color: var(--main-text-color);
     opacity: 1;
     transition: opacity 0.3s ease 0.3s;
 }
