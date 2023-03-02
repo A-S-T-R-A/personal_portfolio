@@ -4,11 +4,12 @@ import styles from "./Section.module.css"
 import { classNames } from "modules/common/helpers/classNames"
 
 function Section({
-    id = null,
+    id = "",
     children,
-    className = null,
+    className = "",
     isGrid = false,
     isRow = false,
+    isFullHeight = false,
     isNopadding = false,
 }) {
     const sectionClassName = classNames(
@@ -17,6 +18,7 @@ function Section({
             [styles.grid]: isGrid,
             [styles.row]: isRow,
             [styles.nopadding]: isNopadding,
+            [styles.fullHeight]: isFullHeight,
         },
         [className]
     )
