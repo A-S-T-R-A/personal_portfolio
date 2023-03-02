@@ -1,9 +1,22 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { BurgerCta } from "../"
 import { NavigationList } from "../../../common"
 import styles from "./BurgerNav.module.css"
 
 export function BurgerNav({ showBurger, setShowBurger }) {
+    const [height, setHeight] = useState(window.innerHeight)
+
+    useEffect(() => {
+        function handleResize() {
+            setHeight(window.innerHeight)
+        }
+
+        window.addEventListener("resize", handleResize)
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [])
+
     function menuClickHandler(e) {
         e.stopPropagation()
     }
@@ -20,7 +33,10 @@ export function BurgerNav({ showBurger, setShowBurger }) {
             onClick={closeClickHandler}
         >
             <div className={styles.wrapper} onClick={menuClickHandler}>
-                <div className={styles.container}>
+                <div
+                    className={styles.container}
+                    style={{ height: `${height}px` }}
+                >
                     <NavigationList closeClickHandler={closeClickHandler} />
                     <BurgerCta closeClickHandler={closeClickHandler} />
                 </div>
