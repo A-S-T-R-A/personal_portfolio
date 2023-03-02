@@ -1,0 +1,168 @@
+.container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    border-radius: 10px;
+    cursor: auto;
+    overflow: hidden;
+    opacity: 1;
+    transition: border-radius 0.15s ease, transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.container.notActive {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 30px 0;
+    width: 100%;
+    color: var(--main-text-color);
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transform: translateY(calc(100% + 57px));
+    transition: transform 0.3s ease-out;
+}
+
+.content.expanded {
+    transform: translateY(0);
+}
+
+.cardTitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cardDesc {
+    font-size: 16px;
+    line-height: 20.16px;
+    margin-bottom: 15px;
+    color: var(--lightgray-color)
+}
+
+.technologiesContainer>p {
+    font: inherit;
+    padding: 3px 6px;
+    border: 1px solid var(--main-text-color);
+    color: var(--main-text-color);
+    margin-bottom: 5px;
+}
+
+.btnContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: bgOpacityOut 0.5s linear forwards;
+}
+
+.btnContainer.expanded {
+    animation: bgOpacityIn 0.5s linear forwards;
+}
+
+.btn {
+    font-weight: bold;
+    width: 100%;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.btn:last-child {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.btnIcon {
+    margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-height: 100%;
+    }
+
+    .content {
+        overflow: hidden;
+    }
+
+    .cardTitle {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    .cardDesc {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    .technologiesContainer>p {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+
+    .btn {
+        font-weight: bold;
+        width: 100%;
+        height: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+
+    .container.notActive {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes bgOpacityIn {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    1% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    99% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes bgOpacityOut {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    1% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    99% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}

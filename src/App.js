@@ -2,7 +2,8 @@ import { About } from "modules/About"
 import { Form } from "modules/Form"
 import { Main } from "modules/Main"
 import { Navigation } from "modules/Navigation"
-import { Projects } from "modules/Projects"
+/* import { Projects } from "modules/Projects" */
+import { Projects } from "modules/NProjects"
 import { Technologies } from "modules/Technologies"
 import { Footer } from "./modules/Footer"
 
