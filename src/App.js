@@ -3,18 +3,17 @@ import { Form } from "modules/Form"
 import { Main } from "modules/Main"
 import { Navigation } from "modules/Navigation"
 /* import { Projects } from "modules/Projects" */
+import { Projects } from "modules/NProjects"
 import { Technologies } from "modules/Technologies"
 import { Footer } from "./modules/Footer"
-
-import { Projects } from "modules/NProjects"
 
 function App() {
     return (
         <div>
-            {/*    <Navigation /> */}
+            <Navigation />
             <div>
-                {/*  <Main />
-                <About /> */}
+                <Main />
+                <About />
                 <Projects />
                 <Technologies />
                 <Form />

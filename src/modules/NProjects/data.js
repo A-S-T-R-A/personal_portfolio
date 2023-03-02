@@ -1,4 +1,4 @@
-import planet from "assets/nProjects/planet-02.png"
+import planet from "assets/images/nProjects/planet-02.png"
 
 export const projectsData = [
     {
