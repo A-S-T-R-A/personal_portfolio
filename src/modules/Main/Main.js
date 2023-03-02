@@ -6,7 +6,7 @@ import { PlanetAnimation } from "./components/PlanetAnimation"
 function Main() {
     const [height, setHeight] = useState(window.innerHeight)
 
-    useEffect(() => {
+    /* useEffect(() => {
         function handleResize() {
             setHeight(window.innerHeight)
         }
@@ -15,13 +15,13 @@ function Main() {
         return () => {
             window.removeEventListener("resize", handleResize)
         }
-    }, [])
+    }, []) */
 
     return (
         <main
             className={styles.wrapper}
             id="home"
-            style={{ height: `${height}px` }}
+            style={{ minHeight: `${height}px` }}
         >
             <section className={styles.container}>
                 <Hero />
