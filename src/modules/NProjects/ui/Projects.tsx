@@ -11,12 +11,8 @@ export function Projects() {
 
     return (
         //@ts-ignore
-        <Section id="projects" className={styles.wrapper}>
+        <Section id="projects" className={styles.wrapper} isFullHeight>
             <SectionTitle>Projects</SectionTitle>
-            <SectionText>
-                A selection of my range of work from simple Landing Pages to
-                complex Fullstack Web Applications
-            </SectionText>
             <motion.div
                 //@ts-ignore
                 variants={staggerContainer}

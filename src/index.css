@@ -51,6 +51,9 @@ select {
     --x-large-fonts: 24px;
     --xx-large-fonts: 32px;
 
+    /* HEIGHTS */
+
+    --navbar-height: 70px;
 }
 
 html {

@@ -4,12 +4,8 @@
     line-height: 58px;
     width: max-content;
     max-width: 100%;
-    background: var(--main-text-color);
+    color: var(--main-text-color);
     /* linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%); */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 16px;
     padding: 0;
 }
 
@@ -21,6 +17,7 @@
 
 .center {
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 @media(max-width: 650px) {
