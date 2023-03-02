@@ -28,10 +28,9 @@
 }
 
 .container {
-    padding: 80px 30px;
+    padding: 50px 30px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    border: 1px solid red;
 }
