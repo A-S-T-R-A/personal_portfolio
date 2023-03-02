@@ -9,37 +9,24 @@ import { classNames } from "modules/common/helpers/classNames"
 interface CardDescriptionProps {
     title: string
     description: string
-    technologies: any
-    isActive: any
+    technologies: string[]
+    isActive: boolean
+    visit: string
 }
 
-function CardDescription({
-    title,
-    description,
-    technologies,
-    isActive,
-}: CardDescriptionProps) {
+function CardDescription(props: CardDescriptionProps) {
+    const { title, description, technologies, isActive, visit } = props
     const [isExpanded, setIsExpanded] = useState(false)
 
     const containerClassName = classNames(styles.container, {
-        [styles.expanded]: isExpanded,
         [styles.notActive]: !isActive,
     })
 
     const contentClassName = classNames(styles.content, {
         [styles.expanded]: isExpanded,
-        [styles.collapsed]: !isExpanded,
     })
 
-    const cardTtitleClassName = classNames(styles.cardTitle, {
-        [styles.expanded]: isExpanded,
-    })
-
-    const cardDescClassName = classNames(styles.cardDesc, {
-        [styles.expanded]: isExpanded,
-    })
-
-    const technologiesClassName = classNames(styles.technologiesContainer, {
+    const buttonsClassName = classNames(styles.btnContainer, {
         [styles.expanded]: isExpanded,
     })
 
@@ -52,16 +39,16 @@ function CardDescription({
     return (
         <div className={containerClassName}>
             <div className={contentClassName}>
-                <h2 className={cardTtitleClassName}>{title}</h2>
-                <p className={cardDescClassName}>{description}</p>
+                <h2 className={styles.cardTitle}>{title}</h2>
+                <p className={styles.cardDesc}>{description}</p>
 
                 <ProjectTechnologies
                     technologies={technologies}
-                    className={technologiesClassName}
+                    className={styles.technologiesContainer}
                 />
             </div>
 
-            <div className={styles.btnContainer}>
+            <div className={buttonsClassName}>
                 <Button
                     variant={ButtonVariant.FILLED}
                     className={styles.btn}
@@ -70,7 +57,14 @@ function CardDescription({
                     <GoLinkExternal className={styles.btnIcon} />
                     Details
                 </Button>
-                <Button variant={ButtonVariant.OUTLINED} className={styles.btn}>
+                <Button
+                    variant={ButtonVariant.OUTLINED}
+                    className={styles.btn}
+                    onClick={e => {
+                        e.preventDefault()
+                        window.open(visit, "_blank")
+                    }}
+                >
                     <GoLinkExternal className={styles.btnIcon} />
                     Visit
                 </Button>

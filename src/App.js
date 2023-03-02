@@ -11,10 +11,10 @@ import { Projects } from "modules/NProjects"
 function App() {
     return (
         <div>
-            <Navigation />
+            {/*    <Navigation /> */}
             <div>
-                <Main />
-                <About />
+                {/*  <Main />
+                <About /> */}
                 <Projects />
                 <Technologies />
                 <Form />

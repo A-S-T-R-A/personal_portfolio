@@ -8,12 +8,6 @@
     flex-direction: column;
 }
 
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
 .projectsList {
     display: flex;
     flex-direction: column;
@@ -30,5 +24,11 @@
 
     .wrapper {
         height: calc(90vh - 50px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
     }
 }
