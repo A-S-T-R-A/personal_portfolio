@@ -1,9 +1,8 @@
 import React from "react"
 import styles from "./NavigationList.module.css"
 import { NavigationLink } from "../NavigationLink"
-import { menuData } from "../data"
 
-export function NavigationList({ closeClickHandler }) {
+export function NavigationList({ closeClickHandler, menuData }) {
     return (
         <ul className={styles.list}>
             {menuData.map(item => {
