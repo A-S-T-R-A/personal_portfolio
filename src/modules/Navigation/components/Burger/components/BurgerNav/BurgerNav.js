@@ -31,10 +31,12 @@ export function BurgerNav({ showBurger, setShowBurger }) {
         <div
             className={`${styles.overlay} ${showBurger ? styles.navOpen : ""}`}
             onClick={closeClickHandler}
-            style={{ height: `${height}px` }}
         >
             <div className={styles.wrapper} onClick={menuClickHandler}>
-                <div className={styles.container}>
+                <div
+                    className={styles.container}
+                    style={{ height: `${height}px` }}
+                >
                     <NavigationList closeClickHandler={closeClickHandler} />
                     <BurgerCta closeClickHandler={closeClickHandler} />
                 </div>
