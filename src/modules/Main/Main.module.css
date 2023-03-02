@@ -1,6 +1,6 @@
 .wrapper {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     color: var(--main-text-color);
     background-image: url('assets/images/MainSection/main-bg.png');
     background-position: top center;
@@ -10,26 +10,18 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border: 1px solid red;
 }
 
 .container {
     width: 1200px;
-    height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
 
 @media (max-width: 960px) {
     .container {
         flex-direction: column-reverse;
-        /*  padding-top: 50px; */
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding-top: 120px;
     }
 }

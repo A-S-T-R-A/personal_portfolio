@@ -18,11 +18,12 @@ function Main() {
     }, [])
 
     return (
-        <main className={styles.wrapper} id="home">
-            <section
-                className={styles.container}
-                style={{ height: `${height}px` }}
-            >
+        <main
+            className={styles.wrapper}
+            id="home"
+            style={{ height: `${height}px` }}
+        >
+            <section className={styles.container}>
                 <Hero />
                 <PlanetAnimation />
             </section>
