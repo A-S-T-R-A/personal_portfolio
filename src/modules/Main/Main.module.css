@@ -24,5 +24,12 @@
 @media (max-width: 960px) {
     .container {
         flex-direction: column-reverse;
+        /*  padding-top: 50px; */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 120px;
     }
 }
