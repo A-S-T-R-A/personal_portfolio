@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { menuData } from "../../../../data"
 import { BurgerCta } from "../"
 import { NavigationList } from "../../../common"
 import styles from "./BurgerNav.module.css"
@@ -37,7 +38,10 @@ export function BurgerNav({ showBurger, setShowBurger }) {
                     className={styles.container}
                     style={{ height: `${height}px` }}
                 >
-                    <NavigationList closeClickHandler={closeClickHandler} />
+                    <NavigationList
+                        closeClickHandler={closeClickHandler}
+                        menuData={menuData.slice(0, -1)}
+                    />
                     <BurgerCta closeClickHandler={closeClickHandler} />
                 </div>
             </div>
