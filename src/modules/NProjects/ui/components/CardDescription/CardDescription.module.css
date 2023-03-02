@@ -10,7 +10,7 @@
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     padding: 20px 30px;
-    transition: border-radius 0.15s ease, transform 0.7s ease-out, opacity 0.35s ease 0.15s;
+    transition: border-radius 0.15s ease, transform 0.5s ease-out, opacity 0.5s ease-out;
     cursor: auto;
     opacity: 1;
 }
@@ -31,8 +31,6 @@
         opacity: 0;
     }
 }
-
-
 
 .content {
     display: flex;
@@ -87,8 +85,6 @@
     margin-right: 5px;
 }
 
-
-
 .btn:last-child {
     margin-right: 0;
     margin-left: 5px;
@@ -98,9 +94,8 @@
     margin-right: 5px;
 }
 
-
 .content.expanded {
-    opacity: 1;
+    opacity: 0;
 }
 
 .container.expanded {
@@ -129,6 +124,7 @@
 @media (max-width: 480px) {
     .container {
         padding: 10px 15px;
+        /*  max-height: 100%; */
     }
 
     .container.expanded {
@@ -136,7 +132,7 @@
     }
 
     .content {
-        overflow: hidden
+        overflow: hidden;
     }
 
     .btnContainer {
@@ -145,13 +141,13 @@
 
     .cardTitle.expanded {
         font-size: 20px;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
     }
 
     .cardDesc.expanded {
         font-size: 15px;
         line-height: 18px;
-        margin-bottom: 10px;
+        /*  margin-bottom: 10px; */
     }
 
     .technologiesContainer.expanded>p {
