@@ -1,6 +1,6 @@
 .wrapper {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     color: var(--main-text-color);
     background-image: url('assets/images/MainSection/main-bg.png');
     background-position: top center;
@@ -14,9 +14,10 @@
 
 .container {
     width: 1200px;
-    min-height: 600px;
+    min-height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 960px) {

@@ -8,6 +8,7 @@
     margin-right: auto;
     flex-direction: column;
     padding-bottom: 20px;
+    align-items: center;
 }
 
 .projectsList {
@@ -15,13 +16,16 @@
     flex-direction: column;
     min-height: 600px;
     gap: 1.25rem;
+    max-width: 650px;
+    width: 100%;
 }
 
 @media (min-width:1024px) {
     .projectsList {
         flex-direction: row;
-        min-height: 0;
+        min-height: 300px;
         height: 100%;
+        max-width: 100%;
     }
 
     .wrapper {

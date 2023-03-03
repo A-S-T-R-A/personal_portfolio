@@ -33,7 +33,7 @@
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.5em;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .icon {
@@ -66,7 +66,7 @@
 
 @media (max-width: 650px) {
     .greeting {
-        margin-top: 40px;
+        margin-top: 10px;
         font-size: clamp(40px, 3vw + 10px, 44px);
     }
 }
@@ -76,15 +76,17 @@
         font-size: 16px;
     }
 
-    .content {
-        padding: 20px;
-    }
-
     .greeting {
         font-size: clamp(32px, 5vw + 10px, 40px);
     }
 
     .description {
         font-size: clamp(12px, 4vw + 1px, 18px)
+    }
+}
+
+@media (max-height: 400px) {
+    .connect {
+        margin-bottom: 10px;
     }
 }
