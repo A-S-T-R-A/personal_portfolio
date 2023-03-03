@@ -6,10 +6,10 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    opacity: 0.5;
-    transition: opacity 0.5s ease-out;
+    filter: brightness(50%);
+    transition: filter 0.5s ease-out;
 }
 
 .img.active {
-    opacity: 1;
+    filter: brightness(100%);
 }
