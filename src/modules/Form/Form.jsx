@@ -73,6 +73,7 @@ export default function Form() {
             setEmailError(true)
             return
         }
+
         sendEmail()
     }
 
