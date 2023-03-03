@@ -78,7 +78,7 @@ export default function Form() {
 
     return (
         <Section id="contact">
-            <SectionTitle>Contact me</SectionTitle>
+            <SectionTitle withDescription>Contact me</SectionTitle>
             <SectionText>
                 Chat with me and see how can I help to bring your ideas to life.
             </SectionText>

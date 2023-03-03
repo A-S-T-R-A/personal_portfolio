@@ -13,9 +13,9 @@ function App() {
             <Navigation />
             <div>
                 <Main />
-                <About />
                 <Projects />
                 <Technologies />
+                <About />
                 <Form />
             </div>
             <Footer />

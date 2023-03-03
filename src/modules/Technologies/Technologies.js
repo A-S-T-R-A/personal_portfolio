@@ -6,7 +6,7 @@ import styles from "./Technologies.module.css"
 function Technologies() {
     return (
         <Section id="technologies">
-            <SectionTitle>Technologies</SectionTitle>
+            <SectionTitle withDescription>Technologies</SectionTitle>
             <SectionText>
                 I've worked with a range of technologies in the web development
                 world. From Frontend to Backend and design.

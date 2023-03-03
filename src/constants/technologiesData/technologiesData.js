@@ -7,6 +7,7 @@ import {
     cssIcon,
     typescriptIcon,
     htmlIcon,
+    graphqlIcon,
 } from "assets/images/other"
 
 export const technologiesData = [
@@ -29,22 +30,29 @@ export const technologiesData = [
         desc: "Experience with Next",
     },
     {
+        id: 9,
+        title: "Graph QL",
+        img: graphqlIcon,
+        desc: "Experience with Graph QL",
+    },
+    {
         id: 4,
         title: "TypeScript",
         img: typescriptIcon,
         desc: "Experience with TS",
+    },
+
+    {
+        id: 6,
+        title: "Node.js",
+        img: nodeIcon,
+        desc: "Experience with Node and Databases",
     },
     {
         id: 5,
         title: "JavaScript",
         img: jsIcon,
         desc: "Experience with React.js",
-    },
-    {
-        id: 6,
-        title: "Node.js",
-        img: nodeIcon,
-        desc: "Experience with Node and Databases",
     },
     {
         id: 7,
