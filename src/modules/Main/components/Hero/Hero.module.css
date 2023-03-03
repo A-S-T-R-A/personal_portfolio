@@ -46,7 +46,7 @@
     letter-spacing: 0.8px;
     transition: 0.3s ease-in-out;
     width: fit-content;
-    padding-left: 0;
+    padding: 20px 0;
 }
 
 .connect:hover {
@@ -76,15 +76,17 @@
         font-size: 16px;
     }
 
-    .content {
-        padding: 20px;
-    }
-
     .greeting {
         font-size: clamp(32px, 5vw + 10px, 40px);
     }
 
     .description {
         font-size: clamp(12px, 4vw + 1px, 18px)
+    }
+}
+
+@media (max-height: 400px) {
+    .connect {
+        margin-bottom: 10px;
     }
 }
