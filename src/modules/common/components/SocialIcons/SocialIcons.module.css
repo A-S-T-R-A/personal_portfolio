@@ -15,7 +15,6 @@
 }
 
 .item:hover {
-    background-color: var(--main-bg-color);
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -37,8 +36,6 @@
     }
 
     .item:hover {
-        background-color: var(--main-bg-color);
-        /* #212d45; */
         transform: scale(1.2);
         cursor: pointer;
     }
