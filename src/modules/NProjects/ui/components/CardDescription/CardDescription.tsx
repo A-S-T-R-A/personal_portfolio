@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import styles from "./CardDescription.module.css"
 
 import { GoLinkExternal } from "react-icons/go"
+import { BiDetail } from "react-icons/bi"
 import { Button, ButtonVariant } from "modules/common/ui/Button"
 import ProjectTechnologies from "../ProjectTechnologies/ProjectTechnologies"
 import { classNames } from "modules/common/helpers/classNames"
@@ -54,7 +55,7 @@ function CardDescription(props: CardDescriptionProps) {
                     className={styles.btn}
                     onClick={() => setIsExpanded(prev => !prev)}
                 >
-                    <GoLinkExternal className={styles.btnIcon} />
+                    <BiDetail className={styles.btnIcon} />
                     Details
                 </Button>
                 <Button
