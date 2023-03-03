@@ -61,12 +61,12 @@
     justify-content: space-between;
     z-index: 2;
     padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.8);
-    animation: bgOpacityOut 0.5s linear forwards;
+    background-color: rgba(0, 0, 0, 1);
+    transition: background-color 0.3s ease;
 }
 
 .btnContainer.expanded {
-    animation: bgOpacityIn 0.5s linear forwards;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .btn {
@@ -128,41 +128,5 @@
     .container.notActive {
         transform: scaleY(0);
         opacity: 0;
-    }
-}
-
-@keyframes bgOpacityIn {
-    0% {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    1% {
-        background-color: rgba(0, 0, 0, 1);
-    }
-
-    99% {
-        background-color: rgba(0, 0, 0, 1);
-    }
-
-    100% {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-}
-
-@keyframes bgOpacityOut {
-    0% {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    1% {
-        background-color: rgba(0, 0, 0, 1);
-    }
-
-    99% {
-        background-color: rgba(0, 0, 0, 1);
-    }
-
-    100% {
-        background-color: rgba(0, 0, 0, 0.8);
     }
 }
