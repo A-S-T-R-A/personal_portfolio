@@ -6,7 +6,7 @@ import { PlanetAnimation } from "./components/PlanetAnimation"
 function Main() {
     const [height, setHeight] = useState(window.innerHeight)
 
-    /* useEffect(() => {
+    useEffect(() => {
         function handleResize() {
             setHeight(window.innerHeight)
         }
@@ -15,7 +15,7 @@ function Main() {
         return () => {
             window.removeEventListener("resize", handleResize)
         }
-    }, []) */
+    }, [])
 
     return (
         <main
