@@ -22,7 +22,7 @@ export function ProjectCard(props: ExploreCardProps) {
         [styles.active]: isActive,
     })
 
-    const { img, description, technologies, visit } = rest
+    const { img, imgDesktop, description, technologies, visit } = rest
 
     return (
         <motion.div
@@ -30,7 +30,11 @@ export function ProjectCard(props: ExploreCardProps) {
             className={containerClassName}
             onClick={() => setActive(index)}
         >
-            <ProjectImage img={img} />
+            <ProjectImage
+                img={img}
+                imgDesktop={imgDesktop}
+                isActive={isActive}
+            />
 
             <h3
                 className={classNames(styles.h3, { [styles.active]: isActive })}
