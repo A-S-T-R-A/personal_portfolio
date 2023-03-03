@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { classNames } from "modules/common/helpers/classNames"
 import styles from "./ProjectTechnologies.module.css"
+import { Tooltip } from "modules/common/ui"
 
 interface ProjectTechnologiesProps {
     technologies: any
@@ -11,15 +12,15 @@ function ProjectTechnologies({
     technologies,
     className,
 }: ProjectTechnologiesProps) {
-    const containerClassName = classNames(styles.container, {}, [className])
     const [showTooltip, setShowTooltip] = useState(-1)
-    console.log(showTooltip)
+
+    const containerClassName = classNames(styles.container, {}, [className])
+
     return (
         <div className={containerClassName}>
             {technologies.map((tech: any, index: number) => (
-                <>
+                <div key={index}>
                     <p
-                        key={index}
                         className={classNames(styles.tech, {
                             [styles.withTooltip]: tech.tooltip,
                         })}
@@ -29,15 +30,12 @@ function ProjectTechnologies({
                         {tech.title}
                     </p>
                     {tech.tooltip && (
-                        <div
-                            className={classNames(styles.description, {
-                                [styles.active]: showTooltip === index,
-                            })}
-                        >
-                            {tech.tooltip}
-                        </div>
+                        <Tooltip
+                            isActive={showTooltip === index}
+                            tooltip={tech.tooltip}
+                        />
                     )}
-                </>
+                </div>
             ))}
         </div>
     )
