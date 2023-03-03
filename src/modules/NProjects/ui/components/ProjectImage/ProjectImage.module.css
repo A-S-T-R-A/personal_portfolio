@@ -1,0 +1,15 @@
+.img {
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-out;
+}
+
+.img.active {
+    opacity: 1;
+}

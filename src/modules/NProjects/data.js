@@ -19,6 +19,7 @@ export const projectsData = [
         description:
             "Find your dream home with our extensive collection of real estate listings.",
         img: realtor,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://a-s-t-r-a.github.io/responsive-travel-website/",
         id: 8,
@@ -28,6 +29,7 @@ export const projectsData = [
         description:
             "Join us at our restaurant and indulge in an unforgettable dining experience with exquisite dishes, hand-crafted cocktails, and exceptional service.",
         img: restaurant,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://a-s-t-r-a.github.io/small-restaurant-js/",
         id: 9,
@@ -37,6 +39,7 @@ export const projectsData = [
         description:
             "Immerse yourself in high-quality sound with our premium noise-cancelling headphones, designed for comfort and performance.",
         img: beats2,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://cosmic-lokum-10d23a.netlify.app/",
         id: 3,
@@ -46,6 +49,7 @@ export const projectsData = [
         description:
             "Experience studio-quality sound and ultimate comfort with our cutting-edge headphones, designed with the latest in audio technology and premium materials.",
         img: beats,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://tranquil-pothos-611864.netlify.app/",
         id: 0,
@@ -55,6 +59,7 @@ export const projectsData = [
         description:
             "Our idelivery website provides a convenient way to get your desired products delivered right to your doorstep, whether it be groceries, electronics, or household items, saving you time and effort from going out to the store.",
         img: delivery,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 1,
@@ -64,6 +69,7 @@ export const projectsData = [
         description:
             "Get ready for Halloween with our spooktacular store, featuring all the costumes, decorations, and accessories you need to create the ultimate Halloween experience!",
         img: halloween,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 10,
@@ -73,6 +79,7 @@ export const projectsData = [
         description:
             "Discover the freshest and most delicious sushi in town at our authentic Japanese restaurant.",
         img: sushi,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 11,
@@ -82,6 +89,7 @@ export const projectsData = [
         description:
             "Book your next adventure with our easy-to-use flight booking app, designed to help you find the best deals and plan your travel itinerary with ease.",
         img: plane,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 12,
@@ -91,6 +99,7 @@ export const projectsData = [
         description:
             "Experience an unforgettable dining journey at our restaurant, where we use the freshest and highest quality ingredients to craft a menu that is both diverse and delectable.",
         img: restaurant_react,
+        imgDesktop: realtor,
         technologies: ["React"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 13,
@@ -100,6 +109,7 @@ export const projectsData = [
         description:
             "Elevate your fashion game with our exquisite collection of watches, crafted with precision and designed to make a bold statement – shop now to find your next favorite accessory.",
         img: watches,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 14,
@@ -109,6 +119,7 @@ export const projectsData = [
         description:
             "Embrace the magic of the holiday season and create unforgettable memories with our wide selection of festive decorations, gifts, and accessories – shop now to make your Christmas dreams come true.",
         img: christmas,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 15,
@@ -119,6 +130,7 @@ export const projectsData = [
         description:
             "Explore the world and discover new adventures with our comprehensive selection of travel packages, flights, and accommodations – book now to start your journey.",
         img: travel,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 16,
@@ -128,6 +140,7 @@ export const projectsData = [
         description:
             "Experience the rich, bold flavors of our premium coffee blends, expertly crafted to elevate your morning routine – shop our collection now to savor the perfect cup every day.",
         img: coffee,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 17,
@@ -138,6 +151,7 @@ export const projectsData = [
         description:
             "Stay informed and inspired with our engaging and informative blog, featuring a variety of topics and perspectives that cater to your interests – explore now to expand your knowledge and curiosity.",
         img: blog,
+        imgDesktop: realtor,
         technologies: ["HTML", "JavaScript", "CSS"],
         visit: "https://resplendent-marzipan-98ad86.netlify.app/",
         id: 18,
