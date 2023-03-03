@@ -27,10 +27,10 @@ function ProjectImage({ img, imgDesktop, isActive }: ProjectImageProps) {
 
     return (
         <>
-            {width <= 1024 ? (
-                <img src={img} alt="project" className={className} />
-            ) : (
+            {width >= 1024 && imgDesktop ? (
                 <img src={imgDesktop} alt="project" className={className} />
+            ) : (
+                <img src={img} alt="project" className={className} />
             )}
         </>
     )
