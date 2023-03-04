@@ -43,7 +43,7 @@
 @media (max-width: 960px) {
     .logoContainer {
         position: fixed;
-        left: 2rem;
+        left: 20px;
         padding: 0;
     }
 }
