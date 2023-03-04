@@ -27,6 +27,7 @@ export const projectsData = [
         visit: "https://real-estate-sable-six.vercel.app/",
         id: 8,
     },
+
     {
         title: "E-commerce",
         description:
@@ -47,25 +48,23 @@ export const projectsData = [
             "Book your next adventure with our easy-to-use flight booking app, designed to help you find the best deals and plan your travel itinerary with ease.",
         img: planeImgPhone,
         imgDesktop: planeImg,
-        technologies: [
-            {
-                title: "HTML",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "JavaScript",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "CSS",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-        ],
+        technologies: [{ title: "React.js" }, { title: "Framer Motion" }],
         visit: "https://unrivaled-douhua-a237e4.netlify.app/",
         id: 12,
+    },
+    {
+        title: "Blog website",
+        description:
+            "Stay informed and inspired with our engaging and informative blog, featuring a variety of topics and perspectives that cater to your interests – explore now to expand your knowledge and curiosity.",
+        img: blogImgPhone,
+        imgDesktop: blogImg,
+        technologies: [
+            { title: "Next.js" },
+            { title: "GraphQL" },
+            { title: "Tailwind" },
+        ],
+        visit: "https://astra-blog.vercel.app/",
+        id: 18,
     },
     {
         title: "Restaurant",
@@ -73,23 +72,7 @@ export const projectsData = [
             "Experience an unforgettable dining journey at our restaurant, where we use the freshest and highest quality ingredients to craft a menu that is both diverse and delectable.",
         img: restaurantReactImgPhone,
         imgDesktop: restaurantReactImg,
-        technologies: [
-            {
-                title: "HTML",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "JavaScript",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "CSS",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-        ],
+        technologies: [{ title: "React.js" }, { title: "Tailwind" }],
         visit: "https://stirring-phoenix-05f76a.netlify.app/",
         id: 13,
     },
@@ -102,47 +85,15 @@ export const projectsData = [
         technologies: [
             {
                 title: "HTML",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
             },
             {
                 title: "JavaScript",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
             },
             {
                 title: "CSS",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
             },
         ],
         visit: "https://a-s-t-r-a.github.io/responsive-watches-website/",
         id: 14,
-    },
-    {
-        title: "Blog website",
-        description:
-            "Stay informed and inspired with our engaging and informative blog, featuring a variety of topics and perspectives that cater to your interests – explore now to expand your knowledge and curiosity.",
-        img: blogImgPhone,
-        imgDesktop: blogImg,
-        technologies: [
-            {
-                title: "HTML",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "JavaScript",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "CSS",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-        ],
-        visit: "https://astra-blog.vercel.app/",
-        id: 18,
     },
 ]
