@@ -1,18 +1,12 @@
-import {
-    Section,
-    SectionDivider,
-    SectionText,
-    SectionTitle,
-} from "modules/common/ui"
+import { Section, SectionText, SectionTitle } from "modules/common/ui"
 import { TechnologiesList } from "./components/TechnologiesList/TechnologiesList"
 import { Timeline } from "./components/Timeline/Timeline"
 import styles from "./Technologies.module.css"
 
 function Technologies() {
     return (
-        <Section id="technologies" className={styles.wrapper}>
-            <SectionDivider isDivider />
-            <SectionTitle>Technologies</SectionTitle>
+        <Section id="technologies">
+            <SectionTitle withDescription>Technologies</SectionTitle>
             <SectionText>
                 I've worked with a range of technologies in the web development
                 world. From Frontend to Backend and design.
@@ -21,7 +15,6 @@ function Technologies() {
                 <TechnologiesList />
                 <Timeline />
             </div>
-            <SectionDivider isColorAlt />
         </Section>
     )
 }

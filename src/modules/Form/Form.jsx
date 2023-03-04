@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser"
 import { FormUi } from "./components/FormUi/FormUi"
 import { Section, SectionText, SectionTitle } from "modules/common/ui"
 import { FormLoading } from "./components/FormLoading/FormLoading"
+import styles from "./Form.module.css"
 
 export default function Form() {
     const [name, setName] = useState("")
@@ -78,8 +79,8 @@ export default function Form() {
     }
 
     return (
-        <Section id="contact">
-            <SectionTitle>Contact me</SectionTitle>
+        <Section id="contact" className={styles.wrapper}>
+            <SectionTitle withDescription>Contact me</SectionTitle>
             <SectionText>
                 Chat with me and see how can I help to bring your ideas to life.
             </SectionText>
