@@ -31,18 +31,17 @@
     align-items: flex-start;
     width: 100%;
     min-height: 40px;
-    max-width: 130px;
+    max-width: 65px;
+    margin-left: 20px;
 }
 
 .logo {
-    padding: 0 10px;
-    position: relative;
+    width: 100%;
 }
 
-@media (max-width: 961px) {
+@media (max-width: 960px) {
     .logoContainer {
-        position: absolute;
-        left: 1rem;
+        position: fixed;
         top: 1.5rem;
     }
 }

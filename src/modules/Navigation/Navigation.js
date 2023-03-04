@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styles from "./Navigation.module.css"
 import { Burger, Navbar } from "./components"
-import Art1us from "assets/images/common/art1us.png"
+import { Logo } from "assets/images/other"
 import { classNames } from "modules/common/helpers/classNames"
 
 export function Navigation({ className }) {
@@ -28,7 +28,7 @@ export function Navigation({ className }) {
         <div className={wrapperClassName}>
             <div className={styles.container}>
                 <div className={styles.logoContainer}>
-                    <img src={Art1us} className={styles.logo} alt="" />
+                    <img src={Logo} className={styles.logo} alt="" />
                 </div>
                 <Navbar />
                 <Burger />
