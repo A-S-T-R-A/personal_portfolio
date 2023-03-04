@@ -16,6 +16,7 @@ function Main() {
                 <Hero />
                 <PlanetAnimation />
             </section>
+            <div className={styles.sun} />
         </main>
     )
 }

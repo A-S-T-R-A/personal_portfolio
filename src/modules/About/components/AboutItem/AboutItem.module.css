@@ -22,7 +22,8 @@
 }
 
 .desc {
-    font-size: 14px;
+    font-size: var(--medium-font);
     text-align: center;
-    color: var(--lightgray-color);
+    color: var(--gray-color);
+
 }

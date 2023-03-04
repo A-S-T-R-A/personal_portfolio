@@ -4,7 +4,7 @@ import { BsArrowRightCircle } from "react-icons/bs"
 import styles from "./Hero.module.css"
 import { TextFlicker } from "modules/common/ui/TextFlicker"
 
-const flickerData = ["Web Developer", "Content Creator", "Lorem Ipsum"]
+const flickerData = ["Web Developer", "UI/UX Designer", "Content Creator"]
 
 function Hero() {
     function clickHandler() {
@@ -15,7 +15,7 @@ function Hero() {
 
     return (
         <div className={styles.content}>
-            <div className={styles.tagline}>Per aspera ad astra</div>
+            {/* <div className={styles.tagline}>Per aspera ad astra</div> */}
             <h1 className={styles.greeting}>
                 Hi! My name is Artur
                 <br />

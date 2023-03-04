@@ -1,11 +1,8 @@
 .wrapper {
     width: 100%;
     height: 100%;
+    padding-top: calc(var(--navbar-height) / 2);
     color: var(--main-text-color);
-    background-image: url('assets/images/MainSection/main-bg.png');
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
