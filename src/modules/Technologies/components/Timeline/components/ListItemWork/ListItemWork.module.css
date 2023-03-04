@@ -20,17 +20,3 @@
     /* gray; */
     margin-top: 5px;
 }
-
-.description {
-    width: 100%;
-    background-color: var(--modal-bg-color);
-    /* #243556cd; */
-    color: var(--lightgray-color);
-    /* rgba(255, 255, 255, 0.688); */
-    font-size: 12px;
-    padding: 10px;
-    border-radius: 5px;
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-}

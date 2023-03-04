@@ -8,6 +8,7 @@
     min-width: 110px;
     transition: flex 0.5s ease-out;
     flex: 2;
+    overflow: hidden;
 }
 
 .container.active {
