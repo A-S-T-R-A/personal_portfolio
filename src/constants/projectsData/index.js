@@ -1,16 +1,16 @@
-import planeImg from "assets/images/nProjects/plane.png"
-import restaurantReactImg from "assets/images/nProjects/restaurant_react.png"
-import watchesImg from "assets/images/nProjects/watches.png"
-import blogImg from "assets/images/nProjects/blog.png"
-import realtorImg from "assets/images/nProjects/realtor.png"
-import beats2Img from "assets/images/nProjects/beats2.png"
+import planeImg from "assets/images/nProjects/plane.webp"
+import restaurantReactImg from "assets/images/nProjects/restaurant_react.webp"
+import watchesImg from "assets/images/nProjects/watches.webp"
+import blogImg from "assets/images/nProjects/blog.webp"
+import realtorImg from "assets/images/nProjects/realtor.webp"
+import beats2Img from "assets/images/nProjects/beats2.webp"
 
-import planeImgPhone from "assets/images/nProjects/planePhone.png"
-import restaurantReactImgPhone from "assets/images/nProjects/restaurantReactPhone.png"
-import watchesImgPhone from "assets/images/nProjects/watchesPhone.png"
-import blogImgPhone from "assets/images/nProjects/blogPhone.png"
-import realtorImgPhone from "assets/images/nProjects/realtorPhone.png"
-import beats2ImgPhone from "assets/images/nProjects/beats2Phone.png"
+import planeImgPhone from "assets/images/nProjects/planePhone.webp"
+import restaurantReactImgPhone from "assets/images/nProjects/restaurantReactPhone.webp"
+import watchesImgPhone from "assets/images/nProjects/watchesPhone.webp"
+import blogImgPhone from "assets/images/nProjects/blogPhone.webp"
+import realtorImgPhone from "assets/images/nProjects/realtorPhone.webp"
+import beats2ImgPhone from "assets/images/nProjects/beats2Phone.webp"
 
 export const projectsData = [
     {
