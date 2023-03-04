@@ -1,7 +1,7 @@
 import { Section, SectionText, SectionTitle } from "modules/common/ui"
 import { AboutList } from "./components/AboutList/AboutList"
 
-export function About() {
+export default function About() {
     return (
         <Section id="about">
             <SectionTitle withDescription>About</SectionTitle>
