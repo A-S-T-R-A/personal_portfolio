@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    cursor: default;
+}
+
 img {
     max-width: 100%;
 }
@@ -17,20 +21,33 @@ select {
 }
 
 :root {
-    --primary1-color: hsl(204, 23.8%, 95.9%);
-    --background1-color: #0F1624;
-    --project-card-background: #1e293d;
-    --accent1-color: hsl(34.9, 98.6%, 72.9%);
-    --button-color: hsl(205.1, 100%, 36.1%);
-    --background2-color: hsl(232.7, 27.3%, 23.7%);
-
-    --primary-color: #edf2f8;
-    --secondary-color: #313bac;
-    --black-color: #030303;
-    --lightGray-color: #e4e4e4;
+    --main-bg-color: #0f061f;
+    --navbar-bg-color: #1f202923;
+    --modal-bg-color: #101825;
+    --main-text-color: #f1f1f1;
+    --accent-color: #743AD0;
+    --tooltip-bg-color: #743ad0e0;
+    --alternative-color: #5FB2F8;
     --gray-color: #6b7688;
-    --brown-color: #46364a;
-    --white-color: #ffffff;
+    --lightgray-color: #e4e4e4;
+    --warning-color: red;
+
+    /* FONTS */
+
+    --xx-small-fonts: 9px;
+    --x-small-fonts: 10px;
+    --small-fonts: 13px;
+
+    --medium-font: 16px;
+
+    --large-fonts: 18px;
+    --x-large-fonts: 24px;
+    --xx-large-fonts: 32px;
+
+
+    /* HEIGHTS */
+
+    --navbar-height: 70px;
 }
 
 html {
@@ -39,8 +56,7 @@ html {
 }
 
 body {
-    /* background: rgb(57, 43, 57); cool color*/
-    background: var(--background1-color);
+    background: var(--main-bg-color);
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
 }
@@ -62,5 +78,13 @@ li {
 }
 
 span.accent {
-    -webkit-text-fill-color: plum;
+    -webkit-text-fill-color: var(--accent-color)
+}
+
+.app {
+    background-image: url('assets/images/universe.f742a005ecd.png');
+    background-repeat: repeat;
+    background-size: contain;
+    transform: rotate(90%);
+
 }

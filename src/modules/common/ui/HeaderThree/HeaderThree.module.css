@@ -1,7 +1,8 @@
 .container {
     font-weight: 500;
     letter-spacing: 2px;
-    color: #9cc9e3;
+    color: var(--alternative-color);
+    /*  #9cc9e3; */
     padding: .5rem 0;
     font-size: 2rem;
 }

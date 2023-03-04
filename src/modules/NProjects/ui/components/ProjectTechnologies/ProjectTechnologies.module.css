@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    position: relative;
+}
+
+.tech {
+    padding: 0.5rem;
+    border: 1px solid var(--main-text-color);
+    color: var(--main-text-color);
+    cursor: default;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.withTooltip:hover {
+    border-color: var(--gray-color);
+    color: var(--gray-color);
+}
+
+.description {
+    width: 80%;
+    background-color: var(--tooltip-bg-color);
+    /* #243556cd; */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: var(--main-text-color);
+    /* rgba(255, 255, 255, 0.688); */
+    text-shadow: 1px 1px 1px black;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.description.active {
+    opacity: 1;
+}

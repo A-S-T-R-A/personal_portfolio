@@ -55,6 +55,7 @@
 }
 
 .btn {
+    padding: 0;
     width: 100%;
     border-radius: 5px;
     font-weight: 700;
@@ -87,13 +88,14 @@
 .error {
     position: absolute;
     font-size: 13px;
-    font-weight: var(--fw-mid);
-    color: red;
+    font-weight: 500;
+    color: var(--warning-color);
+    /* red; */
     left: 16px;
     margin-top: 45px;
 }
 
 .inpError {
-    border: 2px solid red;
+    border: 2px solid var(--warning-color);
     outline: none;
 }

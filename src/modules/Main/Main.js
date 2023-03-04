@@ -1,14 +1,23 @@
+import { useState } from "react"
 import styles from "./Main.module.css"
-import { Section } from "modules/common/ui/Section"
-import { BgAnimation } from "./components/BgAnimation"
 import { Hero } from "./components/Hero"
+import { PlanetAnimation } from "./components/PlanetAnimation"
 
 function Main() {
+    const [height, setHeight] = useState(window.innerHeight)
+
     return (
-        <Section id="home" isGrid className={styles.section}>
-            <Hero />
-            <BgAnimation />
-        </Section>
+        <main
+            className={styles.wrapper}
+            id="home"
+            style={{ minHeight: `${height}px` }}
+        >
+            <section className={styles.container}>
+                <Hero />
+                <PlanetAnimation />
+            </section>
+            <div className={styles.sun} />
+        </main>
     )
 }
 

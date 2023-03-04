@@ -1,9 +1,10 @@
-import React, { useState } from "react"
-/* import emailjs from "@emailjs/browser" */
+import React, { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
 
 import { FormUi } from "./components/FormUi/FormUi"
 import { Section, SectionText, SectionTitle } from "modules/common/ui"
 import { FormLoading } from "./components/FormLoading/FormLoading"
+import styles from "./Form.module.css"
 
 export default function Form() {
     const [name, setName] = useState("")
@@ -17,19 +18,18 @@ export default function Form() {
     const [loading, setLoading] = useState(false)
     const [isSuccess, setIsSuccess] = useState(false)
 
+    const formRef = useRef()
+
     function sendEmail() {
         setLoading(true)
-        /*  emailjs
+        setShowForm(false)
+        emailjs
             .sendForm(
                 process.env.REACT_APP_SERVICE_ID,
                 process.env.REACT_APP_TEMPLATE_ID,
                 formRef.current,
                 process.env.REACT_APP_USER_ID
-            ) */
-        new Promise(resolve => {
-            setShowForm(false)
-            setTimeout(() => resolve(), 1500)
-        })
+            )
             .then(
                 result => {
                     setIsSuccess(true)
@@ -74,12 +74,13 @@ export default function Form() {
             setEmailError(true)
             return
         }
+
         sendEmail()
     }
 
     return (
-        <Section id="contact">
-            <SectionTitle>Contact me</SectionTitle>
+        <Section id="contact" className={styles.wrapper}>
+            <SectionTitle withDescription>Contact me</SectionTitle>
             <SectionText>
                 Chat with me and see how can I help to bring your ideas to life.
             </SectionText>
@@ -96,6 +97,7 @@ export default function Form() {
                     email={email}
                     message={message}
                     onClick={submitHandler}
+                    formRef={formRef}
                 />
             ) : (
                 <FormLoading loading={loading} isSuccess={isSuccess} />

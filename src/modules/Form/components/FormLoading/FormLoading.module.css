@@ -13,19 +13,20 @@
 }
 
 .loadingIcon {
-    color: rgba(255, 255, 255, 0.833);
+    color: var(--lightgray-color);
+    /* rgba(255, 255, 255, 0.833); */
     font-size: 60px;
     margin-bottom: 10px;
 }
 
 .successIcon {
-    color: green;
+    color: var(--accent-color);
     font-size: 60px;
     margin-bottom: 10px;
 }
 
 .failIcon {
-    color: red;
+    color: var(--warning-color);
     font-size: 60px;
     margin-bottom: 10px;
 }

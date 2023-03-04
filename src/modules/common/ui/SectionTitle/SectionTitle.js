@@ -4,13 +4,18 @@ import { classNames } from "modules/common/helpers/classNames"
 
 function SectionTitle({
     children,
-    className,
+    className = null,
     isMain = false,
-    isCenter = false,
+    isCenter = true,
+    withDescription = false,
 }) {
     const titleClassName = classNames(
         styles.title,
-        { [styles.main]: isMain, [styles.center]: isCenter },
+        {
+            [styles.main]: isMain,
+            [styles.center]: isCenter,
+            [styles.withDescription]: withDescription,
+        },
         [className]
     )
 

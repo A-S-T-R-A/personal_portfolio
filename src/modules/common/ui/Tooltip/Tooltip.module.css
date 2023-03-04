@@ -1,0 +1,23 @@
+.description {
+    width: 100%;
+    background-color: var(--tooltip-bg-color);
+    /* #243556cd; */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: var(--main-text-color);
+    /* rgba(255, 255, 255, 0.688); */
+    text-shadow: 1px 1px 1px black;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0px;
+    bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.description.active {
+    opacity: 1;
+}

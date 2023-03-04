@@ -14,7 +14,7 @@ export function Burger() {
 
     return (
         <div
-            className={showBurger ? styles.wrapper : styles.disNone}
+            className={showBurger ? styles.wrapper : styles.displayNone}
             onClick={clickHandler}
         >
             <BurgerIcon showBurger={showBurger} setShowBurger={setShowBurger} />

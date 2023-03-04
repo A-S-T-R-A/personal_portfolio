@@ -2,7 +2,7 @@
     padding: 0.5em;
     cursor: pointer;
     position: fixed;
-    right: 1rem;
+    right: 7px;
     top: 1rem;
     border: 0;
     border-radius: 50%;
@@ -12,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #202f4cc5;
+    background-color: transparent;
+    /* #202f4cc5; */
 }
 
 .burgerOpen {
@@ -40,7 +41,8 @@
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--primary1-color);
+    background: var(--lightgray-color);
+    /* var(--primary1-color); */
     width: 1.5em;
     height: 3px;
     border-radius: 1em;

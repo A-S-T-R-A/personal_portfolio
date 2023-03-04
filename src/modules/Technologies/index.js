@@ -1,4 +1,5 @@
-import Technologies from "./Technologies"
+import { lazy } from "react"
 
-export { Technologies }
+export const Technologies = lazy(() => import("./Technologies"))
+
 export { technologiesData, timelineData } from "constants"

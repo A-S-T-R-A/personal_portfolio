@@ -6,19 +6,27 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
-    color: white;
+    color: var(--main-text-color);
+    position: relative;
+    /* white; */
 }
 
 .yearContainer {
-    margin-right: 3rem;
+    margin-right: 10px;
 }
 
 .year {
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.789);
+    color: var(--lightgray-color);
+    /* rgba(255, 255, 255, 0.789); */
 }
 
 .works {
     flex: 1;
     max-width: 300px;
+}
+
+.tooltip {
+    left: 50px;
+    bottom: 80px;
 }

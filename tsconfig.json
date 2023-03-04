@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "strictNullChecks": true,
+        "module": "ESNext",
+        "target": "es2016",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "baseUrl": "src",
+        "moduleResolution": "node"
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.css",
+        "modules/common/types/global.d.ts"
+    ]
+}

@@ -1,97 +1,99 @@
-import {
-    projImg1_1,
-    projImg1_2,
-    projImg1_3,
-    projImg2_1,
-    projImg2_2,
-    projImg2_3,
-    projImg3_1,
-    projImg3_2,
-    projImg3_3,
-    projImg4_1,
-    projImg4_2,
-    projImg4_3,
-    projImg5_1,
-    projImg5_2,
-    projImg5_3,
-} from "assets/images/projects"
+import planeImg from "assets/images/nProjects/plane.webp"
+import restaurantReactImg from "assets/images/nProjects/restaurant_react.webp"
+import watchesImg from "assets/images/nProjects/watches.webp"
+import blogImg from "assets/images/nProjects/blog.webp"
+import realtorImg from "assets/images/nProjects/realtor.webp"
+import beats2Img from "assets/images/nProjects/beats2.webp"
+
+import planeImgPhone from "assets/images/nProjects/planePhone.webp"
+import restaurantReactImgPhone from "assets/images/nProjects/restaurantReactPhone.webp"
+import watchesImgPhone from "assets/images/nProjects/watchesPhone.webp"
+import blogImgPhone from "assets/images/nProjects/blogPhone.webp"
+import realtorImgPhone from "assets/images/nProjects/realtorPhone.webp"
+import beats2ImgPhone from "assets/images/nProjects/beats2Phone.webp"
 
 export const projectsData = [
     {
-        title: "Flight agency",
+        title: "Real Estate",
         description:
-            "Start your journey with our flight agency website, where you can book flights, view travel deals, and get all the information you need to make your travel experience comfortable and hassle-free, including destination guides, luggage policies, and travel tips",
-        images: [projImg5_1, projImg5_2, projImg5_3],
-        tags: ["Web App"],
-        technologies: ["React", "SCSS"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://sparkling-puffpuff-01ec61.netlify.app/",
-        visit: "https://sparkling-puffpuff-01ec61.netlify.app/",
-        id: 4,
+            "An amazing Real Estate Application. With rental homes and for-sale properties, advanced property filtering, property details page with an image carousel, and much more.",
+        img: realtorImgPhone,
+        imgDesktop: realtorImg,
+        technologies: [
+            { title: "Next.js" },
+            { title: "Rapid API" },
+            { title: "Chakra UI" },
+        ],
+        visit: "https://real-estate-sable-six.vercel.app/",
+        id: 8,
     },
+
     {
-        title: "Sushi restaurant",
+        title: "E-commerce",
         description:
-            "Welcome to our sushi restaurant website, where you can explore our menu, make a reservation, and order your favorite sushi dishes online for pickup or delivery.",
-        images: [projImg4_1, projImg4_2, projImg4_3],
-        tags: ["Landing Page"],
-        technologies: ["HTML", "JavaScript", "CSS"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://cosmic-lokum-10d23a.netlify.app/",
-        visit: "https://cosmic-lokum-10d23a.netlify.app/",
+            "E-commerce application with the ability to add and edit products on the go using a Sanity, advanced cart, checkout functionalities and the complete integration with Stripe to cover real payments.",
+        img: beats2ImgPhone,
+        imgDesktop: beats2Img,
+        technologies: [
+            { title: "Next.js" },
+            { title: "Stripe" },
+            { title: "Sanity" },
+        ],
+        visit: "https://ecommerce-art1us.vercel.app/",
         id: 3,
     },
-
     {
-        title: "Delivery website",
+        title: "Flight Booking App",
         description:
-            "Our idelivery website provides a convenient way to get your desired products delivered right to your doorstep, whether it be groceries, electronics, or household items, saving you time and effort from going out to the store.",
-        images: [projImg2_1, projImg2_2, projImg2_3],
-        tags: ["Web App"],
-        technologies: ["HTML", "JavaScript", "CSS"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://resplendent-marzipan-98ad86.netlify.app/",
-        visit: "https://resplendent-marzipan-98ad86.netlify.app/",
-        id: 1,
+            "Book your next adventure with our easy-to-use flight booking app, designed to help you find the best deals and plan your travel itinerary with ease.",
+        img: planeImgPhone,
+        imgDesktop: planeImg,
+        technologies: [{ title: "React.js" }, { title: "Framer Motion" }],
+        visit: "https://unrivaled-douhua-a237e4.netlify.app/",
+        id: 12,
     },
     {
-        title: "Halloween event",
+        title: "Blog website",
         description:
-            "Step into the spooky season with our Halloween event website, where you can find information on upcoming events and order items to get a taste of the Halloween fun you can expect.",
-        images: [projImg3_1, projImg3_2, projImg3_3],
-        tags: ["Landing Page"],
-        technologies: ["HTML", "JavaScript", "CSS"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://jade-pony-f69691.netlify.app/",
-        visit: "https://jade-pony-f69691.netlify.app/",
-        id: 2,
+            "Stay informed and inspired with our engaging and informative blog, featuring a variety of topics and perspectives that cater to your interests – explore now to expand your knowledge and curiosity.",
+        img: blogImgPhone,
+        imgDesktop: blogImg,
+        technologies: [
+            { title: "Next.js" },
+            { title: "GraphQL" },
+            { title: "Tailwind" },
+        ],
+        visit: "https://astra-blog.vercel.app/",
+        id: 18,
     },
-
     {
-        title: "Beats store",
+        title: "Restaurant",
         description:
-            "Experience the ultimate in sound quality with our headphones store website, where you can browse a wide selection of headphones and audio accessories, read reviews, and make a purchase, all from the comfort of your own home.",
-        images: [projImg1_1, projImg1_2, projImg1_3],
-        tags: ["Web App"],
-        technologies: ["HTML", "JavaScript", "CSS"],
-        dates: {
-            start: "14.05.2210",
-            finish: "14.05.2210",
-        },
-        source: "https://tranquil-pothos-611864.netlify.app/",
-        visit: "https://tranquil-pothos-611864.netlify.app/",
-        id: 0,
+            "Experience an unforgettable dining journey at our restaurant, where we use the freshest and highest quality ingredients to craft a menu that is both diverse and delectable.",
+        img: restaurantReactImgPhone,
+        imgDesktop: restaurantReactImg,
+        technologies: [{ title: "React.js" }, { title: "Tailwind" }],
+        visit: "https://stirring-phoenix-05f76a.netlify.app/",
+        id: 13,
+    },
+    {
+        title: "Watches",
+        description:
+            "Elevate your fashion game with our exquisite collection of watches, crafted with precision and designed to make a bold statement – shop now to find your next favorite accessory.",
+        img: watchesImgPhone,
+        imgDesktop: watchesImg,
+        technologies: [
+            {
+                title: "HTML",
+            },
+            {
+                title: "JavaScript",
+            },
+            {
+                title: "CSS",
+            },
+        ],
+        visit: "https://a-s-t-r-a.github.io/responsive-watches-website/",
+        id: 14,
     },
 ]

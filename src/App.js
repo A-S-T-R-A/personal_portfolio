@@ -1,24 +1,32 @@
 import { About } from "modules/About"
+import { useScrollTimeoutLoading } from "modules/common/helpers/useScrollTimeoutLoading"
 import { Form } from "modules/Form"
 import { Main } from "modules/Main"
 import { Navigation } from "modules/Navigation"
-import { Projects } from "modules/Projects"
+import { Projects } from "modules/NProjects"
 import { Technologies } from "modules/Technologies"
+import { Suspense } from "react"
 import { Footer } from "./modules/Footer"
 
 function App() {
+    const { ready } = useScrollTimeoutLoading(500)
+
     return (
-        <div>
-            <Navigation />
-            <div>
+        <Suspense fallback={<></>}>
+            <div className="app">
+                <Navigation />
                 <Main />
-                <About />
-                <Projects />
-                <Technologies />
-                <Form />
+                {ready && (
+                    <>
+                        <About />
+                        <Projects />
+                        <Technologies />
+                        <Form />
+                        <Footer />
+                    </>
+                )}
             </div>
-            <Footer />
-        </div>
+        </Suspense>
     )
 }
 

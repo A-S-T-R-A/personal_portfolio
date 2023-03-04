@@ -19,7 +19,8 @@
 .navPrev,
 .navNext {
     position: absolute;
-    color: rgba(255, 255, 255, 0.547);
+    color: var(--gray-color);
+    /* rgba(255, 255, 255, 0.547); */
     font-size: 40px;
     top: calc(50% - 20px);
     z-index: 3;
@@ -29,7 +30,8 @@
 
 .navPrev:hover,
 .navNext:hover {
-    color: #0269a5;
+    color: var(--alternative-color);
+    /* #0269a5; */
 }
 
 .navPrev {

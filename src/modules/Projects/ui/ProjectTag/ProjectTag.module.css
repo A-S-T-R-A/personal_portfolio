@@ -1,8 +1,10 @@
 .tag {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    background-color: var(--project-card-background);
-    color: rgba(255, 255, 255, 0.719);
+    background-color: var(--modal-bg-color);
+    /* var(--project-card-background); */
+    color: var(--gray-color);
+    /*  rgba(255, 255, 255, 0.719); */
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -16,10 +18,13 @@
 }
 
 .tag:hover {
-    color: #fff;
+    color: var(--main-text-color);
+    /* #fff; */
 }
 
 .active {
-    background-color: #0269a5;
-    color: #fff;
+    background-color: var(--alternative-color);
+    /*  #0269a5; */
+    color: var(--main-text-color);
+    /* #fff; */
 }

@@ -4,26 +4,33 @@ import styles from "./Section.module.css"
 import { classNames } from "modules/common/helpers/classNames"
 
 function Section({
-    id,
+    id = "",
     children,
-    className,
+    className = "",
     isGrid = false,
     isRow = false,
+    isFullHeight = false,
     isNopadding = false,
+    isWithPadding = false,
 }) {
-    const sectionClassName = classNames(
+    const wrapperClassName = classNames(styles.wrapper, {
+        [styles.fullHeight]: isFullHeight,
+        [styles.withPadding]: isWithPadding,
+        [styles.noPadding]: isNopadding,
+    })
+
+    const containerClassName = classNames(
         styles.container,
         {
             [styles.grid]: isGrid,
             [styles.row]: isRow,
-            [styles.nopadding]: isNopadding,
         },
         [className]
     )
 
     return (
-        <section id={id} className={sectionClassName}>
-            {children}
+        <section id={id} className={wrapperClassName}>
+            <div className={containerClassName}>{children}</div>
         </section>
     )
 }

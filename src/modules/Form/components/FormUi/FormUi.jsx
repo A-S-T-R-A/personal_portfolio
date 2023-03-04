@@ -1,6 +1,6 @@
 import { classNames } from "modules/common/helpers/classNames"
 import { Button } from "modules/common/ui/Button"
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import styles from "./FormUi.module.css"
 
 export function FormUi({
@@ -16,6 +16,9 @@ export function FormUi({
     message,
     handleMessageChange,
 }) {
+    const nameRef = useRef()
+    const emailRef = useRef()
+
     const nameInputClassName = classNames(styles.inputs, {
         [styles.inpError]: nameError,
     })
@@ -24,11 +27,24 @@ export function FormUi({
         [styles.inpError]: emailError,
     })
 
+    useEffect(() => {
+        function focusOnErrorField() {
+            if (nameError) {
+                nameRef.current.scrollIntoView()
+            } else if (emailError) {
+                emailRef.current.scrollIntoView()
+            }
+        }
+
+        focusOnErrorField()
+    }, [nameError, emailError])
+
     return (
         <form onSubmit={submitHandler} className={styles.form} ref={formRef}>
             <div className={styles.formContainer}>
                 <div className={styles.inputWrap}>
                     <input
+                        ref={nameRef}
                         id="nameInput"
                         className={nameInputClassName}
                         type="text"
@@ -43,6 +59,7 @@ export function FormUi({
                 </div>
                 <div className={styles.inputWrap}>
                     <input
+                        ref={emailRef}
                         className={emailInputClassName}
                         type="text"
                         name="email"
@@ -58,7 +75,7 @@ export function FormUi({
                     <textarea
                         className={styles.textarea}
                         type="text"
-                        name="email"
+                        name="message"
                         value={message}
                         onChange={handleMessageChange}
                         placeholder="Your Message"
