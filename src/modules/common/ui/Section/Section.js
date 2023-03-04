@@ -11,9 +11,12 @@ function Section({
     isRow = false,
     isFullHeight = false,
     isNopadding = false,
+    isWithPadding = false,
 }) {
     const wrapperClassName = classNames(styles.wrapper, {
         [styles.fullHeight]: isFullHeight,
+        [styles.withPadding]: isWithPadding,
+        [styles.noPadding]: isNopadding,
     })
 
     const containerClassName = classNames(
@@ -21,7 +24,6 @@ function Section({
         {
             [styles.grid]: isGrid,
             [styles.row]: isRow,
-            [styles.noPadding]: isNopadding,
         },
         [className]
     )

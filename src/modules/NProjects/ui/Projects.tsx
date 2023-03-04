@@ -11,8 +11,9 @@ export default function Projects() {
 
     return (
         //@ts-ignore
-        <Section id="projects" className={styles.wrapper}>
+        <Section id="projects" className={styles.wrapper} isWithPadding>
             <SectionTitle withDescription>Projects</SectionTitle>
+            {/* @ts-ignore */}
             <SectionText>Some examples of my work</SectionText>
             <motion.div
                 //@ts-ignore

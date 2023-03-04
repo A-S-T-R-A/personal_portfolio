@@ -37,10 +37,13 @@ select {
     --xx-small-fonts: 9px;
     --x-small-fonts: 10px;
     --small-fonts: 13px;
-    --medium-fonts: 16px;
+
+    --medium-font: 16px;
+
     --large-fonts: 18px;
     --x-large-fonts: 24px;
     --xx-large-fonts: 32px;
+
 
     /* HEIGHTS */
 

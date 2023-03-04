@@ -22,7 +22,7 @@
 }
 
 .desc {
-    font-size: 14px;
+    font-size: var(--medium-font);
     text-align: center;
     color: var(--gray-color);
 

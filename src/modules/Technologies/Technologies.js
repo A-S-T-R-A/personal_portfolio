@@ -5,9 +5,9 @@ import styles from "./Technologies.module.css"
 
 function Technologies() {
     return (
-        <Section id="technologies">
+        <Section id="technologies" isNopadding>
             <SectionTitle withDescription>Technologies</SectionTitle>
-            <SectionText>
+            <SectionText className={styles.text}>
                 I've worked with a range of technologies in the web development
                 world. From Frontend to Backend and design.
             </SectionText>

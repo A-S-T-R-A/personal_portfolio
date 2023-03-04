@@ -1,7 +1,16 @@
 .wrapper {
     width: 100%;
-    padding: var(--navbar-height) 0;
+    padding-top: var(--navbar-height);
+    padding-bottom: 20px;
 }
+
+.noPadding {
+    padding-bottom: 0;
+}
+
+/* .wrapper.withPadding {
+    padding-bottom: var(--navbar-height);
+} */
 
 .container {
     display: flex;
@@ -40,8 +49,4 @@
 
 .row {
     flex-direction: row;
-}
-
-.noPadding {
-    padding: 0;
 }
