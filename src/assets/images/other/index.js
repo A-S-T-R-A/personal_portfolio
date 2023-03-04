@@ -9,6 +9,7 @@ import typescriptIcon from "./typescript.png"
 import htmlIcon from "./html.png"
 import reduxIcon from "./redux.png"
 import nextIcon from "./next.png"
+import graphqlIcon from "./graphql.png"
 
 import about01Img from "./about01.png"
 import about02Img from "./about02.png"
@@ -27,6 +28,7 @@ export {
     htmlIcon,
     reduxIcon,
     typescriptIcon,
+    graphqlIcon,
     about01Img,
     about02Img,
     about03Img,

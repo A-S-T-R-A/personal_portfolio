@@ -12,20 +12,23 @@ function Section({
     isFullHeight = false,
     isNopadding = false,
 }) {
-    const sectionClassName = classNames(
+    const wrapperClassName = classNames(styles.wrapper, {
+        [styles.fullHeight]: isFullHeight,
+    })
+
+    const containerClassName = classNames(
         styles.container,
         {
             [styles.grid]: isGrid,
             [styles.row]: isRow,
-            [styles.nopadding]: isNopadding,
-            [styles.fullHeight]: isFullHeight,
+            [styles.noPadding]: isNopadding,
         },
         [className]
     )
 
     return (
-        <section id={id} className={sectionClassName}>
-            {children}
+        <section id={id} className={wrapperClassName}>
+            <div className={containerClassName}>{children}</div>
         </section>
     )
 }

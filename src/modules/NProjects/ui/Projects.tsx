@@ -12,11 +12,8 @@ export function Projects() {
     return (
         //@ts-ignore
         <Section id="projects" className={styles.wrapper}>
-            <SectionTitle>Projects</SectionTitle>
-            <SectionText>
-                A selection of my range of work from simple Landing Pages to
-                complex Fullstack Web Applications
-            </SectionText>
+            <SectionTitle withDescription>Projects</SectionTitle>
+            <SectionText>Some examples of my work</SectionText>
             <motion.div
                 //@ts-ignore
                 variants={staggerContainer}
