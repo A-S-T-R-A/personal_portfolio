@@ -6,17 +6,14 @@ import { staggerContainer } from "../lib/motion"
 import { ProjectCard } from "./components/ProjectCard/ProjectCard"
 import { Section, SectionText, SectionTitle } from "modules/common/ui"
 
-export function Projects() {
+export default function Projects() {
     const [active, setActive] = useState(0)
 
     return (
         //@ts-ignore
         <Section id="projects" className={styles.wrapper}>
-            <SectionTitle>Projects</SectionTitle>
-            <SectionText>
-                A selection of my range of work from simple Landing Pages to
-                complex Fullstack Web Applications
-            </SectionText>
+            <SectionTitle withDescription>Projects</SectionTitle>
+            <SectionText>Some examples of my work</SectionText>
             <motion.div
                 //@ts-ignore
                 variants={staggerContainer}

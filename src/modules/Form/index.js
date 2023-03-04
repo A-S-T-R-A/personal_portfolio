@@ -1,2 +1,3 @@
-import Form from "./Form"
-export { Form }
+import { lazy } from "react"
+
+export const Form = lazy(() => import("./Form"))
