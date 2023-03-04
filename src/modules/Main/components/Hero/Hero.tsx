@@ -4,7 +4,7 @@ import { BsArrowRightCircle } from "react-icons/bs"
 import styles from "./Hero.module.css"
 import { TextFlicker } from "modules/common/ui/TextFlicker"
 
-const flickerData = ["Web Developer", "Content Creator", "Lorem Ipsum"]
+const flickerData = ["Web Developer", "UI/UX Designer", "Content Creator"]
 
 function Hero() {
     function clickHandler() {

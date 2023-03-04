@@ -16,51 +16,27 @@ export const projectsData = [
     {
         title: "Real Estate",
         description:
-            "Find your dream home with our extensive collection of real estate listings.",
+            "An amazing Real Estate Application. With rental homes and for-sale properties, advanced property filtering, property details page with an image carousel, and much more.",
         img: realtorImgPhone,
         imgDesktop: realtorImg,
         technologies: [
-            {
-                title: "HTML",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "JavaScript",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "CSS",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
+            { title: "Next.js" },
+            { title: "Rapid API" },
+            { title: "Chakra UI" },
         ],
         visit: "https://real-estate-sable-six.vercel.app/",
         id: 8,
     },
     {
-        title: "Headphones",
+        title: "E-commerce",
         description:
-            "Immerse yourself in high-quality sound with our premium noise-cancelling headphones, designed for comfort and performance.",
+            "E-commerce application with the ability to add and edit products on the go using a Sanity, advanced cart, checkout functionalities and the complete integration with Stripe to cover real payments.",
         img: beats2ImgPhone,
         imgDesktop: beats2Img,
         technologies: [
-            {
-                title: "HTML",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "JavaScript",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
-            {
-                title: "CSS",
-                tooltip:
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-            },
+            { title: "Next.js" },
+            { title: "Stripe" },
+            { title: "Sanity" },
         ],
         visit: "https://ecommerce-art1us.vercel.app/",
         id: 3,

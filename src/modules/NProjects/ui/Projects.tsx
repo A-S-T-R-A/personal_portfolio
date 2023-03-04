@@ -12,9 +12,14 @@ export default function Projects() {
     return (
         //@ts-ignore
         <Section id="projects" className={styles.wrapper} isWithPadding>
-            <SectionTitle withDescription>Projects</SectionTitle>
             {/* @ts-ignore */}
-            <SectionText>Some examples of my work</SectionText>
+            <SectionTitle withDescription className={styles.title}>
+                Projects
+            </SectionTitle>
+            {/* @ts-ignore */}
+            <SectionText>
+                See how I turn ideas into reality with these examples of my work
+            </SectionText>
             <motion.div
                 //@ts-ignore
                 variants={staggerContainer}
