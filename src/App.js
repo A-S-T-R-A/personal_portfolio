@@ -13,7 +13,7 @@ function App() {
 
     return (
         <Suspense fallback={<></>}>
-            <div>
+            <div className="app">
                 <Navigation />
                 <Main />
                 {ready && (

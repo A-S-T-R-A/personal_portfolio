@@ -21,9 +21,9 @@ select {
 }
 
 :root {
-    --main-bg-color: #0c0614;
+    --main-bg-color: #0f061f;
     --navbar-bg-color: #1f202923;
-    --modal-bg-color: #1e293d;
+    --modal-bg-color: #101825;
     --main-text-color: #f1f1f1;
     --accent-color: #743AD0;
     /* --accent-color: #743AD0; */
@@ -80,4 +80,12 @@ li {
 
 span.accent {
     -webkit-text-fill-color: var(--accent-color)
+}
+
+.app {
+    background-image: url('assets/images/universe.f742a005ecd.png');
+    background-repeat: repeat;
+    background-size: contain;
+    transform: rotate(90%);
+
 }

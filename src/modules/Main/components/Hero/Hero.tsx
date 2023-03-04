@@ -15,7 +15,7 @@ function Hero() {
 
     return (
         <div className={styles.content}>
-            <div className={styles.tagline}>Per aspera ad astra</div>
+            {/* <div className={styles.tagline}>Per aspera ad astra</div> */}
             <h1 className={styles.greeting}>
                 Hi! My name is Artur
                 <br />
