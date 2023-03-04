@@ -20,7 +20,7 @@
 }
 
 .successIcon {
-    color: green;
+    color: var(--accent-color);
     font-size: 60px;
     margin-bottom: 10px;
 }
