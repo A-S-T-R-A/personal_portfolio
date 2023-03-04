@@ -1,6 +1,6 @@
 .wrapper {
     width: 100%;
-    padding-top: var(--navbar-height);
+    padding: var(--navbar-height) 0;
 }
 
 .container {
@@ -13,7 +13,6 @@
     position: relative;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
-    /* border: 1px solid orange; */
 }
 
 .fullHeight>.container {
