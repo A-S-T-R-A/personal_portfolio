@@ -6,7 +6,7 @@ import { staggerContainer } from "../lib/motion"
 import { ProjectCard } from "./components/ProjectCard/ProjectCard"
 import { Section, SectionText, SectionTitle } from "modules/common/ui"
 
-export function Projects() {
+export default function Projects() {
     const [active, setActive] = useState(0)
 
     return (
