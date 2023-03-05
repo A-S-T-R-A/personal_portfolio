@@ -31,7 +31,7 @@ export const projectsData = [
     {
         title: "E-commerce",
         description:
-            "E-commerce application with the ability to add and edit products on the go using a Sanity, advanced cart, checkout functionalities and the complete integration with Stripe to cover real payments.",
+            "E-commerce app with the ability to add and edit products on the go using a Sanity, advanced cart, checkout functionalities and Stripe integration to cover real payments.",
         img: beats2ImgPhone,
         imgDesktop: beats2Img,
         technologies: [
@@ -55,7 +55,7 @@ export const projectsData = [
     {
         title: "Blog website",
         description:
-            "Stay informed and inspired with our engaging and informative blog, featuring a variety of topics and perspectives that cater to your interests – explore now to expand your knowledge and curiosity.",
+            "Fast, responsive and customizable blog made with Next.js and GraphQL. Enjoy a seamless blogging experience with efficient content management and dynamic UI design.",
         img: blogImgPhone,
         imgDesktop: blogImg,
         technologies: [
